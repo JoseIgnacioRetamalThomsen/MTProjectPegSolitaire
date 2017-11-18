@@ -26,5 +26,10 @@ namespace MTProjectPegSolitaire
         {
             this.InitializeComponent();
         }
+
+        private void Button_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(GamePage), null);
+        }
     }
 }

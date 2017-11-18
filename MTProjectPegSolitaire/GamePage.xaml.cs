@@ -11,6 +11,7 @@ using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
+using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
@@ -25,6 +26,15 @@ namespace MTProjectPegSolitaire
         public GamePage()
         {
             this.InitializeComponent();
+            ImageBrush BoardBackground = new ImageBrush() { ImageSource = new BitmapImage(new Uri(this.BaseUri, @"Assets\BlackWoodBackground.jpg")) };
+            ImageBrush HoleBackground = new ImageBrush() { ImageSource = new BitmapImage(new Uri(this.BaseUri, @"Assets\lightBack.jpg")) };
+            ImageBrush PieceBackgrounImage = new ImageBrush() { ImageSource = new BitmapImage(new Uri(this.BaseUri, @"Assets\greenSphere.jpg")) };
+
+            Board boardGame = new Board(5, BoardBackground, HoleBackground, PieceBackgrounImage);
+
+            GamePageMainSP.Children.Add(boardGame);
+            boardGame.PlacePieces();
+            boardGame.RemovePiece(1, 1);
         }
     }
 }
