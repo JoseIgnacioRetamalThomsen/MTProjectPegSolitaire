@@ -25729,20 +25729,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Pepe\\.nuget\\packages\\": {}
+    "C:\\Users\\pepe\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Pepe\\source\\repos\\MTProjectPegSolitaire\\MTProjectPegSolitaire\\MTProjectPegSolitaire.csproj",
+      "projectUniqueName": "C:\\Users\\pepe\\Documents\\VSProjects\\MTProjectPegSolitaire\\MTProjectPegSolitaire\\MTProjectPegSolitaire.csproj",
       "projectName": "MTProjectPegSolitaire",
-      "projectPath": "C:\\Users\\Pepe\\source\\repos\\MTProjectPegSolitaire\\MTProjectPegSolitaire\\MTProjectPegSolitaire.csproj",
-      "packagesPath": "C:\\Users\\Pepe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Pepe\\source\\repos\\MTProjectPegSolitaire\\MTProjectPegSolitaire\\obj\\",
+      "projectPath": "C:\\Users\\pepe\\Documents\\VSProjects\\MTProjectPegSolitaire\\MTProjectPegSolitaire\\MTProjectPegSolitaire.csproj",
+      "packagesPath": "C:\\Users\\pepe\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\pepe\\Documents\\VSProjects\\MTProjectPegSolitaire\\MTProjectPegSolitaire\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "C:\\Users\\Pepe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\pepe\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

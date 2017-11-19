@@ -1,1 +1,1 @@
-C:\Users\Pepe\source\repos\MTProjectPegSolitaire\MTProjectPegSolitaire\MTProjectPegSolitaire.csproj;x86
+C:\Users\pepe\Documents\VSProjects\MTProjectPegSolitaire\MTProjectPegSolitaire\MTProjectPegSolitaire.csproj;x86

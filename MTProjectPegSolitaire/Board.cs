@@ -293,6 +293,12 @@ namespace MTProjectPegSolitaire
             BackGrid.Children.Add(Piece);
         }
         #endregion
+        #region checking methods (returns)
+        public int GetPieceRemoved()
+        {
+            return this.piecesRemoved;
+        }
+
         private bool CheckIfCanMove(int i, int j, Point[] moves)
         {
             //  return parameter
@@ -471,7 +477,88 @@ namespace MTProjectPegSolitaire
                 Debug.WriteLine("can't move" + PosibleI + " " + PosibleJ + "trow in move 6");
             }
             return canMove;
-        }//checnIfCanMOve
+        }
+        public bool isGameOver()
+        {
+            Point[] moves = new Point[6];
+            for (int i = 0; i < boardSize; i++)
+            {
+                for (int j = 0; j <= i; j++)
+                {
+                    if (boardArray[i][j] == true)
+                    {
+                        if (CheckIfCanMove(i, j, moves))
+                        {
+                            return false;
+                        }
+                    }
+                }
+            }
+            return true;
+        }
+        public static int getPiecesLeft(int boardSize, int piecesRemoved)
+        {
+            int totalPiece5 = 14;
+            int totalPiece7 = 27;
+            int totalPiece9 = 44;
+            if (boardSize == 5)
+            {
+                return totalPiece5 - piecesRemoved;
+
+            }
+            else if (boardSize == 7)
+            {
+                return totalPiece7 - piecesRemoved;
+
+            }
+            else if (boardSize == 9)
+            {
+                return totalPiece9 - piecesRemoved;
+
+            }
+            return -1;
+        }
+        public static int getScore(int timeInSeconds, int boardSize, int piecesRemoved)
+        {
+            int totalPiece5 = 14;
+            int totalPiece7 = 27;
+            int totalPiece9 = 44;
+            int piecesLeft = 0;
+            int timeScore = 0;
+            int score = 0;
+            if (boardSize == 5)
+            {
+                piecesLeft = totalPiece5 - piecesRemoved;
+                if (piecesLeft == 1) score += 1000;
+
+                timeScore = 300;
+                score += piecesRemoved * 20;
+            }
+            else if (boardSize == 7)
+            {
+                piecesLeft = totalPiece7 - piecesRemoved;
+                if (piecesLeft == 1) score += 2000;
+                else if (piecesLeft == 2) score += 1000;
+                score += piecesRemoved * 15;
+                timeScore = 400;
+            }
+            else if (boardSize == 9)
+            {
+                piecesLeft = totalPiece9 - piecesRemoved;
+                timeScore = 500;
+                if (piecesLeft == 1) score += 3000;
+                else if (piecesLeft == 2) score += 1500;
+                else if (piecesLeft == 3) score += 100;
+                score += piecesRemoved * 10;
+            }
+            if (timeScore - (timeInSeconds * 1.5) > 0)
+            {
+                score += (int)(timeScore - (timeInSeconds * 1.5));
+
+            }
+            return score;
+        }
+        #endregion
         #region Buttons Events methods
         private void Piece_Tapped(object sender, TappedRoutedEventArgs e)
         {
