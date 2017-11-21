@@ -132,17 +132,19 @@ namespace MTProjectPegSolitaire.MTProjectPegSolitaire_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[4];
-            _typeNameTable[0] = "MTProjectPegSolitaire.GamePage";
+            _typeNameTable = new string[5];
+            _typeNameTable[0] = "MTProjectPegSolitaire.GameOverPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "MTProjectPegSolitaire.MainPage";
+            _typeNameTable[3] = "MTProjectPegSolitaire.GamePage";
+            _typeNameTable[4] = "MTProjectPegSolitaire.MainPage";
 
-            _typeTable = new global::System.Type[4];
-            _typeTable[0] = typeof(global::MTProjectPegSolitaire.GamePage);
+            _typeTable = new global::System.Type[5];
+            _typeTable[0] = typeof(global::MTProjectPegSolitaire.GameOverPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::MTProjectPegSolitaire.MainPage);
+            _typeTable[3] = typeof(global::MTProjectPegSolitaire.GamePage);
+            _typeTable[4] = typeof(global::MTProjectPegSolitaire.MainPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -177,8 +179,9 @@ namespace MTProjectPegSolitaire.MTProjectPegSolitaire_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_GamePage() { return new global::MTProjectPegSolitaire.GamePage(); }
-        private object Activate_3_MainPage() { return new global::MTProjectPegSolitaire.MainPage(); }
+        private object Activate_0_GameOverPage() { return new global::MTProjectPegSolitaire.GameOverPage(); }
+        private object Activate_3_GamePage() { return new global::MTProjectPegSolitaire.GamePage(); }
+        private object Activate_4_MainPage() { return new global::MTProjectPegSolitaire.MainPage(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -190,9 +193,9 @@ namespace MTProjectPegSolitaire.MTProjectPegSolitaire_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  MTProjectPegSolitaire.GamePage
+            case 0:   //  MTProjectPegSolitaire.GameOverPage
                 userType = new global::MTProjectPegSolitaire.MTProjectPegSolitaire_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_GamePage;
+                userType.Activator = Activate_0_GameOverPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -205,9 +208,16 @@ namespace MTProjectPegSolitaire.MTProjectPegSolitaire_XamlTypeInfo
                 xamlType = new global::MTProjectPegSolitaire.MTProjectPegSolitaire_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 3:   //  MTProjectPegSolitaire.MainPage
+            case 3:   //  MTProjectPegSolitaire.GamePage
                 userType = new global::MTProjectPegSolitaire.MTProjectPegSolitaire_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_3_MainPage;
+                userType.Activator = Activate_3_GamePage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 4:   //  MTProjectPegSolitaire.MainPage
+                userType = new global::MTProjectPegSolitaire.MTProjectPegSolitaire_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_4_MainPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

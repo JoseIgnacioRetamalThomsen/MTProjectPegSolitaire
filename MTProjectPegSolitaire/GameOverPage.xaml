@@ -1,0 +1,42 @@
+﻿<Page
+    x:Class="MTProjectPegSolitaire.GameOverPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MTProjectPegSolitaire"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <StackPanel  HorizontalAlignment="Center" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel BorderBrush="Gray" BorderThickness="3" CornerRadius="8" Background="WhiteSmoke" Margin="5">
+            <TextBlock x:Name="ScoreTB" Foreground="Gold" Text="Score : " Style="{StaticResource HeaderTextBlockStyle}" FontStretch="ExtraCondensed" Padding="5" HorizontalAlignment="Center"></TextBlock>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+            <TextBlock Text="Result" HorizontalAlignment="Left" Width="200" Foreground="Gray" FontSize="20" ></TextBlock>
+            <TextBlock x:Name="ResultTB"  HorizontalAlignment="Right" Foreground="Gray" FontSize="20" TextAlignment="Center"></TextBlock>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="Pieces Removed" HorizontalAlignment="Left" Width="200"  Foreground="Gray" FontSize="20" ></TextBlock>
+            <TextBlock x:Name="PiecesRemovedTB"  HorizontalAlignment="Right"  Foreground="Gray" FontSize="20" ></TextBlock>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="Time" HorizontalAlignment="Left" Width="200"  Foreground="Gray" FontSize="20" ></TextBlock>
+            <TextBlock x:Name="TimeTB"  HorizontalAlignment="Right"  Foreground="Gray" FontSize="20" ></TextBlock>
+        </StackPanel>
+        <StackPanel>
+            <TextBlock   Text="High Scores" HorizontalAlignment="Center"  Foreground="Gray" Style="{StaticResource HeaderTextBlockStyle}" Margin="10"></TextBlock>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <TextBlock x:Name="HighScore1Name" Text="1ST No One" Width="200" Foreground="Gold" TextAlignment="Center"></TextBlock>
+                <TextBlock x:Name="HighScore1Score" Text="0000" Width="200" Foreground="Gold" TextAlignment="Center"></TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <TextBlock x:Name="HighScore2Name" Text="1ST No One" Width="200" Foreground="Gold" TextAlignment="Center"></TextBlock>
+                <TextBlock x:Name="HighScore2Score" Text="0000" Width="200" Foreground="Gold" TextAlignment="Center" ></TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <TextBlock x:Name="HighScore3Name" Text="1ST No One" Width="200" Foreground="Gold" TextAlignment="Center"></TextBlock>
+                <TextBlock x:Name="HighScore3Score" Text="0000" Width="200" Foreground="Gold" TextAlignment="Center"></TextBlock>
+            </StackPanel>
+        </StackPanel>
+    </StackPanel>
+</Page>

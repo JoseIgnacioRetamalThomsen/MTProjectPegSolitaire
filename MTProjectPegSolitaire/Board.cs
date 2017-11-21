@@ -13,6 +13,7 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Shapes;
 
+
 namespace MTProjectPegSolitaire
 {
     class Board : Grid
@@ -24,7 +25,8 @@ namespace MTProjectPegSolitaire
         StackPanel BackSP;
         Point pieceToMove;
 
-      
+        GamePage gamePage;
+
         ImageBrush BoardBackGroundImage, PieceHolderBackgroundImage, PieceBackgroundImage;
 
         Boolean[][] boardArray;
@@ -32,7 +34,7 @@ namespace MTProjectPegSolitaire
 
         #endregion
         #region constructors
-        public Board(int size, ImageBrush dackGroundImage, ImageBrush lightBack, ImageBrush PieceBackgroundImage)
+        public Board(int size, ImageBrush dackGroundImage, ImageBrush lightBack, ImageBrush PieceBackgroundImage, GamePage gamePage)
         {
 
             this.boardSize = size;
@@ -45,7 +47,7 @@ namespace MTProjectPegSolitaire
             createBoardArray();
 
 
-            
+            this.gamePage = gamePage;
         }
         #endregion
         #region create baord and place piece methods
@@ -239,7 +241,7 @@ namespace MTProjectPegSolitaire
         }//PlacePiece
         #endregion
         #region manipulating pieces methods
-        
+     
         public void RemovePiece(int i, int j)
         {
             //get grid for remove piece
@@ -665,7 +667,7 @@ namespace MTProjectPegSolitaire
                 }
             }
             piecesRemoved++;
-           
+          
         }//PieceHolderTo move
 
         #endregion

@@ -35,28 +35,13 @@ namespace MTProjectPegSolitaire
         {
             this.InitializeComponent();
 
-            
+
 
 
 
         }
 
-      
-
-
-
-
-
-
-
-
-
-
-
         //move have to be done here
-
-
-
 
         private void Button_Tapped(object sender, TappedRoutedEventArgs e)
         {
@@ -91,4 +76,3 @@ namespace MTProjectPegSolitaire
         }
     }
 }
-

@@ -8,12 +8,23 @@
     mc:Ignorable="d">
 
     <StackPanel x:Name="GamePageMainSP" HorizontalAlignment="Center"  Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" VerticalAlignment="Center">
+
         <Button Tapped="BackButton_Tapped"  Content="BACK"></Button>
         <StackPanel x:Name="TimerSP" Orientation="Horizontal" HorizontalAlignment="Center" >
+
+         
+
         </StackPanel>
+
+      
         <StackPanel Height="100">
             <TextBlock x:Name="GameOverTF" Visibility="Collapsed" Text="Game Over" Foreground="Red" FontStyle="Normal" FontSize="80" Style="{StaticResource   HeaderTextBlockStyle}" HorizontalAlignment="Center" VerticalAlignment="Center" >
             </TextBlock>
         </StackPanel>
+    
+
+
+
+
     </StackPanel>
 </Page>

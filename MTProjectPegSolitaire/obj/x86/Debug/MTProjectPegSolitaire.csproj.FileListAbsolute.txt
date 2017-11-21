@@ -434,3 +434,8 @@ C:\Users\pepe\Documents\VSProjects\MTProjectPegSolitaire\MTProjectPegSolitaire\o
 C:\Users\pepe\Documents\VSProjects\MTProjectPegSolitaire\MTProjectPegSolitaire\obj\x86\Debug\qualifiers.txt.intermediate
 C:\Users\pepe\Documents\VSProjects\MTProjectPegSolitaire\MTProjectPegSolitaire\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\pepe\Documents\VSProjects\MTProjectPegSolitaire\MTProjectPegSolitaire\obj\x86\Debug\ProjectArchitectures.txt
+C:\Users\pepe\Documents\VSProjects\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Debug\GameOverPage.xbf
+C:\Users\pepe\Documents\VSProjects\MTProjectPegSolitaire\MTProjectPegSolitaire\obj\x86\Debug\GameOverPage.g.i.cs
+C:\Users\pepe\Documents\VSProjects\MTProjectPegSolitaire\MTProjectPegSolitaire\obj\x86\Debug\GameOverPage.g.cs
+C:\Users\pepe\Documents\VSProjects\MTProjectPegSolitaire\MTProjectPegSolitaire\obj\x86\Debug\GameOverPage.xaml
+C:\Users\pepe\Documents\VSProjects\MTProjectPegSolitaire\MTProjectPegSolitaire\obj\x86\Debug\GameOverPage.xbf
