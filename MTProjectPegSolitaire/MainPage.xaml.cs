@@ -35,28 +35,58 @@ namespace MTProjectPegSolitaire
         {
             this.InitializeComponent();
 
-            
+<<<<<<< HEAD
+            this.Loading += MainPage_Loading;
 
 
 
         }
 
-      
+        private void MainPage_Loading(FrameworkElement sender, object args)
+        {
+            ApplicationDataContainer localSettings = ApplicationData.Current.LocalSettings;
+
+            try
+            {
+                //get last board size
+                App.lastBoardSize = Convert.ToInt32((localSettings.Values["BoardSize"]).ToString());
+            }
+            catch (Exception exc)
+            {
+                //this will be if is first time runig the app, will create baord size
+                localSettings.Values["BoardSize"] = App.lastBoardSize;
+                Debug.WriteLine(exc.StackTrace);
+
+            }
+            //set radio button to checked
+            if (App.lastBoardSize == 5)
+            {
+                EasyRB.IsChecked = true;
+            }
+            else if (App.lastBoardSize == 7)
+            {
+                MediunRB.IsChecked = true;
+            }
+            else if (App.lastBoardSize == 9)
+            {
+                HardRB.IsChecked = true;
+            }
+        }
 
 
 
 
 
 
+=======
+>>>>>>> 396c6f2ad0f280e6cc4d037ca9d0c101043f42f6
 
 
 
 
+        }
 
         //move have to be done here
-
-
-
 
         private void Button_Tapped(object sender, TappedRoutedEventArgs e)
         {
@@ -87,8 +117,30 @@ namespace MTProjectPegSolitaire
 
         private void RadioButton_Checked(object sender, RoutedEventArgs e)
         {
+            //set board size and naviete to game , mean start the game
+            if (EasyRB.IsChecked == true)
+            {
+                App.lastBoardSize = 5;
 
+            }
+            else if (MediunRB.IsChecked == true)
+            {
+                App.lastBoardSize = 7;
+            }
+            else if (HardRB.IsChecked == true)
+            {
+                App.lastBoardSize = 9;
+            }
+
+            ApplicationDataContainer localSettings = ApplicationData.Current.LocalSettings;
+            try
+            {
+                localSettings.Values["BoardSize"] = App.lastBoardSize;
+            }
+            catch (Exception exc)
+            {
+                Debug.WriteLine(exc.StackTrace);
+            }
         }
     }
 }
-

@@ -8,13 +8,24 @@
     mc:Ignorable="d">
 
     <StackPanel x:ConnectionId='1' x:Name="GamePageMainSP" HorizontalAlignment="Center"  Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" VerticalAlignment="Center">
+
         <Button x:ConnectionId='2'                             Content="BACK"></Button>
         <StackPanel x:ConnectionId='3' x:Name="TimerSP" Orientation="Horizontal" HorizontalAlignment="Center" >
+
+         
+
         </StackPanel>
+
+      
         <StackPanel Height="100">
             <TextBlock x:ConnectionId='4' x:Name="GameOverTF" Visibility="Collapsed" Text="Game Over" Foreground="Red" FontStyle="Normal" FontSize="80" Style="{StaticResource   HeaderTextBlockStyle}" HorizontalAlignment="Center" VerticalAlignment="Center" >
             </TextBlock>
         </StackPanel>
+    
+
+
+
+
     </StackPanel>
 </Page>
 

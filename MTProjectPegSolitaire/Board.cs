@@ -13,6 +13,7 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Shapes;
 
+
 namespace MTProjectPegSolitaire
 {
     class Board : Grid
@@ -24,7 +25,8 @@ namespace MTProjectPegSolitaire
         StackPanel BackSP;
         Point pieceToMove;
 
-      
+        GamePage gamePage;
+
         ImageBrush BoardBackGroundImage, PieceHolderBackgroundImage, PieceBackgroundImage;
 
         Boolean[][] boardArray;
@@ -32,7 +34,7 @@ namespace MTProjectPegSolitaire
 
         #endregion
         #region constructors
-        public Board(int size, ImageBrush dackGroundImage, ImageBrush lightBack, ImageBrush PieceBackgroundImage)
+        public Board(int size, ImageBrush dackGroundImage, ImageBrush lightBack, ImageBrush PieceBackgroundImage, GamePage gamePage)
         {
 
             this.boardSize = size;
@@ -45,7 +47,7 @@ namespace MTProjectPegSolitaire
             createBoardArray();
 
 
-            
+            this.gamePage = gamePage;
         }
         #endregion
         #region create baord and place piece methods
@@ -239,7 +241,17 @@ namespace MTProjectPegSolitaire
         }//PlacePiece
         #endregion
         #region manipulating pieces methods
-        
+<<<<<<< HEAD
+        public void RemoveRandonPiece()
+        {
+            int row, col;
+            row = App.random.Next(0, boardSize);
+            col = App.random.Next(0, row + 1);
+            RemovePiece(row, col);
+        }
+=======
+     
+>>>>>>> 396c6f2ad0f280e6cc4d037ca9d0c101043f42f6
         public void RemovePiece(int i, int j)
         {
             //get grid for remove piece
@@ -665,7 +677,14 @@ namespace MTProjectPegSolitaire
                 }
             }
             piecesRemoved++;
-           
+<<<<<<< HEAD
+            if (isGameOver())
+            {
+                gamePage.GameOverAsync();
+            }
+=======
+          
+>>>>>>> 396c6f2ad0f280e6cc4d037ca9d0c101043f42f6
         }//PieceHolderTo move
 
         #endregion
