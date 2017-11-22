@@ -40,18 +40,23 @@ namespace MTProjectPegSolitaire
             TimerSP.Children.Add(timer);
             timer.StartTimer();
 
-            //create board
-            ImageBrush BoardBackground = new ImageBrush() { ImageSource = new BitmapImage(new Uri(this.BaseUri, @"Assets\images\back.jpg")) };
-            ImageBrush HoleBackground = new ImageBrush() { ImageSource = new BitmapImage(new Uri(this.BaseUri, @"Assets\images\lightBack.jpg")) };
-            ImageBrush PieceBackgrounImage = new ImageBrush() { ImageSource = new BitmapImage(new Uri(this.BaseUri, @"Assets\images\greenSphere.jpg")) };
 
-            board = new Board(5, BoardBackground, HoleBackground, PieceBackgrounImage, this);
+            //create board
+            ImageBrush BoardBackground = new ImageBrush() { ImageSource = new BitmapImage(new Uri(this.BaseUri, @"Assets\BlackWoodBackground.jpg")) };
+            ImageBrush HoleBackground = new ImageBrush() { ImageSource = new BitmapImage(new Uri(this.BaseUri, @"Assets\lightBack.jpg")) };
+            ImageBrush PieceBackgrounImage = new ImageBrush() { ImageSource = new BitmapImage(new Uri(this.BaseUri, @"Assets\greenSphere.jpg")) };
+
+            board = new Board(App.lastBoardSize, BoardBackground, HoleBackground, PieceBackgrounImage, this);
+
+
 
             GamePageMainSP.Children.Add(board);
             board.PlacePieces();
-            board.RemovePiece(1, 1);
+            board.RemoveRandonPiece();
 
         }
+
+
 
 
         private void Test_Tapped(object sender, TappedRoutedEventArgs e)
@@ -59,7 +64,29 @@ namespace MTProjectPegSolitaire
             Debug.WriteLine(timer.GetTotalSeconds());
         }
 
-       
+
+        public async Task GameOverAsync()
+        {
+
+            //show game over
+            GameOverTF.Visibility = Visibility.Visible;
+
+            timer.StopTimer();
+            App.lastTotalTimeSecond = timer.GetTotalSeconds();
+            App.lastPiecesRemoved = board.GetPieceRemoved();
+            App.lastTotalTime = timer.GetTime();
+            App.lastPiecesLeft = Board.getPiecesLeft(App.lastBoardSize, App.lastTotalTimeSecond);
+            App.lastScore = Board.getScore(timer.GetTotalSeconds(), App.lastBoardSize, App.lastPiecesRemoved);
+
+
+
+            await Task.Delay(1500);
+
+            this.Frame.Navigate(typeof(GameOverPage), null);
+
+            Debug.WriteLine(App.variable);
+
+        }
 
 
 
@@ -68,6 +95,11 @@ namespace MTProjectPegSolitaire
         {
             this.Frame.Navigate(typeof(MainPage), null);
 
+
+
+
         }
+
+
     }
 }

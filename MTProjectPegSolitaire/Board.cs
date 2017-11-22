@@ -241,7 +241,16 @@ namespace MTProjectPegSolitaire
         }//PlacePiece
         #endregion
         #region manipulating pieces methods
-     
+
+        public void RemoveRandonPiece()
+        {
+            int row, col;
+            row = App.random.Next(0, boardSize);
+            col = App.random.Next(0, row + 1);
+            RemovePiece(row, col);
+        }
+
+
         public void RemovePiece(int i, int j)
         {
             //get grid for remove piece
@@ -667,7 +676,12 @@ namespace MTProjectPegSolitaire
                 }
             }
             piecesRemoved++;
-          
+
+            if (isGameOver())
+            {
+                gamePage.GameOverAsync();
+            }
+
         }//PieceHolderTo move
 
         #endregion

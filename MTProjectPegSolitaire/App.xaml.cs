@@ -26,7 +26,18 @@ namespace MTProjectPegSolitaire
         /// Initializes the singleton application object.  This is the first line of authored code
         /// executed, and as such is the logical equivalent of main() or WinMain().
         /// 
+
+        public static int variable = 5;
+        public static int lastBoardSize = 5;
+        public static int lastTotalTimeSecond = 0;
+        public static String lastTotalTime = "";
+        public static int lastPiecesRemoved = 0;
+        public static int lastPiecesLeft = 0;
+        public static int lastScore = 0;
+        public static Random random = new Random();
+
         
+
         /// </summary>
         public App()
         {
