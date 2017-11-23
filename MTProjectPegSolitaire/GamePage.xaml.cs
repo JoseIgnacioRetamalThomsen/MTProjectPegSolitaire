@@ -18,7 +18,13 @@ using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
 
 
-
+/*
+ *   Jose Ignacio Retamal Peg Solitaire Game - Page where actually the game happens.
+ *   17/11/2017 File created. Jose Ignacio Retamal.
+ *   17/11/2017 Page create and add a Board object wich is the game,
+ *              Set image URI, they are parameters for the board object. Jose Ignacio Retamal.
+ *   19/11/2017 Timer Object added. Jose Ignacio Retamal.
+ */
 
 namespace MTProjectPegSolitaire
 {
@@ -56,14 +62,10 @@ namespace MTProjectPegSolitaire
 
         }
 
-
-
-
         private void Test_Tapped(object sender, TappedRoutedEventArgs e)
         {
             Debug.WriteLine(timer.GetTotalSeconds());
         }
-
 
         public async Task GameOverAsync()
         {
@@ -78,8 +80,6 @@ namespace MTProjectPegSolitaire
             App.lastPiecesLeft = Board.getPiecesLeft(App.lastBoardSize, App.lastTotalTimeSecond);
             App.lastScore = Board.getScore(timer.GetTotalSeconds(), App.lastBoardSize, App.lastPiecesRemoved);
 
-
-
             await Task.Delay(1500);
 
             this.Frame.Navigate(typeof(GameOverPage), null);
@@ -88,15 +88,9 @@ namespace MTProjectPegSolitaire
 
         }
 
-
-
-
         private void BackButton_Tapped(object sender, TappedRoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(MainPage), null);
-
-
-
 
         }
 

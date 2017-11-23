@@ -24,6 +24,9 @@ namespace MTProjectPegSolitaire
     /// </summary>
     public sealed partial class GameOverPage : Page
     {
+
+        int haveHighScore;
+        ApplicationDataContainer localSettings = ApplicationData.Current.LocalSettings;
         public GameOverPage()
         {
 
@@ -47,7 +50,7 @@ namespace MTProjectPegSolitaire
             TimeTB.Text = App.lastTotalTime;
 
             //save last score to app seting
-            ApplicationDataContainer localSettings = ApplicationData.Current.LocalSettings;
+        
             try
             {
                 localSettings.Values["LastTimeInSeconds"] = App.lastTotalTimeSecond;
@@ -55,81 +58,107 @@ namespace MTProjectPegSolitaire
             }
             catch (Exception exp) { }
 
-            //high scores
-            int highScore3 = 0, highScore2 = 0, highScore1 = 0;
-            String highScore3Name = "", highScore2Name = "", highScore1Name = "";
-            #region get high score from storage or create if not exist
-            try
+
+            
+
+                    
+
+            //0 if not high score, 1 high1 ...
+             haveHighScore = 0;
+            //check and assig if any high score
+            if (App.lastScore > App.highScores[0])
             {
-                highScore3 = Convert.ToInt32((localSettings.Values["HighScore3"]).ToString());
-                highScore3Name = (localSettings.Values["HighScore3Name"]).ToString();
-                highScore2 = Convert.ToInt32((localSettings.Values["HighScore2"]).ToString());
-                highScore2Name = (localSettings.Values["HighScore2Name"]).ToString();
-                highScore1 = Convert.ToInt32((localSettings.Values["HighScore1"]).ToString());
-                highScore1Name = (localSettings.Values["HighScore1Name"]).ToString();
-            }
-            catch (Exception exc3)
-            {
-                //if do not existe create
-                localSettings.Values["HighScore3"] = 0;
-                localSettings.Values["HighScore3Name"] = "";
+                //update high scores and names
+                App.highScores[0] = App.lastScore;
                 try
                 {
-                    highScore2 = Convert.ToInt32((localSettings.Values["HighScore2"]).ToString());
-                    highScore2Name = (localSettings.Values["HighScore2Name"]).ToString();
-                }
-                catch (Exception exc2)
+                    App.highScores[1] = Convert.ToInt32((localSettings.Values["HighScore1"]).ToString());
+                    App.highScores[2] = Convert.ToInt32((localSettings.Values["HighScore2"]).ToString());
+                }catch(Exception e)
                 {
-                    localSettings.Values["HighScore2"] = 0;
-                    localSettings.Values["HighScore2Name"] = "";
+                    Debug.WriteLine(e.StackTrace);
+                }
+                localSettings.Values["HighScore1"] = App.highScores[0];
+                localSettings.Values["HighScore2"] = App.highScores[1];
+                localSettings.Values["HighScore3"] = App.highScores[2];
 
-                    try
-                    {
-                        highScore1 = Convert.ToInt32((localSettings.Values["HighScore1"]).ToString());
-                        highScore1Name = (localSettings.Values["HighScore1Name"]).ToString();
-                    }
-                    catch (Exception exc1)
-                    {
-                        localSettings.Values["HighScore1"] = 0;
-                        localSettings.Values["HighScore1Name"] = "";
-                    }
+                //HighScore1Name.Text = "1ST " + "Unknown";
+                localSettings.Values["HighScore1Name"] = "Unknown";
+                App.highScoresName[0] = "Unknown";
+
+                haveHighScore = 1;
+
+            }
+            else if (App.lastScore > App.highScores[1])
+            {
+                //update high scores
+                App.highScores[1] = App.lastScore;
+                Debug.WriteLine(localSettings.Values["HighScore2"]);
+                App.highScores[2] = Convert.ToInt32((localSettings.Values["HighScore2"]).ToString());
+                localSettings.Values["HighScore2"] = App.highScores[1];
+                localSettings.Values["HighScore3"] = App.highScores[2];
+
+               // HighScore2Name.Text = "2ND " + "Unknown";
+                localSettings.Values["HighScore2Name"] = "Unknown";
+                App.highScoresName[1] = "Unknown";
+
+                haveHighScore = 2;
+
+            }
+            else if (App.lastScore > App.highScores[2])
+            {
+                App.highScores[2] = App.lastScore;
+                Debug.WriteLine(localSettings.Values["HighScore3"]);
+                localSettings.Values["HighScore3"] = App.highScores[2];
+
+               // HighScore3Name.Text = "3RD " + "Unknown";
+                localSettings.Values["HighScore3Name"] = "Unknown";
+                App.highScoresName[2] = "Unknown";
+
+                haveHighScore = 3;
+
+            }
+            //set value in gui
+            HighScore1Score.Text = App.highScores[0].ToString();
+            HighScore2Score.Text = App.highScores[1].ToString();
+            HighScore3Score.Text = App.highScores[2].ToString();
+
+            HighScore1Name.Text ="1ST "+ App.highScoresName[0];
+            HighScore2Name.Text = "2ND  "+App.highScoresName[1];
+            HighScore3Name.Text = "3RD  "+App.highScoresName[2];
+            if (haveHighScore > 0)
+            {
+                HavaHighScoreSP.Visibility = Visibility.Visible;
+            }
+        }
+
+        private void highScoreNameButton_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            String localHighScoreName = highScoreNameInput.Text;
+
+            if (haveHighScore > 0)
+            {
+               
+                switch (haveHighScore)
+                {
+                    case 1:
+                        
+                        HighScore1Name.Text = "1ST " + localHighScoreName;
+                        localSettings.Values["HighScore1Name"] = localHighScoreName;
+                        break;
+                    case 2:
+                        
+                        HighScore2Name.Text = "2ST " + localHighScoreName;
+                        localSettings.Values["HighScore2Name"] = localHighScoreName;
+                        break;
+                    case 3:
+                       
+                        HighScore3Name.Text = "3RD " + localHighScoreName;
+                        localSettings.Values["HighScore3Name"] = localHighScoreName;
+                        break;
 
                 }
             }
-            #endregion
-
-            Debug.WriteLine(Convert.ToInt32((localSettings.Values["HighScore3"]).ToString()) + " " + Convert.ToInt32((localSettings.Values["HighScore2"]).ToString()) + " " + Convert.ToInt32((localSettings.Values["HighScore1"]).ToString()));
-
-            bool haveHighScore = false;
-            //check and assig if any high score
-            if (App.lastScore > highScore1)
-            {
-                highScore1 = App.lastScore;
-                highScore2 = Convert.ToInt32((localSettings.Values["HighScore1"]).ToString());
-                highScore3 = Convert.ToInt32((localSettings.Values["HighScore2"]).ToString());
-                localSettings.Values["HighScore1"] = highScore1;
-                localSettings.Values["HighScore2"] = highScore2;
-                localSettings.Values["HighScore3"] = highScore3;
-
-            }
-            else if (App.lastScore > highScore2)
-            {
-                highScore2 = App.lastScore;
-                highScore3 = Convert.ToInt32((localSettings.Values["HighScore2"]).ToString());
-                localSettings.Values["HighScore2"] = highScore2;
-                localSettings.Values["HighScore3"] = highScore3;
-
-            }
-            else if (App.lastScore > highScore3)
-            {
-                highScore3 = App.lastScore;
-                localSettings.Values["HighScore3"] = highScore3;
-
-            }
-            HighScore1Score.Text = highScore1.ToString();
-            HighScore2Score.Text = highScore2.ToString();
-            HighScore3Score.Text = highScore3.ToString();
-
         }
     }
 }

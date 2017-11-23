@@ -25734,11 +25734,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pepe\\Documents\\VSProjects\\MTProjectPegSolitaire\\MTProjectPegSolitaire\\MTProjectPegSolitaire.csproj",
+      "projectUniqueName": "C:\\Users\\pepe\\Documents\\New folder\\MTProjectPegSolitaire\\MTProjectPegSolitaire\\MTProjectPegSolitaire.csproj",
       "projectName": "MTProjectPegSolitaire",
-      "projectPath": "C:\\Users\\pepe\\Documents\\VSProjects\\MTProjectPegSolitaire\\MTProjectPegSolitaire\\MTProjectPegSolitaire.csproj",
+      "projectPath": "C:\\Users\\pepe\\Documents\\New folder\\MTProjectPegSolitaire\\MTProjectPegSolitaire\\MTProjectPegSolitaire.csproj",
       "packagesPath": "C:\\Users\\pepe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pepe\\Documents\\VSProjects\\MTProjectPegSolitaire\\MTProjectPegSolitaire\\obj\\",
+      "outputPath": "C:\\Users\\pepe\\Documents\\New folder\\MTProjectPegSolitaire\\MTProjectPegSolitaire\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [

@@ -18,7 +18,12 @@ using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
 using Windows.UI.Xaml.Shapes;
 
-// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
+
+/*
+ *   Jose Ignacio Retamal Peg Solitaire Game - Landing game page.
+ *   17/11/2017 File created: Jose Ignacio Retamal.
+ *   20/11/2017 Static GUI added to xamal file : Jose Ignacio Retamal.
+ */
 
 namespace MTProjectPegSolitaire
 {
@@ -28,21 +33,49 @@ namespace MTProjectPegSolitaire
     public sealed partial class MainPage : Page
     {
         int boardSize = 5;
-        //array taht represent the board with pieces
+        //array that represent the board with pieces
         Boolean[][] boardArray;
         public MainPage()
 
         {
             this.InitializeComponent();
 
-
-            this.Loading += MainPage_Loading;
-
-
-
+            //add loading event
+            this.Loading += LoadBoardSize_Loading;
+            this.Loading += LoadScores_Loding;
         }
 
-        private void MainPage_Loading(FrameworkElement sender, object args)
+        private void LoadScores_Loding(FrameworkElement sender, object args)
+        {
+            ApplicationDataContainer localSettings = ApplicationData.Current.LocalSettings;
+            try
+            {
+                //if high score 1 do not exist mean that non other
+                App.highScores[0] = Convert.ToInt32((localSettings.Values["HighScore1"]).ToString());
+                App.highScoresName[0] = localSettings.Values["HighScore1Name"].ToString();
+                //if highScore1 exits all other are at least ini to 0
+                App.highScores[1] = Convert.ToInt32((localSettings.Values["HighScore2"]).ToString());
+                App.highScoresName[1] = localSettings.Values["HighScore2Name"].ToString();
+
+                App.highScores[2] = Convert.ToInt32((localSettings.Values["HighScore3"]).ToString());
+                App.highScoresName[2] = localSettings.Values["HighScore3Name"].ToString();
+
+            }
+            catch (Exception exception)
+            {
+               // Debug.WriteLine(exception);
+                localSettings.Values["HighScore3"] = 0;
+                localSettings.Values["HighScore2"] = 0;
+                localSettings.Values["HighScore1"] = 0;
+
+                localSettings.Values["HighScore1Name"] = "Non One";
+                localSettings.Values["HighScore2Name"] = "Non One";
+                localSettings.Values["HighScore3Name"] = "Non One";
+                
+            }
+        }
+
+        private void LoadBoardSize_Loading(FrameworkElement sender, object args)
         {
             ApplicationDataContainer localSettings = ApplicationData.Current.LocalSettings;
 
@@ -73,8 +106,7 @@ namespace MTProjectPegSolitaire
             }
         }
 
-                          
-               
+
         //move have to be done here
 
         private void Button_Tapped(object sender, TappedRoutedEventArgs e)

@@ -15,6 +15,12 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
+/*
+ *   Jose Ignacio Retamal Peg Solitaire Game .
+ *   17/11/2017 File created: Jose Ignacio Retamal.
+ *  
+ */
+
 namespace MTProjectPegSolitaire
 {
     /// <summary>
@@ -36,14 +42,24 @@ namespace MTProjectPegSolitaire
         public static int lastScore = 0;
         public static Random random = new Random();
 
+        //0 high score 1, 1 high 1 and 2 lowe high
+        public static int[] highScores = new int[3];
+        public static String[] highScoresName = new String[3];
         
 
         /// </summary>
         public App()
         {
             this.InitializeComponent();
+
+            //add on loadig for local setting
+           
+
             this.Suspending += OnSuspending;
+            
         }
+
+     
 
         /// <summary>
         /// Invoked when the application is launched normally by the end user.  Other entry points
