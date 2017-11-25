@@ -160,5 +160,15 @@ namespace MTProjectPegSolitaire
                 }
             }
         }
+
+        private void PlayAgainButton_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+
+        }
+
+        private void HOME_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+
+        }
     }
 }

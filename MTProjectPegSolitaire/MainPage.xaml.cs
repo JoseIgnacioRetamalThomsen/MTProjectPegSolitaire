@@ -49,7 +49,10 @@ namespace MTProjectPegSolitaire
         {
             ApplicationDataContainer localSettings = ApplicationData.Current.LocalSettings;
             try
+
             {
+               
+
                 //if high score 1 do not exist mean that non other
                 App.highScores[0] = Convert.ToInt32((localSettings.Values["HighScore1"]).ToString());
                 App.highScoresName[0] = localSettings.Values["HighScore1Name"].ToString();
