@@ -168,7 +168,7 @@ namespace MTProjectPegSolitaire
 
         private void HOME_Tapped(object sender, TappedRoutedEventArgs e)
         {
-
+            this.Frame.Navigate(typeof(MainPage), null);
         }
     }
 }

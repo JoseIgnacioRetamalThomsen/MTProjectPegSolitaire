@@ -307,7 +307,7 @@ namespace MTProjectPegSolitaire
         #region checking methods (returns)
         public int GetPieceRemoved()
         {
-            return this.piecesRemoved;
+            return this.piecesRemoved+1;
         }
 
         private bool CheckIfCanMove(int i, int j, Point[] moves)
