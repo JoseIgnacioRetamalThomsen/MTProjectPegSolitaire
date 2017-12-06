@@ -33,10 +33,7 @@ namespace MTProjectPegSolitaire
             this.InitializeComponent();
 
             ScoreTB.Text += App.lastScore;
-
-
-
-
+                                    
             if (App.lastPiecesLeft == 1)
             {
                 ResultTB.Text = "Success";
@@ -46,11 +43,11 @@ namespace MTProjectPegSolitaire
                 ResultTB.Text = "Fail";
             }
 
-            PiecesRemovedTB.Text = "" + App.lastPiecesRemoved;
+            PiecesRemovedTB.Text = "" + (App.lastPiecesRemoved-1);
             TimeTB.Text = App.lastTotalTime;
 
             //save last score to app seting
-        
+
             try
             {
                 localSettings.Values["LastTimeInSeconds"] = App.lastTotalTimeSecond;
@@ -58,13 +55,8 @@ namespace MTProjectPegSolitaire
             }
             catch (Exception exp) { }
 
-
-            
-
-                    
-
             //0 if not high score, 1 high1 ...
-             haveHighScore = 0;
+            haveHighScore = 0;
             //check and assig if any high score
             if (App.lastScore > App.highScores[0])
             {
@@ -74,7 +66,8 @@ namespace MTProjectPegSolitaire
                 {
                     App.highScores[1] = Convert.ToInt32((localSettings.Values["HighScore1"]).ToString());
                     App.highScores[2] = Convert.ToInt32((localSettings.Values["HighScore2"]).ToString());
-                }catch(Exception e)
+                }
+                catch (Exception e)
                 {
                     Debug.WriteLine(e.StackTrace);
                 }
@@ -98,7 +91,7 @@ namespace MTProjectPegSolitaire
                 localSettings.Values["HighScore2"] = App.highScores[1];
                 localSettings.Values["HighScore3"] = App.highScores[2];
 
-               // HighScore2Name.Text = "2ND " + "Unknown";
+                // HighScore2Name.Text = "2ND " + "Unknown";
                 localSettings.Values["HighScore2Name"] = "Unknown";
                 App.highScoresName[1] = "Unknown";
 
@@ -111,7 +104,7 @@ namespace MTProjectPegSolitaire
                 Debug.WriteLine(localSettings.Values["HighScore3"]);
                 localSettings.Values["HighScore3"] = App.highScores[2];
 
-               // HighScore3Name.Text = "3RD " + "Unknown";
+                // HighScore3Name.Text = "3RD " + "Unknown";
                 localSettings.Values["HighScore3Name"] = "Unknown";
                 App.highScoresName[2] = "Unknown";
 
@@ -123,9 +116,9 @@ namespace MTProjectPegSolitaire
             HighScore2Score.Text = App.highScores[1].ToString();
             HighScore3Score.Text = App.highScores[2].ToString();
 
-            HighScore1Name.Text ="1ST "+ App.highScoresName[0];
-            HighScore2Name.Text = "2ND  "+App.highScoresName[1];
-            HighScore3Name.Text = "3RD  "+App.highScoresName[2];
+            HighScore1Name.Text = "1ST " + App.highScoresName[0];
+            HighScore2Name.Text = "2ND  " + App.highScoresName[1];
+            HighScore3Name.Text = "3RD  " + App.highScoresName[2];
             if (haveHighScore > 0)
             {
                 HavaHighScoreSP.Visibility = Visibility.Visible;
@@ -138,21 +131,21 @@ namespace MTProjectPegSolitaire
 
             if (haveHighScore > 0)
             {
-               
+
                 switch (haveHighScore)
                 {
                     case 1:
-                        
+
                         HighScore1Name.Text = "1ST " + localHighScoreName;
                         localSettings.Values["HighScore1Name"] = localHighScoreName;
                         break;
                     case 2:
-                        
+
                         HighScore2Name.Text = "2ST " + localHighScoreName;
                         localSettings.Values["HighScore2Name"] = localHighScoreName;
                         break;
                     case 3:
-                       
+
                         HighScore3Name.Text = "3RD " + localHighScoreName;
                         localSettings.Values["HighScore3Name"] = localHighScoreName;
                         break;

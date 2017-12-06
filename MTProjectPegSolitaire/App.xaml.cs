@@ -7,6 +7,7 @@ using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Storage;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -14,6 +15,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+
 
 /*
  *   Jose Ignacio Retamal Peg Solitaire Game .
@@ -42,10 +44,17 @@ namespace MTProjectPegSolitaire
         public static int lastScore = 0;
         public static Random random = new Random();
 
+       public static bool continueGame = false;
+        public static int piecesRemovedForContinue = 0;
+
         //0 high score 1, 1 high 1 and 2 lowe high
         public static int[] highScores = new int[3];
         public static String[] highScoresName = new String[3];
-        
+
+        //game state
+
+        public static Board board;
+        public static TimeKeeper timer;
 
         /// </summary>
         public App()
@@ -124,6 +133,12 @@ namespace MTProjectPegSolitaire
             var deferral = e.SuspendingOperation.GetDeferral();
             //TODO: Save application state and stop any background activity
             deferral.Complete();
+
+            ApplicationDataContainer localSettings = ApplicationData.Current.LocalSettings;
+            localSettings.Values["boardArray"] = App.board.getBoardArrayInOneString();
+
+            localSettings.Values["LastTime"] = App.timer.GetTotalSeconds();
+            localSettings.Values["LastPiecesRemoves"] = App.board.GetPieceRemoved();
         }
     }
 }

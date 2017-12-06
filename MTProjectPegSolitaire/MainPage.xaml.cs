@@ -32,9 +32,9 @@ namespace MTProjectPegSolitaire
     /// </summary>
     public sealed partial class MainPage : Page
     {
-        int boardSize = 5;
+       // int boardSize = 5;
         //array that represent the board with pieces
-        Boolean[][] boardArray;
+       // Boolean[][] boardArray;
         public MainPage()
 
         {
@@ -43,6 +43,25 @@ namespace MTProjectPegSolitaire
             //add loading event
             this.Loading += LoadBoardSize_Loading;
             this.Loading += LoadScores_Loding;
+            this.Loading += LoadGame_Loading;
+        }
+
+        private void LoadGame_Loading(FrameworkElement sender, object args)
+        {
+            ApplicationDataContainer localSettings = ApplicationData.Current.LocalSettings;
+            String oneArrayBoard = "";
+            try
+            {
+                oneArrayBoard = localSettings.Values["boardArray"].ToString();
+            }catch(Exception ex)
+            {
+                localSettings.Values["boardArray"] = "0";
+                oneArrayBoard = "0";
+            }
+            if(oneArrayBoard.Substring(0,1)!="0")
+            {
+                ContinueButton.Visibility = Visibility.Visible;
+            }
         }
 
         private void LoadScores_Loding(FrameworkElement sender, object args)
@@ -80,6 +99,8 @@ namespace MTProjectPegSolitaire
 
         private void LoadBoardSize_Loading(FrameworkElement sender, object args)
         {
+
+           
             ApplicationDataContainer localSettings = ApplicationData.Current.LocalSettings;
 
             try
@@ -126,6 +147,8 @@ namespace MTProjectPegSolitaire
 
         private void Button_NewGame_Tapped(object sender, TappedRoutedEventArgs e)
         {
+            //flas for new game
+            App.continueGame = false;
             this.Frame.Navigate(typeof(GamePage), null);
         }
 
@@ -165,6 +188,12 @@ namespace MTProjectPegSolitaire
             {
                 Debug.WriteLine(exc.StackTrace);
             }
+        }
+
+        private void ContinueButton_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            App.continueGame = true;
+            this.Frame.Navigate(typeof(GamePage), null);
         }
     }
 }

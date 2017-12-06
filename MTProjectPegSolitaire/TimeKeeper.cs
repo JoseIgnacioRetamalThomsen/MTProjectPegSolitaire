@@ -10,7 +10,7 @@ using Windows.UI.Xaml.Media;
 
 namespace MTProjectPegSolitaire
 {
-    class TimeKeeper : StackPanel
+    public class TimeKeeper : StackPanel
     {
         //variables
         private int TimerFontSize { get; set; }
@@ -109,6 +109,14 @@ namespace MTProjectPegSolitaire
         public String GetTime()
         {
             return "" + minutes + ":" + seconds;
+        }
+        public void setTime(int second)
+        {
+            int minutes = (int)(second / 60);
+            
+            
+            this.minutes = minutes;
+            this.seconds =  second - minutes*60;
         }
         private void timer_Tick(object sender, object e)
         {

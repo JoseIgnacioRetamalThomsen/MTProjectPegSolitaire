@@ -13,10 +13,15 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Shapes;
 
+/*
+ * Jose Ignacio Retamal 2017 - main game calss
+ *   17/11/2017 File Created : first methods started
+ *   06/12/2017 method for save boardArray in local storage, get boardArray in one string and set board array with 1 string
+ */
 
 namespace MTProjectPegSolitaire
 {
-    class Board : Grid
+    public class Board : Grid
     {
         #region class variables
         int scale;
@@ -48,6 +53,18 @@ namespace MTProjectPegSolitaire
 
 
             this.gamePage = gamePage;
+        }
+        public Board(String oneStringArray,int piecesRemove, ImageBrush dackGroundImage, ImageBrush lightBack, ImageBrush PieceBackgroundImage, GamePage gamePage)
+        {
+            this.setBoardArrayWithOneString(oneStringArray);//creates board array
+            BoardBackGroundImage = dackGroundImage;
+            PieceHolderBackgroundImage = lightBack;
+            this.PieceBackgroundImage = PieceBackgroundImage;
+
+            this.piecesRemoved = piecesRemove;
+            CreateBoard();
+            this.gamePage = gamePage;
+
         }
         #endregion
         #region create baord and place piece methods
@@ -192,6 +209,42 @@ namespace MTProjectPegSolitaire
                     boardArray[i][j] = true;
             }
         }
+        public String getBoardArrayInOneString()
+        {
+            StringBuilder arrayInString = new StringBuilder("");
+            //first number is going to be the size of the table 3,5 or 7
+            arrayInString.Append(boardSize);
+            //1 for tru 0 for false
+            for (int i = 0; i < boardSize; i++)
+            {
+                for (int j = 0; j < (i + 1); j++)
+                {
+                    if (boardArray[i][j])
+                        arrayInString.Append("1");
+                    else
+                        arrayInString.Append("0");
+                }
+            }
+            // Debug.WriteLine(arrayInString);
+            return arrayInString.ToString();
+        }
+        public void setBoardArrayWithOneString(String boardArrayString)
+        {
+            this.boardSize = Convert.ToInt32(boardArrayString.Substring(0, 1));
+            this.createBoardArray();
+            Debug.WriteLine(boardSize);
+            int postionInString = 1;
+            for (int i = 0; i < boardSize; i++)
+            {
+                for (int j = 0; j < (i + 1); j++)
+                {
+                    if (Convert.ToInt32(boardArrayString.Substring(postionInString++, 1)) == 1)
+                        boardArray[i][j] = true;
+                    else
+                        boardArray[i][j] = false;
+                }
+            }
+        }
         public void PlacePieces()
         {
             int scale = 1;
@@ -232,13 +285,63 @@ namespace MTProjectPegSolitaire
                     Piece.SetValue(Grid.RowProperty, 0);
 
                     //add action listener
-                    Piece.Tapped += Piece_Tapped;
+                    Piece.Tapped += PieceTappedFirstTime;
 
                     //add piece to border
                     BackGrid.Children.Add(Piece);
                 }
             }
         }//PlacePiece
+        public void placePieceFromArray()
+        {
+            int scale = 1;
+            if (boardSize == 7)
+            {
+                scale = 70;
+            }
+            else if (boardSize == 9)
+            {
+                scale = 55;
+            }
+            else
+            {
+                scale = 100;
+            }
+            for (int i = 0; i < boardSize; i++)
+            {
+                //get grid
+                String GridName = "BackGrid_" + i;
+                Grid BackGrid = (Grid)FindName(GridName);
+
+                for (int j = 0; j < (i + 1); j++)
+                {
+                    if (boardArray[i][j] == true)
+                    {
+                        //create piece
+                        Ellipse Piece = new Ellipse()
+                        {
+                            Fill = PieceBackgroundImage, //new ImageBrush() { ImageSource = new BitmapImage(new Uri(this.BaseUri, @"Assets\images\ESF.jpg")) }, //new SolidColorBrush(Colors.OrangeRed),
+                            Width = ((70 * scale) / 100),
+                            Height = ((70 * scale) / 100),
+                            StrokeThickness = 2,
+                            Stroke = new SolidColorBrush(Colors.DarkGreen),
+                            Name = "Piece" + i + "_" + j,
+
+
+                        };
+                        //set position in grid
+                        Piece.SetValue(Grid.ColumnProperty, j);
+                        Piece.SetValue(Grid.RowProperty, 0);
+
+                        //add action listener
+                        Piece.Tapped += PieceTappedFirstTime;
+
+                        //add piece to border
+                        BackGrid.Children.Add(Piece);
+                    }
+                }
+            }
+        }//place pieces from array
         #endregion
         #region manipulating pieces methods
 
@@ -297,7 +400,7 @@ namespace MTProjectPegSolitaire
 
             Piece.SetValue(Grid.ColumnProperty, j);
             Piece.SetValue(Grid.RowProperty, 0);
-            Piece.Tapped += Piece_Tapped;
+            Piece.Tapped += PieceTappedFirstTime;
 
             boardArray[i][j] = true;
 
@@ -307,7 +410,7 @@ namespace MTProjectPegSolitaire
         #region checking methods (returns)
         public int GetPieceRemoved()
         {
-            return this.piecesRemoved+1;
+            return this.piecesRemoved + 1;
         }
 
         private bool CheckIfCanMove(int i, int j, Point[] moves)
@@ -514,17 +617,17 @@ namespace MTProjectPegSolitaire
             int totalPiece9 = 44;
             if (boardSize == 5)
             {
-                return totalPiece5 - piecesRemoved;
+                return totalPiece5 - piecesRemoved+1;
 
             }
             else if (boardSize == 7)
             {
-                return totalPiece7 - piecesRemoved;
+                return totalPiece7 - piecesRemoved+1;
 
             }
             else if (boardSize == 9)
             {
-                return totalPiece9 - piecesRemoved;
+                return totalPiece9 - piecesRemoved+1;
 
             }
             return -1;
@@ -539,15 +642,15 @@ namespace MTProjectPegSolitaire
             int score = 0;
             if (boardSize == 5)
             {
-                piecesLeft = totalPiece5 - piecesRemoved;
-                if (piecesLeft == 1) score += 1000;
+                piecesLeft = totalPiece5 - piecesRemoved+1;
+                if (piecesLeft == 1) score += 1100;
 
                 timeScore = 300;
                 score += piecesRemoved * 20;
             }
             else if (boardSize == 7)
             {
-                piecesLeft = totalPiece7 - piecesRemoved;
+                piecesLeft = totalPiece7 - piecesRemoved+1;
                 if (piecesLeft == 1) score += 2000;
                 else if (piecesLeft == 2) score += 1000;
                 score += piecesRemoved * 15;
@@ -555,7 +658,7 @@ namespace MTProjectPegSolitaire
             }
             else if (boardSize == 9)
             {
-                piecesLeft = totalPiece9 - piecesRemoved;
+                piecesLeft = totalPiece9 - piecesRemoved+1;
                 timeScore = 500;
                 if (piecesLeft == 1) score += 3000;
                 else if (piecesLeft == 2) score += 1500;
@@ -571,7 +674,7 @@ namespace MTProjectPegSolitaire
         }
         #endregion
         #region Buttons Events methods
-        private void Piece_Tapped(object sender, TappedRoutedEventArgs e)
+        private void PieceTappedFirstTime(object sender, TappedRoutedEventArgs e)
         {
             //get piece that triger action
             Ellipse piece = (Ellipse)sender;

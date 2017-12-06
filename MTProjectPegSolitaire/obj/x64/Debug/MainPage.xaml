@@ -28,7 +28,7 @@
             <RadioButton x:ConnectionId='8' x:Name="HardRB" Content="Hard" Tag="9"                                Margin="3"/>
         </StackPanel>
 
-        <Button x:ConnectionId='2' x:Name="ContinueButton" Visibility="Collapsed" Content="CONTINUE"                                Width="200" Style="{StaticResource PivotTitleContentControlStyle}" Foreground="White" HorizontalAlignment="Center" Margin="0,20,0,5"></Button>
+        <Button x:ConnectionId='2' x:Name="ContinueButton" Visibility="Collapsed" Content="CONTINUE"                                 Width="200" Style="{StaticResource PivotTitleContentControlStyle}" Foreground="White" HorizontalAlignment="Center" Margin="0,20,0,5"></Button>
         <Button x:ConnectionId='3' Content="NEW   GAME" MinWidth="200"                                 Style="{StaticResource PivotTitleContentControlStyle}" Foreground="White" HorizontalAlignment="Center" Margin="0,20,0,5"></Button>
         <Button x:ConnectionId='4' Content="SCORE BOARD" MinWidth="200"                             Style="{StaticResource PivotTitleContentControlStyle}" Foreground="White" HorizontalAlignment="Center" Margin="0,20,0,5"></Button>
         <Button x:ConnectionId='5'                        Content="GoToPage"></Button>

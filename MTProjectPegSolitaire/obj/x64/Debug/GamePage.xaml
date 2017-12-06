@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <StackPanel x:ConnectionId='1' x:Name="GamePageMainSP" HorizontalAlignment="Center"  Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" VerticalAlignment="Center">
+    <StackPanel x:ConnectionId='1' x:Name="GamePageMainSP" HorizontalAlignment="Center"  Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" VerticalAlignment="Top">
 
         <Button x:ConnectionId='2'                             Content="BACK"></Button>
         <StackPanel x:ConnectionId='3' x:Name="TimerSP" Orientation="Horizontal" HorizontalAlignment="Center" >

@@ -444,3 +444,6 @@ C:\Users\pepe\Documents\New folder\MTProjectPegSolitaire\MTProjectPegSolitaire\o
 C:\Users\pepe\Documents\New folder\MTProjectPegSolitaire\MTProjectPegSolitaire\obj\x64\Debug\qualifiers.txt.intermediate
 C:\Users\pepe\Documents\New folder\MTProjectPegSolitaire\MTProjectPegSolitaire\obj\x64\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\pepe\Documents\New folder\MTProjectPegSolitaire\MTProjectPegSolitaire\obj\x64\Debug\ProjectArchitectures.txt
+C:\Users\pepe\Documents\New folder\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x64\Debug\Assets\BlackWoodBackground.jpg
+C:\Users\pepe\Documents\New folder\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x64\Debug\Assets\greenSphere.jpg
+C:\Users\pepe\Documents\New folder\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x64\Debug\Assets\lightBack.jpg
