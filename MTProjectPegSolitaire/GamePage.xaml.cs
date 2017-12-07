@@ -20,7 +20,8 @@ using Windows.UI.Xaml.Navigation;
 
 
 /*
- *   Jose Ignacio Retamal Peg Solitaire Game - Page where actually the game happens.
+ *   Jose Ignacio Retamal Peg Solitaire Game -
+ *   This page 
  *   17/11/2017 File created. Jose Ignacio Retamal.
  *   17/11/2017 Page create and add a Board object wich is the game,
  *              Set image URI, they are parameters for the board object. Jose Ignacio Retamal.
@@ -34,10 +35,7 @@ namespace MTProjectPegSolitaire
     /// </summary>
     public sealed partial class GamePage : Page
     {
-        /*
-        TimeKeeper timer;
-        Board board;
-        */
+       
 
 
         public GamePage()
@@ -52,7 +50,8 @@ namespace MTProjectPegSolitaire
 
 
             //create board
-            ImageBrush BoardBackground = new ImageBrush() { ImageSource = new BitmapImage(new Uri(this.BaseUri, @"Assets\BlackWoodBackground.jpg")) };
+            ImageBrush BoardBackground = new ImageBrush() { ImageSource = new BitmapImage(new Uri(this.BaseUri, @"Assets\Wood_1.jpg")) };
+            BoardBackground.Stretch = Stretch.UniformToFill;
             ImageBrush HoleBackground = new ImageBrush() { ImageSource = new BitmapImage(new Uri(this.BaseUri, @"Assets\lightBack.jpg")) };
             ImageBrush PieceBackgrounImage = new ImageBrush() { ImageSource = new BitmapImage(new Uri(this.BaseUri, @"Assets\greenSphere.jpg")) };
 

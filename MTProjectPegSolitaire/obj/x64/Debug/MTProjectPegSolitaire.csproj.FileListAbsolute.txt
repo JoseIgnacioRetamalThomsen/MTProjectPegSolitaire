@@ -221,7 +221,6 @@ C:\Users\pepe\Documents\VSProjects\MTProjectPegSolitaire\MTProjectPegSolitaire\o
 C:\Users\pepe\Documents\VSProjects\MTProjectPegSolitaire\MTProjectPegSolitaire\obj\x64\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\pepe\Documents\VSProjects\MTProjectPegSolitaire\MTProjectPegSolitaire\obj\x64\Debug\ProjectArchitectures.txt
 C:\Users\pepe\Documents\VSProjects\MTProjectPegSolitaire\MTProjectPegSolitaire\obj\x64\Debug\MTProjectPegSolitaire.csprojResolveAssemblyReference.cache
-C:\Users\pepe\Documents\New folder\MTProjectPegSolitaire\MTProjectPegSolitaire\obj\x64\Debug\MTProjectPegSolitaire.csprojResolveAssemblyReference.cache
 C:\Users\pepe\Documents\New folder\MTProjectPegSolitaire\MTProjectPegSolitaire\obj\x64\Debug\App.g.i.cs
 C:\Users\pepe\Documents\New folder\MTProjectPegSolitaire\MTProjectPegSolitaire\obj\x64\Debug\App.g.cs
 C:\Users\pepe\Documents\New folder\MTProjectPegSolitaire\MTProjectPegSolitaire\obj\x64\Debug\GameOverPage.g.i.cs
@@ -444,6 +443,6 @@ C:\Users\pepe\Documents\New folder\MTProjectPegSolitaire\MTProjectPegSolitaire\o
 C:\Users\pepe\Documents\New folder\MTProjectPegSolitaire\MTProjectPegSolitaire\obj\x64\Debug\qualifiers.txt.intermediate
 C:\Users\pepe\Documents\New folder\MTProjectPegSolitaire\MTProjectPegSolitaire\obj\x64\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\pepe\Documents\New folder\MTProjectPegSolitaire\MTProjectPegSolitaire\obj\x64\Debug\ProjectArchitectures.txt
-C:\Users\pepe\Documents\New folder\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x64\Debug\Assets\BlackWoodBackground.jpg
 C:\Users\pepe\Documents\New folder\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x64\Debug\Assets\greenSphere.jpg
 C:\Users\pepe\Documents\New folder\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x64\Debug\Assets\lightBack.jpg
+C:\Users\pepe\Documents\New folder\MTProjectPegSolitaire\MTProjectPegSolitaire\obj\x64\Debug\MTProjectPegSolitaire.csprojResolveAssemblyReference.cache

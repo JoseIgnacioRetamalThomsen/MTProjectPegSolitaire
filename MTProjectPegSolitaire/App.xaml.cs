@@ -135,10 +135,16 @@ namespace MTProjectPegSolitaire
             deferral.Complete();
 
             ApplicationDataContainer localSettings = ApplicationData.Current.LocalSettings;
-            localSettings.Values["boardArray"] = App.board.getBoardArrayInOneString();
+            try
+            {
+                localSettings.Values["boardArray"] = App.board.getBoardArrayInOneString();
 
-            localSettings.Values["LastTime"] = App.timer.GetTotalSeconds();
-            localSettings.Values["LastPiecesRemoves"] = App.board.GetPieceRemoved();
+                localSettings.Values["LastTime"] = App.timer.GetTotalSeconds();
+                localSettings.Values["LastPiecesRemoves"] = App.board.GetPieceRemoved();
+            }catch(Exception exp2)
+            {
+
+            }
         }
     }
 }

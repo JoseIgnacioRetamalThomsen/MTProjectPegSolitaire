@@ -8,7 +8,7 @@
     mc:Ignorable="d">
 
     <StackPanel x:Name="MainGrid"  HorizontalAlignment="Center" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBlock Text="PEG SOLITAIRE" Style="{StaticResource HeaderTextBlockStyle}" Foreground="DarkRed" HorizontalAlignment="Center" Margin="5" ></TextBlock>
+        <TextBlock Text="PEG ▲ SOLITAIRE" Style="{StaticResource HeaderTextBlockStyle}" Foreground="DarkRed" HorizontalAlignment="Center" Margin="5" ></TextBlock>
         <StackPanel BorderBrush="Gray" BorderThickness="3" CornerRadius="8" Background="WhiteSmoke" Margin="5">
             <TextBlock Text="How to Play" Style="{StaticResource SubtitleTextBlockStyle}" Foreground="Gray" HorizontalAlignment="Center" ></TextBlock>
             <Image Source="assets/images/back.jpg" MaxWidth="300" HorizontalAlignment="Center"></Image>
@@ -30,7 +30,7 @@
 
         <Button x:Name="ContinueButton" Visibility="Collapsed" Content="CONTINUE" Tapped="ContinueButton_Tapped"  Width="200" Style="{StaticResource PivotTitleContentControlStyle}" Foreground="White" HorizontalAlignment="Center" Margin="0,20,0,5"></Button>
         <Button Content="NEW   GAME" MinWidth="200" Tapped="Button_NewGame_Tapped"  Style="{StaticResource PivotTitleContentControlStyle}" Foreground="White" HorizontalAlignment="Center" Margin="0,20,0,5"></Button>
-        <Button Content="SCORE BOARD" MinWidth="200"  Tapped="Button_Tapped_2"   Style="{StaticResource PivotTitleContentControlStyle}" Foreground="White" HorizontalAlignment="Center" Margin="0,20,0,5"></Button>
-        <Button Tapped="Button_Tapped" Content="GoToPage"></Button>
+        <Button Content="SCORE BOARD" MinWidth="200"  Tapped="Button_Tapped"   Style="{StaticResource PivotTitleContentControlStyle}" Foreground="White" HorizontalAlignment="Center" Margin="0,20,0,5"></Button>
+        
     </StackPanel>
 </Page>

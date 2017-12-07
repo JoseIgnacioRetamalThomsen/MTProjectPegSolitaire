@@ -370,14 +370,14 @@
     <AppxPackagedFile Include="C:\Users\pepe\.nuget\packages\system.xml.xmlserializer\4.0.11\lib\netcore50\System.Xml.XmlSerializer.dll">
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pepe\Documents\New folder\MTProjectPegSolitaire\MTProjectPegSolitaire\Assets\BlackWoodBackground.jpg">
-      <PackagePath>Assets\BlackWoodBackground.jpg</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pepe\Documents\New folder\MTProjectPegSolitaire\MTProjectPegSolitaire\Assets\greenSphere.jpg">
       <PackagePath>Assets\greenSphere.jpg</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pepe\Documents\New folder\MTProjectPegSolitaire\MTProjectPegSolitaire\Assets\lightBack.jpg">
       <PackagePath>Assets\lightBack.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Documents\New folder\MTProjectPegSolitaire\MTProjectPegSolitaire\Assets\Wood_1.jpg">
+      <PackagePath>Assets\Wood_1.jpg</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pepe\Documents\New folder\MTProjectPegSolitaire\MTProjectPegSolitaire\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>

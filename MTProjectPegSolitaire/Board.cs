@@ -15,6 +15,7 @@ using Windows.UI.Xaml.Shapes;
 
 /*
  * Jose Ignacio Retamal 2017 - main game calss
+ *  This class create the boad an set all the game, need to be place in a container
  *   17/11/2017 File Created : first methods started
  *   06/12/2017 method for save boardArray in local storage, get boardArray in one string and set board array with 1 string
  */
@@ -109,8 +110,8 @@ namespace MTProjectPegSolitaire
 
             var points = new PointCollection();
             points.Add(new Windows.Foundation.Point(0, 500));
-            points.Add(new Windows.Foundation.Point(250, 0));
-            points.Add(new Windows.Foundation.Point(350, 0));
+            points.Add(new Windows.Foundation.Point(300, -40));
+            points.Add(new Windows.Foundation.Point(300, -40));
             points.Add(new Windows.Foundation.Point(600, 500));
             //  points.Add(new Windows.Foundation.Point(180, 200));
             triangle.Points = points;

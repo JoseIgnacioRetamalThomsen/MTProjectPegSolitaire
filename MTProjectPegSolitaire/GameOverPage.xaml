@@ -46,7 +46,7 @@
                 <Button x:Name="highScoreNameButton" Content="SAVE" Tapped="highScoreNameButton_Tapped"></Button>
             </StackPanel>
         </StackPanel>
-        <Button x:Name="PlayAgainButton" Tapped="PlayAgainButton_Tapped" Content="PLAY AGAIN" HorizontalAlignment="Center" Margin="10,5,10,5" MinWidth="110"></Button>
+       
         <Button x:Name="HOME" Tapped="HOME_Tapped"  Content="Home" HorizontalAlignment="Center" Margin="10,5,10,5" MinWidth="110"></Button>
     </StackPanel>
 </Page>

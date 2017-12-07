@@ -133,18 +133,7 @@ namespace MTProjectPegSolitaire
 
         //move have to be done here
 
-        private void Button_Tapped(object sender, TappedRoutedEventArgs e)
-        {
-            MediaElement sound = new MediaElement()
-            {
-                AudioDeviceType = AudioDeviceType.Multimedia,
-                Source = new Uri(this.BaseUri, @"Assets\images\bells001.mp3"),
-            };
-            sound.Play();
-            sound.AutoPlay = true;
-        }
-
-
+            
         private void Button_NewGame_Tapped(object sender, TappedRoutedEventArgs e)
         {
             //flas for new game
@@ -152,15 +141,6 @@ namespace MTProjectPegSolitaire
             this.Frame.Navigate(typeof(GamePage), null);
         }
 
-        private void Button_Tapped_2(object sender, TappedRoutedEventArgs e)
-        {
-            MediaElement sound = new MediaElement()
-            {
-                AudioDeviceType = AudioDeviceType.Multimedia,
-                Source = new Uri(this.BaseUri, @"Assets\images\bells001.mp3"),
-            };
-            sound.Play();
-        }
 
         private void RadioButton_Checked(object sender, RoutedEventArgs e)
         {
@@ -194,6 +174,11 @@ namespace MTProjectPegSolitaire
         {
             App.continueGame = true;
             this.Frame.Navigate(typeof(GamePage), null);
+        }
+
+        private void Button_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+
         }
     }
 }
