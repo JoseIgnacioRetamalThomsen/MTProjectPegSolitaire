@@ -31,22 +31,19 @@ using Windows.UI.Xaml.Navigation;
 namespace MTProjectPegSolitaire
 {
     /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
+    /// Game Page Where the game calss is loaded
+    /// 
     /// </summary>
     public sealed partial class GamePage : Page
     {
-       
-
-
         public GamePage()
         {
             this.InitializeComponent();
-          
-            //StartTimer();
-            // ShowGameOver();
+
+            //create and add timer to gUI
             App.timer = new TimeKeeper(40);
             TimerSP.Children.Add(App.timer);
-            
+
 
 
             //create board
@@ -55,11 +52,12 @@ namespace MTProjectPegSolitaire
             ImageBrush HoleBackground = new ImageBrush() { ImageSource = new BitmapImage(new Uri(this.BaseUri, @"Assets\lightBack.jpg")) };
             ImageBrush PieceBackgrounImage = new ImageBrush() { ImageSource = new BitmapImage(new Uri(this.BaseUri, @"Assets\greenSphere.jpg")) };
 
+            //if continue game or new game
             if (App.continueGame)
             {
                 ApplicationDataContainer localSettings = ApplicationData.Current.LocalSettings;
                 String oneArrayBoard = localSettings.Values["boardArray"].ToString();
-                int piecesRmoves = Convert.ToInt32(localSettings.Values["LastPiecesRemoves"]) -1;
+                int piecesRmoves = Convert.ToInt32(localSettings.Values["LastPiecesRemoves"]) - 1;
                 int timeToContinue = Convert.ToInt32(localSettings.Values["LastTime"]);
                 App.board = new Board(oneArrayBoard, piecesRmoves, BoardBackground, HoleBackground, PieceBackgrounImage, this);
                 GamePageMainSP.Children.Add(App.board);
@@ -79,13 +77,11 @@ namespace MTProjectPegSolitaire
                 App.timer.StartTimer();
             }
             App.board.setBoardArrayWithOneString(App.board.getBoardArrayInOneString());
-        }
+        }//end contructor
 
-        private void Test_Tapped(object sender, TappedRoutedEventArgs e)
-        {
-            Debug.WriteLine(App.timer.GetTotalSeconds());
-        }
 
+        //method that is call from board game when game is over
+        //navigate to endgame page after 1 second delay
         public async Task GameOverAsync()
         {
 
@@ -98,11 +94,11 @@ namespace MTProjectPegSolitaire
             App.lastTotalTime = App.timer.GetTime();
             App.lastPiecesLeft = Board.getPiecesLeft(App.lastBoardSize, App.lastPiecesRemoved);
 
-            Debug.WriteLine("l"+App.lastPiecesLeft);
+            Debug.WriteLine("l" + App.lastPiecesLeft);
 
             App.lastScore = Board.getScore(App.timer.GetTotalSeconds(), App.lastBoardSize, App.lastPiecesRemoved);
 
-            await Task.Delay(1500);
+            await Task.Delay(1000);
 
             this.Frame.Navigate(typeof(GameOverPage), null);
 
@@ -111,19 +107,16 @@ namespace MTProjectPegSolitaire
             localSettings.Values["boardArray"] = "0";
         }
 
+        //come backt to mainPage
         private void BackButton_Tapped(object sender, TappedRoutedEventArgs e)
         {
             //save board to local storage
             ApplicationDataContainer localSettings = ApplicationData.Current.LocalSettings;
             localSettings.Values["boardArray"] = App.board.getBoardArrayInOneString();
-            
             localSettings.Values["LastTime"] = App.timer.GetTotalSeconds();
             localSettings.Values["LastPiecesRemoves"] = App.board.GetPieceRemoved();
 
             this.Frame.Navigate(typeof(MainPage), null);
-
         }
-
-
     }
 }
