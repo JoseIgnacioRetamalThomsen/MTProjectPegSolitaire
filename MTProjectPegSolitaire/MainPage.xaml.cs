@@ -48,6 +48,9 @@ namespace MTProjectPegSolitaire
 
         private void LoadGame_Loading(FrameworkElement sender, object args)
         {
+            //left game over page
+            App.isOnGameOverPage = false;
+
             ApplicationDataContainer localSettings = ApplicationData.Current.LocalSettings;
             String oneArrayBoard = "";
             try
@@ -177,6 +180,11 @@ namespace MTProjectPegSolitaire
         }
 
         private void Button_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+
+        }
+
+        private void instructiosRB_Checked(object sender, RoutedEventArgs e)
         {
 
         }

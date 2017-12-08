@@ -31,6 +31,8 @@ namespace MTProjectPegSolitaire
         {
 
             this.InitializeComponent();
+            this.Loading += GameOver_Loading;
+           
 
             ScoreTB.Text += App.lastScore;
                                     
@@ -122,7 +124,16 @@ namespace MTProjectPegSolitaire
             if (haveHighScore > 0)
             {
                 HavaHighScoreSP.Visibility = Visibility.Visible;
+               
             }
+        }
+
+     
+
+        private void GameOver_Loading(FrameworkElement sender, object args)
+        {
+            localSettings.Values["boardArray"] = "0";
+            App.isOnGameOverPage = true;
         }
 
         private void highScoreNameButton_Tapped(object sender, TappedRoutedEventArgs e)
@@ -154,10 +165,6 @@ namespace MTProjectPegSolitaire
             }
         }
 
-        private void PlayAgainButton_Tapped(object sender, TappedRoutedEventArgs e)
-        {
-
-        }
 
         private void HOME_Tapped(object sender, TappedRoutedEventArgs e)
         {

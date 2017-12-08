@@ -23,15 +23,19 @@
         </StackPanel>
 
         <StackPanel  Orientation="Horizontal"  HorizontalAlignment="Center" VerticalAlignment="Center" >
-            <RadioButton x:ConnectionId='5' x:Name="EasyRB" Content="Easy" Tag="5"                                Margin="3"/>
-            <RadioButton x:ConnectionId='6' x:Name="MediunRB" Content="Medium" Tag="7"                               Margin="3"/>
-            <RadioButton x:ConnectionId='7' x:Name="HardRB" Content="Hard" Tag="9"                                Margin="3"/>
+            <RadioButton x:ConnectionId='6' x:Name="EasyRB" Content="Easy" Tag="5"                                Margin="3"/>
+            <RadioButton x:ConnectionId='7' x:Name="MediunRB" Content="Medium" Tag="7"                               Margin="3"/>
+            <RadioButton x:ConnectionId='8' x:Name="HardRB" Content="Hard" Tag="9"                                Margin="3"/>
         </StackPanel>
 
         <Button x:ConnectionId='2' x:Name="ContinueButton" Visibility="Collapsed" Content="CONTINUE"                                 Width="200" Style="{StaticResource PivotTitleContentControlStyle}" Foreground="White" HorizontalAlignment="Center" Margin="0,20,0,5"></Button>
         <Button x:ConnectionId='3' Content="NEW   GAME" MinWidth="200"                                 Style="{StaticResource PivotTitleContentControlStyle}" Foreground="White" HorizontalAlignment="Center" Margin="0,20,0,5"></Button>
-        <Button x:ConnectionId='4' Content="SCORE BOARD" MinWidth="200"                           Style="{StaticResource PivotTitleContentControlStyle}" Foreground="White" HorizontalAlignment="Center" Margin="0,20,0,5"></Button>
-        
+        <StackPanel  Orientation="Horizontal"  HorizontalAlignment="Center" VerticalAlignment="Center" >
+            <RadioButton x:ConnectionId='4' x:Name="instructiosRB" Content="Instructions" Tag="5"                                  Margin="3"/>
+            <RadioButton x:ConnectionId='5' x:Name="scoreTableRB" Content="High Scores" Tag="7"                                 Margin="3"/>
+           
+        </StackPanel>
+
     </StackPanel>
 </Page>
 

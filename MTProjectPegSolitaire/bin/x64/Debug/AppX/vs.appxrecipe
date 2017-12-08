@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\pepe\Documents\New folder\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-07T21:26:02.479</Modified>
+      <Modified>2017-12-08T00:07:33.976</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\pepe\Documents\New folder\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x64\Debug\MTProjectPegSolitaire.exe">
       <PackagePath>entrypoint\MTProjectPegSolitaire.exe</PackagePath>
-      <Modified>2017-12-07T21:26:01.630</Modified>
+      <Modified>2017-12-08T00:07:33.361</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pepe\.nuget\packages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -513,37 +513,37 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pepe\Documents\New folder\MTProjectPegSolitaire\MTProjectPegSolitaire\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2017-11-22T23:44:28.793</Modified>
+      <Modified>2017-12-07T23:10:26.897</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pepe\Documents\New folder\MTProjectPegSolitaire\MTProjectPegSolitaire\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-11-22T23:44:28.793</Modified>
+      <Modified>2017-12-07T23:20:05.305</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pepe\Documents\New folder\MTProjectPegSolitaire\MTProjectPegSolitaire\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-11-22T23:44:28.793</Modified>
+      <Modified>2017-12-07T23:28:35.154</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pepe\Documents\New folder\MTProjectPegSolitaire\MTProjectPegSolitaire\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-11-22T23:44:28.793</Modified>
+      <Modified>2017-12-07T23:29:31.223</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pepe\Documents\New folder\MTProjectPegSolitaire\MTProjectPegSolitaire\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-11-22T23:44:28.793</Modified>
+      <Modified>2017-12-07T23:28:27.304</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pepe\Documents\New folder\MTProjectPegSolitaire\MTProjectPegSolitaire\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-11-22T23:44:28.793</Modified>
+      <Modified>2017-12-07T23:33:38.647</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pepe\Documents\New folder\MTProjectPegSolitaire\MTProjectPegSolitaire\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-11-22T23:44:28.793</Modified>
+      <Modified>2017-12-07T23:38:07.855</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pepe\Documents\New folder\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x64\Debug\MTProjectPegSolitaire.xr.xml">
       <PackagePath>MTProjectPegSolitaire.xr.xml</PackagePath>
@@ -556,11 +556,11 @@
     <AppxPackagedFile Include="C:\Users\pepe\Documents\New folder\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-07T21:26:02.248</Modified>
+      <Modified>2017-12-08T00:07:33.838</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pepe\Documents\New folder\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x64\Debug\Core\MTProjectPegSolitaire.exe">
       <PackagePath>MTProjectPegSolitaire.exe</PackagePath>
-      <Modified>2017-12-07T21:26:02.471</Modified>
+      <Modified>2017-12-08T00:07:33.969</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

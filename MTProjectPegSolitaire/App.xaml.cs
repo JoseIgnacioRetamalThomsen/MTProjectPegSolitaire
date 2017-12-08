@@ -56,6 +56,8 @@ namespace MTProjectPegSolitaire
         public static Board board;
         public static TimeKeeper timer;
 
+        //check if is on gameover page for not save game when close
+        public static bool isOnGameOverPage = false;
         /// </summary>
         public App()
         {
@@ -137,10 +139,13 @@ namespace MTProjectPegSolitaire
             ApplicationDataContainer localSettings = ApplicationData.Current.LocalSettings;
             try
             {
-                localSettings.Values["boardArray"] = App.board.getBoardArrayInOneString();
+                if (!App.isOnGameOverPage)
+                {
+                    localSettings.Values["boardArray"] = App.board.getBoardArrayInOneString();
 
-                localSettings.Values["LastTime"] = App.timer.GetTotalSeconds();
-                localSettings.Values["LastPiecesRemoves"] = App.board.GetPieceRemoved();
+                    localSettings.Values["LastTime"] = App.timer.GetTotalSeconds();
+                    localSettings.Values["LastPiecesRemoves"] = App.board.GetPieceRemoved();
+                }
             }catch(Exception exp2)
             {
 
