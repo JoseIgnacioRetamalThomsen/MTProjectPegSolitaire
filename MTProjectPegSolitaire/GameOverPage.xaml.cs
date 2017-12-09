@@ -32,10 +32,10 @@ namespace MTProjectPegSolitaire
 
             this.InitializeComponent();
             this.Loading += GameOver_Loading;
-           
 
+            //set score 
             ScoreTB.Text += App.lastScore;
-                                    
+
             if (App.lastPiecesLeft == 1)
             {
                 ResultTB.Text = "Success";
@@ -45,11 +45,10 @@ namespace MTProjectPegSolitaire
                 ResultTB.Text = "Fail";
             }
 
-            PiecesRemovedTB.Text = "" + (App.lastPiecesRemoved-1);
+            PiecesRemovedTB.Text = "" + (App.lastPiecesRemoved - 1);
             TimeTB.Text = App.lastTotalTime;
 
             //save last score to app seting
-
             try
             {
                 localSettings.Values["LastTimeInSeconds"] = App.lastTotalTimeSecond;
@@ -57,21 +56,23 @@ namespace MTProjectPegSolitaire
             }
             catch (Exception exp) { }
 
-            //0 if not high score, 1 high1 ...
+            //0 if not high score, 1 high1, 2 high2 ...
             haveHighScore = 0;
             //check and assig if any high score
+            //first score
             if (App.lastScore > App.highScores[0])
             {
                 //update high scores and names
                 App.highScores[0] = App.lastScore;
                 try
                 {
+                    //one score down
                     App.highScores[1] = Convert.ToInt32((localSettings.Values["HighScore1"]).ToString());
                     App.highScores[2] = Convert.ToInt32((localSettings.Values["HighScore2"]).ToString());
                 }
-                catch (Exception e)
+                catch
                 {
-                    Debug.WriteLine(e.StackTrace);
+
                 }
                 localSettings.Values["HighScore1"] = App.highScores[0];
                 localSettings.Values["HighScore2"] = App.highScores[1];
@@ -84,11 +85,11 @@ namespace MTProjectPegSolitaire
                 haveHighScore = 1;
 
             }
-            else if (App.lastScore > App.highScores[1])
+            else if (App.lastScore > App.highScores[1])//second score
             {
                 //update high scores
                 App.highScores[1] = App.lastScore;
-                Debug.WriteLine(localSettings.Values["HighScore2"]);
+                //Debug.WriteLine(localSettings.Values["HighScore2"]);
                 App.highScores[2] = Convert.ToInt32((localSettings.Values["HighScore2"]).ToString());
                 localSettings.Values["HighScore2"] = App.highScores[1];
                 localSettings.Values["HighScore3"] = App.highScores[2];
@@ -100,7 +101,7 @@ namespace MTProjectPegSolitaire
                 haveHighScore = 2;
 
             }
-            else if (App.lastScore > App.highScores[2])
+            else if (App.lastScore > App.highScores[2])//third high score
             {
                 App.highScores[2] = App.lastScore;
                 Debug.WriteLine(localSettings.Values["HighScore3"]);
@@ -121,14 +122,14 @@ namespace MTProjectPegSolitaire
             HighScore1Name.Text = "1ST " + App.highScoresName[0];
             HighScore2Name.Text = "2ND  " + App.highScoresName[1];
             HighScore3Name.Text = "3RD  " + App.highScoresName[2];
+
             if (haveHighScore > 0)
             {
                 HavaHighScoreSP.Visibility = Visibility.Visible;
-               
             }
         }
 
-     
+
 
         private void GameOver_Loading(FrameworkElement sender, object args)
         {
@@ -149,16 +150,19 @@ namespace MTProjectPegSolitaire
 
                         HighScore1Name.Text = "1ST " + localHighScoreName;
                         localSettings.Values["HighScore1Name"] = localHighScoreName;
+                        App.highScoresName[0]= localHighScoreName;
                         break;
                     case 2:
 
                         HighScore2Name.Text = "2ST " + localHighScoreName;
                         localSettings.Values["HighScore2Name"] = localHighScoreName;
+                        App.highScoresName[1] = localHighScoreName;
                         break;
                     case 3:
 
                         HighScore3Name.Text = "3RD " + localHighScoreName;
                         localSettings.Values["HighScore3Name"] = localHighScoreName;
+                        App.highScoresName[2] = localHighScoreName;
                         break;
 
                 }
@@ -168,6 +172,11 @@ namespace MTProjectPegSolitaire
 
         private void HOME_Tapped(object sender, TappedRoutedEventArgs e)
         {
+            //reset game over for not able to continue a game when is over
+            //is for fix a bug taht i cant find...
+            localSettings.Values["boardArray"] = "0";
+            App.isOnGameOverPage = true;
+
             this.Frame.Navigate(typeof(MainPage), null);
         }
     }

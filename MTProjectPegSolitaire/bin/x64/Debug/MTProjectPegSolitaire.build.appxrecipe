@@ -8,8 +8,8 @@
     <TargetOsDescription>Windows 10.0</TargetOsDescription>
     <SolutionConfiguration>Debug|x64</SolutionConfiguration>
     <PackageArchitecture>x64</PackageArchitecture>
-    <PackageIdentityName>7a75daee-7f39-4dc3-b828-aa8269fc0800</PackageIdentityName>
-    <PackageIdentityPublisher>CN=Pepe</PackageIdentityPublisher>
+    <PackageIdentityName>c8b3b3ee-b5c3-458b-8ba3-ff283e646445</PackageIdentityName>
+    <PackageIdentityPublisher>CN=C257EEA6-5F4C-4B8A-B5EA-B97FE77D6454</PackageIdentityPublisher>
     <IntermediateOutputPath>C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\obj\x64\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>

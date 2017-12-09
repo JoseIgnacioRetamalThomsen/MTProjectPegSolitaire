@@ -438,3 +438,4 @@ C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\obj\x64\Rel
 C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\obj\x64\Release\ilc\intermediate\TransformedSRWR\System.Runtime.WindowsRuntime.dll
 C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\obj\x64\Release\ilc\intermediate\TransformedSRWR\System.Runtime.WindowsRuntime.dll.ILTransformTask.repro
 C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\obj\x64\Release\ilc\intermediate\TransformedSRWR\System.Runtime.WindowsRuntime.pdb
+C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\obj\x64\Release\MTProjectPegSolitaire.csprojResolveAssemblyReference.cache

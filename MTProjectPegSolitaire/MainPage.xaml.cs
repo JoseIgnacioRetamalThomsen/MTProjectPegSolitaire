@@ -34,7 +34,7 @@ namespace MTProjectPegSolitaire
     /// </summary>
     public sealed partial class MainPage : Page
     {
-       
+
         public MainPage()
 
         {
@@ -44,6 +44,7 @@ namespace MTProjectPegSolitaire
             this.Loading += LoadBoardSize_Loading;
             this.Loading += LoadScores_Loding;
             this.Loading += LoadGame_Loading;
+
         }
 
         private void LoadGame_Loading(FrameworkElement sender, object args)
@@ -56,16 +57,39 @@ namespace MTProjectPegSolitaire
             try
             {
                 oneArrayBoard = localSettings.Values["boardArray"].ToString();
-            }catch
+            }
+            catch
             {
                 localSettings.Values["boardArray"] = "0";
                 oneArrayBoard = "0";
             }
-            if(oneArrayBoard.Substring(0,1)!="0")
+            if (oneArrayBoard.Substring(0, 1) != "0")
             {
                 ContinueButton.Visibility = Visibility.Visible;
             }
+
+            //check show score or intructions
+            if (App.isHighScoreChecked)
+            {
+                scoreTableRB.IsChecked = true;
+                HowToPlaySP.Visibility = Visibility.Collapsed;
+                highScoreSP.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                instructiosRB.IsChecked = true;
+                HowToPlaySP.Visibility = Visibility.Visible;
+                highScoreSP.Visibility = Visibility.Collapsed;
+            }
+            //fill score board
+            HighScore1Score.Text = App.highScores[0].ToString();
+            HighScore2Score.Text = App.highScores[1].ToString();
+            HighScore3Score.Text = App.highScores[2].ToString();
+            HighScore1Name.Text = "1ST " + App.highScoresName[0];
+            HighScore2Name.Text = "2ND  " + App.highScoresName[1];
+            HighScore3Name.Text = "3RD  " + App.highScoresName[2];
         }
+
 
         private void LoadScores_Loding(FrameworkElement sender, object args)
         {
@@ -73,8 +97,6 @@ namespace MTProjectPegSolitaire
             try
 
             {
-               
-
                 //if high score 1 do not exist mean that non other
                 App.highScores[0] = Convert.ToInt32((localSettings.Values["HighScore1"]).ToString());
                 App.highScoresName[0] = localSettings.Values["HighScore1Name"].ToString();
@@ -84,28 +106,30 @@ namespace MTProjectPegSolitaire
 
                 App.highScores[2] = Convert.ToInt32((localSettings.Values["HighScore3"]).ToString());
                 App.highScoresName[2] = localSettings.Values["HighScore3Name"].ToString();
-
             }
-            catch (Exception exception)
+            catch //create score if do not exist
             {
-               // Debug.WriteLine(exception);
-                localSettings.Values["HighScore3"] = 0;
-                localSettings.Values["HighScore2"] = 0;
-                localSettings.Values["HighScore1"] = 0;
+                // Debug.WriteLine(exception);
+                localSettings.Values["HighScore1"] = 3475;
+                localSettings.Values["HighScore2"] = 1994;
+                localSettings.Values["HighScore3"] = 679;
+                App.highScores[0] = 3475;
+                App.highScores[1] = 1994;
+                App.highScores[2] = 679;
 
-                localSettings.Values["HighScore1Name"] = "Non One";
-                localSettings.Values["HighScore2Name"] = "Non One";
-                localSettings.Values["HighScore3Name"] = "Non One";
-                
+                localSettings.Values["HighScore1Name"] = "Pitagoras";
+                localSettings.Values["HighScore2Name"] = "Kurt";
+                localSettings.Values["HighScore3Name"] = "pepe";
+                App.highScoresName[0] = "Pitagoras";
+                App.highScoresName[1] = "Kurt";
+                App.highScoresName[2] = "pepe";
+
             }
         }
 
         private void LoadBoardSize_Loading(FrameworkElement sender, object args)
         {
-
-           
             ApplicationDataContainer localSettings = ApplicationData.Current.LocalSettings;
-
             try
             {
                 //get last board size
@@ -116,7 +140,6 @@ namespace MTProjectPegSolitaire
                 //this will be if is first time runig the app, will create baord size
                 localSettings.Values["BoardSize"] = App.lastBoardSize;
                 Debug.WriteLine(exc.StackTrace);
-
             }
             //set radio button to checked
             if (App.lastBoardSize == 5)
@@ -133,10 +156,6 @@ namespace MTProjectPegSolitaire
             }
         }
 
-
-        //move have to be done here
-
-            
         private void Button_NewGame_Tapped(object sender, TappedRoutedEventArgs e)
         {
             //flas for new game
@@ -145,7 +164,7 @@ namespace MTProjectPegSolitaire
         }
 
 
-        private void RadioButton_Checked(object sender, RoutedEventArgs e)
+        private void SelectDiff_Checked(object sender, RoutedEventArgs e)
         {
             //set board size and naviete to game , mean start the game
             if (EasyRB.IsChecked == true)
@@ -161,7 +180,7 @@ namespace MTProjectPegSolitaire
             {
                 App.lastBoardSize = 9;
             }
-
+            //save size to local storage
             ApplicationDataContainer localSettings = ApplicationData.Current.LocalSettings;
             try
             {
@@ -184,9 +203,22 @@ namespace MTProjectPegSolitaire
 
         }
 
+        //method for check hisgh score or how to play
         private void instructiosRB_Checked(object sender, RoutedEventArgs e)
         {
 
+            if (scoreTableRB.IsChecked==true)
+            {
+                
+                HowToPlaySP.Visibility = Visibility.Collapsed;
+                highScoreSP.Visibility = Visibility.Visible;
+            }
+            else
+            {
+               
+                HowToPlaySP.Visibility = Visibility.Visible;
+                highScoreSP.Visibility = Visibility.Collapsed;
+            }
         }
     }
 }

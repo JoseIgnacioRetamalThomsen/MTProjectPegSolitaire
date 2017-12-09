@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
-  <Identity Name="6861PEPE.TrianglePegSolitaire" Publisher="CN=C257EEA6-5F4C-4B8A-B5EA-B97FE77D6454" Version="1.1.2.0" />
+  <Identity Name="6861PEPE.TrianglePegSolitaire" Publisher="CN=C257EEA6-5F4C-4B8A-B5EA-B97FE77D6454" Version="1.1.3.0" />
   <mp:PhoneIdentity PhoneProductId="c8b3b3ee-b5c3-458b-8ba3-ff283e646445" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>Triangle Peg Solitaire</DisplayName>

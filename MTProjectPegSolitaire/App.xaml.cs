@@ -35,6 +35,7 @@ namespace MTProjectPegSolitaire
         /// Initializes the singleton application object.  This is the first line of authored code
         /// executed, and as such is the logical equivalent of main() or WinMain().
         /// 
+        /// </summary>
         //app variables
         public static int variable = 5;
         public static int lastBoardSize = 5;
@@ -44,8 +45,10 @@ namespace MTProjectPegSolitaire
         public static int lastPiecesLeft = 0;
         public static int lastScore = 0;
         public static Random random = new Random();
+        //highScore
+        public static bool isHighScoreChecked = false;
 
-       public static bool continueGame = false;
+        public static bool continueGame = false;
         public static int piecesRemovedForContinue = 0;
 
         //0 high score 1, 1 high 1 and 2 lowe high
@@ -53,25 +56,24 @@ namespace MTProjectPegSolitaire
         public static String[] highScoresName = new String[3];
 
         //game state
-
         public static Board board;
         public static TimeKeeper timer;
 
         //check if is on gameover page for not save game when close
         public static bool isOnGameOverPage = false;
-        /// </summary>
+
         public App()
         {
             this.InitializeComponent();
 
             //add on loadig for local setting
-                                   this.Suspending += OnSuspending;
+            this.Suspending += OnSuspending;
             //prefered size
             ApplicationView.PreferredLaunchViewSize = new Size(700, 750);
             ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.PreferredLaunchViewSize;
         }
 
-     
+
 
         /// <summary>
         /// Invoked when the application is launched normally by the end user.  Other entry points
@@ -147,7 +149,8 @@ namespace MTProjectPegSolitaire
                     localSettings.Values["LastTime"] = App.timer.GetTotalSeconds();
                     localSettings.Values["LastPiecesRemoves"] = App.board.GetPieceRemoved();
                 }
-            }catch(Exception exp2)
+            }
+            catch (Exception exp2)
             {
 
             }
