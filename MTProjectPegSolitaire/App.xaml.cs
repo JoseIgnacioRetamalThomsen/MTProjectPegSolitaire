@@ -8,6 +8,7 @@ using Windows.ApplicationModel.Activation;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.Storage;
+using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -64,10 +65,10 @@ namespace MTProjectPegSolitaire
             this.InitializeComponent();
 
             //add on loadig for local setting
-           
-
-            this.Suspending += OnSuspending;
-            
+                                   this.Suspending += OnSuspending;
+            //prefered size
+            ApplicationView.PreferredLaunchViewSize = new Size(700, 750);
+            ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.PreferredLaunchViewSize;
         }
 
      

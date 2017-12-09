@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-08T23:27:38.393</Modified>
+      <Modified>2017-12-09T16:00:37.257</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\bin\x64\Debug\MTProjectPegSolitaire.exe">
       <PackagePath>entrypoint\MTProjectPegSolitaire.exe</PackagePath>
-      <Modified>2017-12-08T23:26:48.723</Modified>
+      <Modified>2017-12-09T16:00:36.656</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pepe\.nuget\packages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -507,9 +507,9 @@
       <PackagePath>Assets\Wood_1.jpg</PackagePath>
       <Modified>2017-12-08T23:24:23.210</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\Properties\Default.rd.xml">
-      <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2017-12-08T23:24:23.210</Modified>
+    <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\Assets\howtoplay.png">
+      <PackagePath>Assets\howtoplay.png</PackagePath>
+      <Modified>2017-12-09T15:46:06.251</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -545,6 +545,10 @@
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-12-08T23:24:23.210</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\Properties\Default.rd.xml">
+      <PackagePath>Properties\Default.rd.xml</PackagePath>
+      <Modified>2017-12-08T23:24:23.210</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\bin\x64\Debug\MTProjectPegSolitaire.xr.xml">
       <PackagePath>MTProjectPegSolitaire.xr.xml</PackagePath>
       <Modified>2017-12-08T23:24:24.485</Modified>
@@ -556,11 +560,11 @@
     <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-08T23:27:38.220</Modified>
+      <Modified>2017-12-09T16:00:37.115</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\bin\x64\Debug\Core\MTProjectPegSolitaire.exe">
       <PackagePath>MTProjectPegSolitaire.exe</PackagePath>
-      <Modified>2017-12-08T23:27:38.388</Modified>
+      <Modified>2017-12-09T16:00:37.251</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

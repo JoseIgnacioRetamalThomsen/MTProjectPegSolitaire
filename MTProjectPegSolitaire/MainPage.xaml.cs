@@ -23,18 +23,18 @@ using Windows.UI.Xaml.Shapes;
  *   Jose Ignacio Retamal Peg Solitaire Game - Landing game page.
  *   17/11/2017 File created: Jose Ignacio Retamal.
  *   20/11/2017 Static GUI added to xamal file : Jose Ignacio Retamal.
+ *   09/12/2017 show ScoreBoard  :Jose Ignacio Retamal
  */
 
 namespace MTProjectPegSolitaire
 {
     /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
+    /// Landig page of the app
+    /// 
     /// </summary>
     public sealed partial class MainPage : Page
     {
-       // int boardSize = 5;
-        //array that represent the board with pieces
-       // Boolean[][] boardArray;
+       
         public MainPage()
 
         {
@@ -56,7 +56,7 @@ namespace MTProjectPegSolitaire
             try
             {
                 oneArrayBoard = localSettings.Values["boardArray"].ToString();
-            }catch(Exception ex)
+            }catch
             {
                 localSettings.Values["boardArray"] = "0";
                 oneArrayBoard = "0";

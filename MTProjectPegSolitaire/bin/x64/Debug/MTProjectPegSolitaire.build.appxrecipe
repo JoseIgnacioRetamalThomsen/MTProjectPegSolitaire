@@ -379,8 +379,8 @@
     <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\Assets\Wood_1.jpg">
       <PackagePath>Assets\Wood_1.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\Properties\Default.rd.xml">
-      <PackagePath>Properties\Default.rd.xml</PackagePath>
+    <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\Assets\howtoplay.png">
+      <PackagePath>Assets\howtoplay.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -408,6 +408,9 @@
     <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\Properties\Default.rd.xml">
+      <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\bin\x64\Debug\MTProjectPegSolitaire.xr.xml">
       <PackagePath>MTProjectPegSolitaire.xr.xml</PackagePath>

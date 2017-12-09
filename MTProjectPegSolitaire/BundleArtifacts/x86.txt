@@ -1,0 +1,2 @@
+MainPackage=C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\bin\x86\Release\MTProjectPegSolitaire_1.1.2.0_x86.appx
+SymbolPackage=C:\Users\pepe\Documents\pegpacks\MTProjectPegSolitaire_1.1.2.0_Test\MTProjectPegSolitaire_1.1.2.0_x86.appxsym

@@ -1,0 +1,16 @@
+/osver:6.2
+/appcontainer
+/runtime:mrt100_app
+/eh:clr
+/pdb
+"/nativeLink:C:\Users\pepe\.nuget\packages\microsoft.net.native.compiler\1.7.1\tools\ARM\ilc\lib\Native\vmath.lib"
+/customImports
+/methodBodyFolding
+"C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\obj\ARM\Release\ilc\intermediate\MDIL\MTProjectPegSolitaire.mdilexe"
+"/i:C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\obj\ARM\Release\ilc\intermediate\MDIL"
+"/out:C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\obj\ARM\Release\ilc\intermediate\Native\MTProjectPegSolitaire.exe"
+"/pdbAltPath:C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\bin\ARM\Release\ilc"
+"/res:C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\obj\ARM\Release\ilc\intermediate\Native.res"
+"/i:C:\Users\pepe\.nuget\packages\microsoft.net.native.sharedlibrary-arm\1.7.0\tools\SharedLibrary\ret\MDIL"
+/shimexe
+"/classlib:SharedLibrary"

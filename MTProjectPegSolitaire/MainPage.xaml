@@ -6,35 +6,32 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
-
-    <StackPanel x:Name="MainGrid"  HorizontalAlignment="Center" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBlock Text="PEG ▲ SOLITAIRE" Style="{StaticResource HeaderTextBlockStyle}" Foreground="DarkRed" HorizontalAlignment="Center" Margin="5" ></TextBlock>
-        <StackPanel BorderBrush="Gray" BorderThickness="3" CornerRadius="8" Background="WhiteSmoke" Margin="5">
-            <TextBlock Text="How to Play" Style="{StaticResource SubtitleTextBlockStyle}" Foreground="Gray" HorizontalAlignment="Center" ></TextBlock>
-            <Image Source="assets/images/back.jpg" MaxWidth="300" HorizontalAlignment="Center"></Image>
-            <TextBlock Text="The aim is to remove pegs from the board by "  Style="{StaticResource BodyTextBlockStyle}" Foreground="Gray" HorizontalAlignment="Center" ></TextBlock>
-            <TextBlock Text="jumpingwith one peg to another, jumped peg is " Style="{StaticResource BodyTextBlockStyle}" Foreground="Gray" HorizontalAlignment="Center" ></TextBlock>
-            <TextBlock Text="removed. You can jump only when the opposite " Style="{StaticResource BodyTextBlockStyle}" Foreground="Gray" HorizontalAlignment="Center" ></TextBlock>
-            <TextBlock Text="slot across the ball is free. Game is over  " Style="{StaticResource BodyTextBlockStyle}" Foreground="Gray" HorizontalAlignment="Center" ></TextBlock>
-            <TextBlock Text="when you have no more posible movements.  " Style="{StaticResource BodyTextBlockStyle}" Foreground="Gray" HorizontalAlignment="Center" ></TextBlock>
-            <TextBlock Text="A perfect game wil be whe you leave only " Style="{StaticResource BodyTextBlockStyle}" Foreground="Gray" HorizontalAlignment="Center" ></TextBlock>
-            <TextBlock Text=" one peg on the board."  Foreground="Gray" Style="{StaticResource BodyTextBlockStyle}" HorizontalAlignment="Center" ></TextBlock>
-
+            <StackPanel x:Name="MainGrid"  HorizontalAlignment="Center" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+            <TextBlock Text="PEG ▲ SOLITAIRE" Style="{StaticResource HeaderTextBlockStyle}" Foreground="DarkRed" HorizontalAlignment="Center" Margin="5" ></TextBlock>
+        <StackPanel x:Name="HowToPlayOrScoreSP" Height="300" >
+            <StackPanel BorderBrush="Gray" BorderThickness="3" CornerRadius="8" Background="WhiteSmoke" Margin="5">
+                <TextBlock Text="How to Play" Style="{StaticResource SubtitleTextBlockStyle}" Foreground="Gray" HorizontalAlignment="Center" ></TextBlock>
+                <Image Source="assets/howtoplay.png" MaxWidth="300" HorizontalAlignment="Center"></Image>
+                <TextBlock Text="The aim is to remove pegs from the board by "  Style="{StaticResource BodyTextBlockStyle}" Foreground="Gray" HorizontalAlignment="Center" ></TextBlock>
+                <TextBlock Text="jumping with one peg over another, jumped peg is " Style="{StaticResource BodyTextBlockStyle}" Foreground="Gray" HorizontalAlignment="Center" ></TextBlock>
+                <TextBlock Text="removed. You can jump only when the opposite " Style="{StaticResource BodyTextBlockStyle}" Foreground="Gray" HorizontalAlignment="Center" ></TextBlock>
+                <TextBlock Text="slot across the ball is free. Game is over  " Style="{StaticResource BodyTextBlockStyle}" Foreground="Gray" HorizontalAlignment="Center" ></TextBlock>
+                <TextBlock Text="when you have no more possible movements.  " Style="{StaticResource BodyTextBlockStyle}" Foreground="Gray" HorizontalAlignment="Center" ></TextBlock>
+                <TextBlock Text="You win the game if only one peg is left  " Style="{StaticResource BodyTextBlockStyle}" Foreground="Gray" HorizontalAlignment="Center" ></TextBlock>
+                <TextBlock Text="on the board."  Foreground="Gray" Style="{StaticResource BodyTextBlockStyle}" HorizontalAlignment="Center" ></TextBlock>
+            </StackPanel>
         </StackPanel>
-
         <StackPanel  Orientation="Horizontal"  HorizontalAlignment="Center" VerticalAlignment="Center" >
             <RadioButton x:Name="EasyRB" Content="Easy" Tag="5" Checked="RadioButton_Checked"  Margin="3"/>
             <RadioButton x:Name="MediunRB" Content="Medium" Tag="7" Checked="RadioButton_Checked" Margin="3"/>
             <RadioButton x:Name="HardRB" Content="Hard" Tag="9" Checked="RadioButton_Checked"  Margin="3"/>
         </StackPanel>
-
-        <Button x:Name="ContinueButton" Visibility="Collapsed" Content="CONTINUE" Tapped="ContinueButton_Tapped"  Width="200" Style="{StaticResource PivotTitleContentControlStyle}" Foreground="White" HorizontalAlignment="Center" Margin="0,20,0,5"></Button>
-        <Button Content="NEW   GAME" MinWidth="200" Tapped="Button_NewGame_Tapped"  Style="{StaticResource PivotTitleContentControlStyle}" Foreground="White" HorizontalAlignment="Center" Margin="0,20,0,5"></Button>
         <StackPanel  Orientation="Horizontal"  HorizontalAlignment="Center" VerticalAlignment="Center" >
-            <RadioButton x:Name="instructiosRB" Content="Instructions" Tag="5" Checked="instructiosRB_Checked"  Margin="3"/>
+            <RadioButton x:Name="instructiosRB" Content="How to Play" Tag="5" Checked="instructiosRB_Checked"  Margin="3"/>
             <RadioButton x:Name="scoreTableRB" Content="High Scores" Tag="7" Checked="instructiosRB_Checked" Margin="3"/>
-           
         </StackPanel>
-
+        
+                <Button x:Name="ContinueButton" Visibility="Collapsed" Content="CONTINUE" Tapped="ContinueButton_Tapped"  Width="200" Style="{StaticResource PivotTitleContentControlStyle}" Foreground="White" HorizontalAlignment="Center" Margin="0,20,0,5"></Button>
+        <Button Content="NEW   GAME" MinWidth="200" Tapped="Button_NewGame_Tapped"  Style="{StaticResource PivotTitleContentControlStyle}" Foreground="White" HorizontalAlignment="Center" Margin="0,20,0,5"></Button>
     </StackPanel>
 </Page>

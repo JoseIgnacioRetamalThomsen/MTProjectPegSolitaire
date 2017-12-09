@@ -1,0 +1,1 @@
+C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\MTProjectPegSolitaire.csproj;x64
