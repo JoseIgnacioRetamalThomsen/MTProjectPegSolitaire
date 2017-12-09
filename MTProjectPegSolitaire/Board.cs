@@ -442,8 +442,7 @@ namespace MTProjectPegSolitaire
                         //move is posible
                         moves[0] = new Point(PosibleI, PosibleJ);
                         canMove = true;
-
-                    }
+                                            }
                     else
                     {
                         moves[0] = new Point(99, 99);

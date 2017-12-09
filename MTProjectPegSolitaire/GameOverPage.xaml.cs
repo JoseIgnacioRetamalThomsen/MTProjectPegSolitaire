@@ -15,23 +15,40 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
+/*
+ * Jose Ignacio Retamal Triangle peg solitaraire game
+ * Page that will show after the game where is display the score, time,pegs removes and high score table
+ * 
+ */
 
 namespace MTProjectPegSolitaire
 {
     /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
+    /// game over page
     /// </summary>
     public sealed partial class GameOverPage : Page
     {
+        #region class variables
+        //variable for check if have high score, 0 no high score , 1 first have score ,2 secon...
+        private int haveHighScore { get; set; }
 
-        int haveHighScore;
-        ApplicationDataContainer localSettings = ApplicationData.Current.LocalSettings;
+        #endregion
+        #region constructors
+        //constructor no parameter
         public GameOverPage()
         {
 
             this.InitializeComponent();
             this.Loading += GameOver_Loading;
+            this.Loading += SetScore_Loading;
+
+
+        }
+        #endregion
+        #region Loading methods
+        private void SetScore_Loading(FrameworkElement sender, object args)
+        {
+            ApplicationDataContainer localSettings = ApplicationData.Current.LocalSettings;
 
             //set score 
             ScoreTB.Text += App.lastScore;
@@ -127,18 +144,20 @@ namespace MTProjectPegSolitaire
             {
                 HavaHighScoreSP.Visibility = Visibility.Visible;
             }
+
         }
-
-
 
         private void GameOver_Loading(FrameworkElement sender, object args)
         {
+            ApplicationDataContainer localSettings = ApplicationData.Current.LocalSettings;
             localSettings.Values["boardArray"] = "0";
             App.isOnGameOverPage = true;
         }
-
+        #endregion
+        #region button listeners
         private void highScoreNameButton_Tapped(object sender, TappedRoutedEventArgs e)
         {
+            ApplicationDataContainer localSettings = ApplicationData.Current.LocalSettings;
             String localHighScoreName = highScoreNameInput.Text;
 
             if (haveHighScore > 0)
@@ -150,7 +169,7 @@ namespace MTProjectPegSolitaire
 
                         HighScore1Name.Text = "1ST " + localHighScoreName;
                         localSettings.Values["HighScore1Name"] = localHighScoreName;
-                        App.highScoresName[0]= localHighScoreName;
+                        App.highScoresName[0] = localHighScoreName;
                         break;
                     case 2:
 
@@ -172,6 +191,7 @@ namespace MTProjectPegSolitaire
 
         private void HOME_Tapped(object sender, TappedRoutedEventArgs e)
         {
+            ApplicationDataContainer localSettings = ApplicationData.Current.LocalSettings;
             //reset game over for not able to continue a game when is over
             //is for fix a bug taht i cant find...
             localSettings.Values["boardArray"] = "0";
@@ -179,5 +199,6 @@ namespace MTProjectPegSolitaire
 
             this.Frame.Navigate(typeof(MainPage), null);
         }
+        #endregion
     }
 }

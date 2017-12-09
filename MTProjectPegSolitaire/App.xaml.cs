@@ -37,34 +37,39 @@ namespace MTProjectPegSolitaire
         /// 
         /// </summary>
         //app variables
-        public static int variable = 5;
-        public static int lastBoardSize = 5;
-        public static int lastTotalTimeSecond = 0;
-        public static String lastTotalTime = "";
-        public static int lastPiecesRemoved = 0;
-        public static int lastPiecesLeft = 0;
-        public static int lastScore = 0;
-        public static Random random = new Random();
+        #region app variables
+        public static int lastBoardSize { get; set; }
+        public static int lastTotalTimeSecond { get; set; }
+        public static String lastTotalTime { get; set; }
+        public static int lastPiecesRemoved { get; set; }
+        public static int lastPiecesLeft { get; set; }
+        public static int lastScore { get; set; }
+        
         //highScore
-        public static bool isHighScoreChecked = false;
+        public static bool isHighScoreChecked { get; set; }
 
-        public static bool continueGame = false;
-        public static int piecesRemovedForContinue = 0;
+        public static bool continueGame { get; set; }
+        public static int piecesRemovedForContinue { get; set; }
 
         //0 high score 1, 1 high 1 and 2 lowe high
-        public static int[] highScores = new int[3];
-        public static String[] highScoresName = new String[3];
+        public static int[] highScores { get; set; }
+        public static String[] highScoresName { get; set; }
 
         //game state
-        public static Board board;
-        public static TimeKeeper timer;
+        public static Board board { get; set; }
+        public static TimeKeeper timer { get; set; }
 
         //check if is on gameover page for not save game when close
-        public static bool isOnGameOverPage = false;
+        public static bool isOnGameOverPage { get; set; }
 
+        //random for use in the full app
+        public static Random random { get; set; }
+        #endregion
         public App()
         {
-            this.InitializeComponent();
+            
+                                   this.InitializeComponent();
+            this.initAppVariables();
 
             //add on loadig for local setting
             this.Suspending += OnSuspending;
@@ -72,7 +77,23 @@ namespace MTProjectPegSolitaire
             ApplicationView.PreferredLaunchViewSize = new Size(700, 750);
             ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.PreferredLaunchViewSize;
         }
-
+        private void initAppVariables()
+        {
+            lastBoardSize = 5;
+            lastTotalTimeSecond = 0;
+            lastTotalTime = "";
+            lastPiecesRemoved = 0;
+            lastPiecesLeft = 0;
+            lastScore = 0;
+            isHighScoreChecked = false;
+            continueGame = false;
+            piecesRemovedForContinue = 0;
+            piecesRemovedForContinue = 0;
+            highScores = new int[3];
+            highScoresName = new String[3];
+            isOnGameOverPage = false;
+            random = new Random();
+        }
 
 
         /// <summary>

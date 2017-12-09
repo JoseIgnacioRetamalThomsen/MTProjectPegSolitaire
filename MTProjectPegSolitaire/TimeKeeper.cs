@@ -7,7 +7,9 @@ using Windows.UI;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media;
-
+/*
+ * Jose Ignacio Retamal - Triangle Peg Solitaire - Timer
+ */ 
 namespace MTProjectPegSolitaire
 {
     public class TimeKeeper : StackPanel
@@ -17,7 +19,7 @@ namespace MTProjectPegSolitaire
         private int seconds { get; set; }
         private int minutes { get; set; }
 
-        DispatcherTimer timer;
+        private  DispatcherTimer timer{ get; set; }
 
         TextBlock minutesTB;
         TextBlock colonTB;
