@@ -9,26 +9,29 @@ using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media;
 /*
  * Jose Ignacio Retamal - Triangle Peg Solitaire - Timer
- */ 
+ * 21/11/2017 class made: jose Retamal
+ * 10/12/2017 refatored : Jose Retamal
+ */
 namespace MTProjectPegSolitaire
 {
     public class TimeKeeper : StackPanel
     {
-        //variables
+        #region class variables
+        //class variables
         private int TimerFontSize { get; set; }
         private int seconds { get; set; }
         private int minutes { get; set; }
 
-        private  DispatcherTimer timer{ get; set; }
+        private DispatcherTimer timer { get; set; }
 
-        TextBlock minutesTB;
-        TextBlock colonTB;
-        TextBlock secondsTB;
+        //gui variables
+        static TextBlock minutesTB;
+        static TextBlock colonTB;
+        static TextBlock secondsTB;
 
-
-
-
-        //constructor
+        #endregion
+        #region constructors
+        //constructor with starting time as parameter
         public TimeKeeper(int TimerSize)
         {
             TimerFontSize = TimerSize;
@@ -38,6 +41,17 @@ namespace MTProjectPegSolitaire
             //add tick event
             timer.Tick += timer_Tick;
 
+            CreateTimerGUI();
+
+            //intitialaze minutes and seconds
+            seconds = 0;
+            minutes = 0;
+
+        }
+        #endregion
+        #region create GUI and time
+        private void CreateTimerGUI()
+        {
             //set stack panel
             //one for background
             StackPanel BackSP = new StackPanel()
@@ -85,41 +99,8 @@ namespace MTProjectPegSolitaire
             BackSP.Children.Add(colonTB);
             BackSP.Children.Add(secondsTB);
             this.Children.Add(BackSP);
-
-            //intitialaze minutes and seconds
-            seconds = 0;
-            minutes = 0;
-
         }
-
-        public void StartTimer()
-        {
-            timer.Start();
-
-        }
-        public void StopTimer()
-        {
-            timer.Stop();
-        }
-        public int GetTotalSeconds()
-        {
-            int seccondsToReturn = 0;
-            seccondsToReturn += seconds;
-            seccondsToReturn += minutes * 60;
-            return seccondsToReturn;
-        }
-        public String GetTime()
-        {
-            return "" + minutes + ":" + seconds;
-        }
-        public void setTime(int second)
-        {
-            int minutes = (int)(second / 60);
-            
-            
-            this.minutes = minutes;
-            this.seconds =  second - minutes*60;
-        }
+        //control the time will tick every one second
         private void timer_Tick(object sender, object e)
         {
             //increse second        
@@ -150,5 +131,40 @@ namespace MTProjectPegSolitaire
                 minutesTB.Text = minutes.ToString();
             }
         }
+        #endregion
+        #region time control 
+
+        public void StartTimer()
+        {
+            timer.Start();
+
+        }
+        public void StopTimer()
+        {
+            timer.Stop();
+        }
+        public void setTime(int second)
+        {
+            int minutes = (int)(second / 60);
+
+
+            this.minutes = minutes;
+            this.seconds = second - minutes * 60;
+        }
+        #endregion
+        #region public return methods
+        public int GetTotalSeconds()
+        {
+            int seccondsToReturn = 0;
+            seccondsToReturn += seconds;
+            seccondsToReturn += minutes * 60;
+            return seccondsToReturn;
+        }
+        public String GetTime()
+        {
+            return "" + minutes + ":" + seconds;
+        }
+
+        #endregion
     }
 }

@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-09T23:47:06.575</Modified>
+      <Modified>2017-12-10T10:54:34.080</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\bin\x64\Debug\MTProjectPegSolitaire.exe">
       <PackagePath>entrypoint\MTProjectPegSolitaire.exe</PackagePath>
-      <Modified>2017-12-09T23:47:05.881</Modified>
+      <Modified>2017-12-10T10:54:33.392</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pepe\.nuget\packages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -560,11 +560,11 @@
     <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-09T18:46:43.386</Modified>
+      <Modified>2017-12-10T10:16:09.657</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\bin\x64\Debug\Core\MTProjectPegSolitaire.exe">
       <PackagePath>MTProjectPegSolitaire.exe</PackagePath>
-      <Modified>2017-12-09T23:47:06.565</Modified>
+      <Modified>2017-12-10T10:54:34.069</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
