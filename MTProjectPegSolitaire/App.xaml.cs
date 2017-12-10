@@ -79,13 +79,30 @@ namespace MTProjectPegSolitaire
         }
         private void initAppVariables()
         {
-            lastBoardSize = 5;
-            lastTotalTimeSecond = 0;
+            //board size
+            ApplicationDataContainer localSettings = ApplicationData.Current.LocalSettings;
+            try
+            {
+                //get last board size
+                lastBoardSize = Convert.ToInt32((localSettings.Values["BoardSize"]).ToString());
+            }
+            catch 
+            {
+                //this will be if is first time runig the app, will create baord size
+                //if first time start at 5
+                lastBoardSize = 5;
+                localSettings.Values["BoardSize"] = lastBoardSize;
+                
+            }
+            //timer, just start at 0 if game is contunied will be load from local storage
+                        lastTotalTimeSecond = 0;
             lastTotalTime = "";
             lastPiecesRemoved = 0;
             lastPiecesLeft = 0;
+            //score
             lastScore = 0;
             isHighScoreChecked = false;
+
             continueGame = false;
             piecesRemovedForContinue = 0;
             piecesRemovedForContinue = 0;

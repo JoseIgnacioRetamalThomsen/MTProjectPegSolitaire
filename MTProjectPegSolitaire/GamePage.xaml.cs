@@ -22,20 +22,21 @@ using Windows.UI.Xaml.Navigation;
 /*
  *   Jose Ignacio Retamal Peg Solitaire Game -
  *   This page 
- *   17/11/2017 File created. Jose Ignacio Retamal.
- *   17/11/2017 Page create and add a Board object wich is the game,
- *              Set image URI, they are parameters for the board object. Jose Ignacio Retamal.
- *   19/11/2017 Timer Object added. Jose Ignacio Retamal.
+ *   19/11/2017 File created. Jose Ignacio Retamal.
+ *   19/11/2017 Page create and add a Board object wich is the game,
+ *  Set image URI, they are parameters for the board object. Jose Ignacio Retamal.
+ *   21/11/2017 Timer Object added. Jose Ignacio Retamal.
  */
 
 namespace MTProjectPegSolitaire
 {
     /// <summary>
-    /// Game Page Where the game calss is loaded
+    /// Game Page Where the game class is loaded
     /// 
     /// </summary>
     public sealed partial class GamePage : Page
     {
+        #region constructors
         public GamePage()
         {
             this.InitializeComponent();
@@ -43,8 +44,6 @@ namespace MTProjectPegSolitaire
             //create and add timer to gUI
             App.timer = new TimeKeeper(40);
             TimerSP.Children.Add(App.timer);
-
-
 
             //create board
             ImageBrush BoardBackground = new ImageBrush() { ImageSource = new BitmapImage(new Uri(this.BaseUri, @"Assets\Wood_1.jpg")) };
@@ -79,12 +78,12 @@ namespace MTProjectPegSolitaire
             App.board.setBoardArrayWithOneString(App.board.getBoardArrayInOneString());
         }//end contructor
 
-
+        #endregion
+        #region game control
         //method that is call from board game when game is over
         //navigate to endgame page after 1 second delay
         public async Task GameOverAsync()
         {
-
             //show game over
             GameOverTF.Visibility = Visibility.Visible;
 
@@ -106,7 +105,8 @@ namespace MTProjectPegSolitaire
             ApplicationDataContainer localSettings = ApplicationData.Current.LocalSettings;
             localSettings.Values["boardArray"] = "0";
         }
-
+        #endregion
+        #region button listeners
         //come backt to mainPage
         private void BackButton_Tapped(object sender, TappedRoutedEventArgs e)
         {
@@ -118,5 +118,6 @@ namespace MTProjectPegSolitaire
 
             this.Frame.Navigate(typeof(MainPage), null);
         }
+        #endregion
     }
 }

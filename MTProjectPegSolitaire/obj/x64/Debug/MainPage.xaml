@@ -6,8 +6,8 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
-            <StackPanel x:ConnectionId='1' x:Name="MainGrid"  HorizontalAlignment="Center" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-            <TextBlock Text="PEG ▲ SOLITAIRE" Style="{StaticResource HeaderTextBlockStyle}" Foreground="DarkRed" HorizontalAlignment="Center" Margin="5" ></TextBlock>
+    <StackPanel x:ConnectionId='1' x:Name="MainGrid"  HorizontalAlignment="Center" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock Text="PEG ▲ SOLITAIRE" Style="{StaticResource HeaderTextBlockStyle}" Foreground="DarkRed" HorizontalAlignment="Center" Margin="5" ></TextBlock>
         <StackPanel x:ConnectionId='2' x:Name="HowToPlayOrScoreSP" Height="300" >
             <StackPanel x:ConnectionId='10' x:Name="HowToPlaySP" BorderBrush="Gray" BorderThickness="3" CornerRadius="8" Background="WhiteSmoke" Margin="5">
                 <TextBlock Text="How to Play" Style="{StaticResource SubtitleTextBlockStyle}" Foreground="Gray" HorizontalAlignment="Center" ></TextBlock>
@@ -38,16 +38,16 @@
 
         </StackPanel>
         <StackPanel  Orientation="Horizontal"  HorizontalAlignment="Center" VerticalAlignment="Center" >
-            <RadioButton x:ConnectionId='7' x:Name="EasyRB" Content="Easy" Tag="5"                               Margin="3"/>
-            <RadioButton x:ConnectionId='8' x:Name="MediunRB" Content="Medium" Tag="7"                              Margin="3"/>
-            <RadioButton x:ConnectionId='9' x:Name="HardRB" Content="Hard" Tag="9"                               Margin="3"/>
+            <RadioButton x:ConnectionId='8' x:Name="instructiosRB" Content="How to Play" Tag="5"                                  Margin="3"/>
+            <RadioButton x:ConnectionId='9' x:Name="scoreTableRB" Content="High Scores" Tag="7"                                 Margin="3"/>
         </StackPanel>
         <StackPanel  Orientation="Horizontal"  HorizontalAlignment="Center" VerticalAlignment="Center" >
-            <RadioButton x:ConnectionId='5' x:Name="instructiosRB" Content="How to Play" Tag="5"                                  Margin="3"/>
-            <RadioButton x:ConnectionId='6' x:Name="scoreTableRB" Content="High Scores" Tag="7"                                 Margin="3"/>
+            <RadioButton x:ConnectionId='5' x:Name="EasyRB" Content="Easy" Tag="5"                               Margin="3"/>
+            <RadioButton x:ConnectionId='6' x:Name="MediunRB" Content="Medium" Tag="7"                              Margin="3"/>
+            <RadioButton x:ConnectionId='7' x:Name="HardRB" Content="Hard" Tag="9"                               Margin="3"/>
         </StackPanel>
-        
-                <Button x:ConnectionId='3' x:Name="ContinueButton" Visibility="Collapsed" Content="CONTINUE"                                 Width="200" Style="{StaticResource PivotTitleContentControlStyle}" Foreground="White" HorizontalAlignment="Center" Margin="0,20,0,5"></Button>
+
+        <Button x:ConnectionId='3' x:Name="ContinueButton" Visibility="Collapsed" Content="CONTINUE"                                 Width="200" Style="{StaticResource PivotTitleContentControlStyle}" Foreground="White" HorizontalAlignment="Center" Margin="0,20,0,5"></Button>
         <Button x:ConnectionId='4' Content="NEW   GAME" MinWidth="200"                                 Style="{StaticResource PivotTitleContentControlStyle}" Foreground="White" HorizontalAlignment="Center" Margin="0,20,0,5"></Button>
     </StackPanel>
 </Page>

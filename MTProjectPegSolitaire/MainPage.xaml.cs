@@ -129,18 +129,8 @@ namespace MTProjectPegSolitaire
 
         private void LoadBoardSize_Loading(FrameworkElement sender, object args)
         {
-            ApplicationDataContainer localSettings = ApplicationData.Current.LocalSettings;
-            try
-            {
-                //get last board size
-                App.lastBoardSize = Convert.ToInt32((localSettings.Values["BoardSize"]).ToString());
-            }
-            catch (Exception exc)
-            {
-                //this will be if is first time runig the app, will create baord size
-                localSettings.Values["BoardSize"] = App.lastBoardSize;
-                Debug.WriteLine(exc.StackTrace);
-            }
+
+
             //set radio button to checked
             if (App.lastBoardSize == 5)
             {
@@ -207,15 +197,13 @@ namespace MTProjectPegSolitaire
         private void instructiosRB_Checked(object sender, RoutedEventArgs e)
         {
 
-            if (scoreTableRB.IsChecked==true)
+            if (scoreTableRB.IsChecked == true)
             {
-                
                 HowToPlaySP.Visibility = Visibility.Collapsed;
                 highScoreSP.Visibility = Visibility.Visible;
             }
             else
             {
-               
                 HowToPlaySP.Visibility = Visibility.Visible;
                 highScoreSP.Visibility = Visibility.Collapsed;
             }
