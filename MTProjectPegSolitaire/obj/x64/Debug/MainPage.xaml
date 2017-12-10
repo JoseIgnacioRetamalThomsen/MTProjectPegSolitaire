@@ -9,7 +9,7 @@
     <StackPanel x:ConnectionId='1' x:Name="MainGrid"  HorizontalAlignment="Center" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <TextBlock Text="PEG ▲ SOLITAIRE" Style="{StaticResource HeaderTextBlockStyle}" Foreground="DarkRed" HorizontalAlignment="Center" Margin="5" ></TextBlock>
         <StackPanel x:ConnectionId='2' x:Name="HowToPlayOrScoreSP" Height="300" >
-            <StackPanel x:ConnectionId='10' x:Name="HowToPlaySP" BorderBrush="Gray" BorderThickness="3" CornerRadius="8" Background="WhiteSmoke" Margin="5">
+            <StackPanel x:ConnectionId='12' x:Name="HowToPlaySP" BorderBrush="Gray" BorderThickness="3" CornerRadius="8" Background="WhiteSmoke" Margin="5">
                 <TextBlock Text="How to Play" Style="{StaticResource SubtitleTextBlockStyle}" Foreground="Gray" HorizontalAlignment="Center" ></TextBlock>
                 <Image Source="assets/howtoplay.png" MaxWidth="300" HorizontalAlignment="Center"></Image>
                 <TextBlock Text="The aim is to remove pegs from the board by "  Style="{StaticResource BodyTextBlockStyle}" Foreground="Gray" HorizontalAlignment="Center" ></TextBlock>
@@ -20,35 +20,40 @@
                 <TextBlock Text="You win the game if only one peg is left  " Style="{StaticResource BodyTextBlockStyle}" Foreground="Gray" HorizontalAlignment="Center" ></TextBlock>
                 <TextBlock Text="on the board."  Foreground="Gray" Style="{StaticResource BodyTextBlockStyle}" HorizontalAlignment="Center" ></TextBlock>
             </StackPanel>
-            <StackPanel x:ConnectionId='11' x:Name="highScoreSP" Visibility="Collapsed">
+            <StackPanel x:ConnectionId='13' x:Name="highScoreSP" Visibility="Collapsed">
                 <TextBlock   Text="High Scores" HorizontalAlignment="Center"  Foreground="Gray" Style="{StaticResource HeaderTextBlockStyle}" Margin="10"></TextBlock>
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                    <TextBlock x:ConnectionId='16' x:Name="HighScore1Name" Text="1ST No One" Width="200" Foreground="Gold"  HorizontalAlignment="Left" Margin="10,5,10,5"></TextBlock>
-                    <TextBlock x:ConnectionId='17' x:Name="HighScore1Score" Text="0000"  Foreground="Gold" TextAlignment="Left"></TextBlock>
+                    <TextBlock x:ConnectionId='18' x:Name="HighScore1Name" Text="1ST No One" Width="200" Foreground="Gold"  HorizontalAlignment="Left" Margin="10,5,10,5"></TextBlock>
+                    <TextBlock x:ConnectionId='19' x:Name="HighScore1Score" Text="0000"  Foreground="Gold" TextAlignment="Left"></TextBlock>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                    <TextBlock x:ConnectionId='14' x:Name="HighScore2Name" Text="2ND No One" Width="200" Foreground="Gold"  Margin="10,5,10,5"></TextBlock>
-                    <TextBlock x:ConnectionId='15' x:Name="HighScore2Score" Text="0000"  Foreground="Gold" TextAlignment="Left" ></TextBlock>
+                    <TextBlock x:ConnectionId='16' x:Name="HighScore2Name" Text="2ND No One" Width="200" Foreground="Gold"  Margin="10,5,10,5"></TextBlock>
+                    <TextBlock x:ConnectionId='17' x:Name="HighScore2Score" Text="0000"  Foreground="Gold" TextAlignment="Left" ></TextBlock>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                    <TextBlock x:ConnectionId='12' x:Name="HighScore3Name" Text="3RD No One" Width="200" Foreground="Gold"  Margin="10,5,10,5"></TextBlock>
-                    <TextBlock x:ConnectionId='13' x:Name="HighScore3Score" Text="0000"  Foreground="Gold" TextAlignment="Left" ></TextBlock>
+                    <TextBlock x:ConnectionId='14' x:Name="HighScore3Name" Text="3RD No One" Width="200" Foreground="Gold"  Margin="10,5,10,5"></TextBlock>
+                    <TextBlock x:ConnectionId='15' x:Name="HighScore3Score" Text="0000"  Foreground="Gold" TextAlignment="Left" ></TextBlock>
                 </StackPanel>
             </StackPanel>
 
         </StackPanel>
         <StackPanel  Orientation="Horizontal"  HorizontalAlignment="Center" VerticalAlignment="Center" >
-            <RadioButton x:ConnectionId='8' x:Name="instructiosRB" Content="How to Play" Tag="5"                                  Margin="3"/>
-            <RadioButton x:ConnectionId='9' x:Name="scoreTableRB" Content="High Scores" Tag="7"                                 Margin="3"/>
+            <RadioButton x:ConnectionId='10' x:Name="instructiosRB" Content="How to Play" Tag="5"                                  Margin="3"/>
+            <RadioButton x:ConnectionId='11' x:Name="scoreTableRB" Content="High Scores" Tag="7"                                 Margin="3"/>
         </StackPanel>
         <StackPanel  Orientation="Horizontal"  HorizontalAlignment="Center" VerticalAlignment="Center" >
-            <RadioButton x:ConnectionId='5' x:Name="EasyRB" Content="Easy" Tag="5"                               Margin="3"/>
-            <RadioButton x:ConnectionId='6' x:Name="MediunRB" Content="Medium" Tag="7"                              Margin="3"/>
-            <RadioButton x:ConnectionId='7' x:Name="HardRB" Content="Hard" Tag="9"                               Margin="3"/>
+            <RadioButton x:ConnectionId='7' x:Name="EasyRB" Content="Easy" Tag="5"                               Margin="3"/>
+            <RadioButton x:ConnectionId='8' x:Name="MediunRB" Content="Medium" Tag="7"                              Margin="3"/>
+            <RadioButton x:ConnectionId='9' x:Name="HardRB" Content="Hard" Tag="9"                               Margin="3"/>
         </StackPanel>
-
+        <StackPanel  Orientation="Horizontal"  HorizontalAlignment="Center" VerticalAlignment="Center" >
+            
+            <RadioButton x:ConnectionId='5' x:Name="soundOn" Content="Sound On" Tag="5"                            Margin="3" IsChecked="True"/>
+            <RadioButton x:ConnectionId='6' x:Name="soundOff" Content="Sound Off" Tag="7"                           Margin="3"/>
+        </StackPanel>
         <Button x:ConnectionId='3' x:Name="ContinueButton" Visibility="Collapsed" Content="CONTINUE"                                 Width="200" Style="{StaticResource PivotTitleContentControlStyle}" Foreground="White" HorizontalAlignment="Center" Margin="0,20,0,5"></Button>
         <Button x:ConnectionId='4' Content="NEW   GAME" MinWidth="200"                                 Style="{StaticResource PivotTitleContentControlStyle}" Foreground="White" HorizontalAlignment="Center" Margin="0,20,0,5"></Button>
     </StackPanel>
+
 </Page>
 

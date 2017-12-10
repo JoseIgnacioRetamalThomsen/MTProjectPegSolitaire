@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-10T10:54:34.080</Modified>
+      <Modified>2017-12-10T21:16:29.360</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\bin\x64\Debug\MTProjectPegSolitaire.exe">
       <PackagePath>entrypoint\MTProjectPegSolitaire.exe</PackagePath>
-      <Modified>2017-12-10T10:54:33.392</Modified>
+      <Modified>2017-12-10T21:16:28.715</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pepe\.nuget\packages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -495,6 +495,26 @@
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
       <Modified>2016-06-11T22:15:04.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\Assets\brongTap.wav">
+      <PackagePath>Assets\brongTap.wav</PackagePath>
+      <Modified>2017-12-10T20:55:11.331</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\Assets\gameOverBeep.wav">
+      <PackagePath>Assets\gameOverBeep.wav</PackagePath>
+      <Modified>2017-12-10T21:15:02.920</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\Assets\pegJumped.wav">
+      <PackagePath>Assets\pegJumped.wav</PackagePath>
+      <Modified>2017-12-10T20:54:35.973</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\Assets\pegTapped.wav">
+      <PackagePath>Assets\pegTapped.wav</PackagePath>
+      <Modified>2017-12-10T20:52:56.147</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\Assets\tappedSound.wav">
+      <PackagePath>Assets\tappedSound.wav</PackagePath>
+      <Modified>2017-12-10T20:16:59.263</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\Assets\greenSphere.jpg">
       <PackagePath>Assets\greenSphere.jpg</PackagePath>
       <Modified>2017-12-08T23:24:23.210</Modified>
@@ -551,7 +571,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\bin\x64\Debug\MTProjectPegSolitaire.xr.xml">
       <PackagePath>MTProjectPegSolitaire.xr.xml</PackagePath>
-      <Modified>2017-12-08T23:24:24.485</Modified>
+      <Modified>2017-12-10T20:36:34.659</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.15063.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -560,11 +580,11 @@
     <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-10T10:16:09.657</Modified>
+      <Modified>2017-12-10T21:16:29.190</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\bin\x64\Debug\Core\MTProjectPegSolitaire.exe">
       <PackagePath>MTProjectPegSolitaire.exe</PackagePath>
-      <Modified>2017-12-10T10:54:34.069</Modified>
+      <Modified>2017-12-10T21:16:29.354</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

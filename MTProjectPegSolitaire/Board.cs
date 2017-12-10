@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Windows.Foundation;
+using Windows.Media.Playback;
 using Windows.UI;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -18,10 +19,14 @@ using Windows.UI.Xaml.Shapes;
  *  This class create the boad an set all the game, need to be place in a container
  *   17/11/2017 File Created : first methods started
  *   06/12/2017 method for save boardArray in local storage, get boardArray in one string and set board array with 1 string
+ *   10/12/2017: sound :Jose Retamal ,
  */
 
 namespace MTProjectPegSolitaire
 {
+    /// <summary>
+    /// Main game object
+    /// </summary>
     public class Board : Grid
     {
         #region class variables
@@ -37,10 +42,15 @@ namespace MTProjectPegSolitaire
 
         Boolean[][] boardArray;
         int piecesRemoved;
+        //sound
+        MediaPlayer pegTapped = new MediaPlayer();
+        MediaPlayer pegJumped = new MediaPlayer();
+        MediaPlayer brongTap = new MediaPlayer();
 
         #endregion
         #region constructors
-        public Board(int size, ImageBrush dackGroundImage, ImageBrush lightBack, ImageBrush PieceBackgroundImage, GamePage gamePage)
+        //new game
+        public Board(int size, ImageBrush dackGroundImage, ImageBrush lightBack, ImageBrush PieceBackgroundImage, GamePage gamePage, MediaPlayer pegTapped,MediaPlayer pegJumped,MediaPlayer brongTap)
         {
 
             this.boardSize = size;
@@ -54,8 +64,12 @@ namespace MTProjectPegSolitaire
 
 
             this.gamePage = gamePage;
+            //sound
+            this.pegTapped = pegTapped;
+            this.brongTap = brongTap;
+            this.pegJumped = pegJumped;
         }
-        public Board(String oneStringArray,int piecesRemove, ImageBrush dackGroundImage, ImageBrush lightBack, ImageBrush PieceBackgroundImage, GamePage gamePage)
+        public Board(String oneStringArray,int piecesRemove, ImageBrush dackGroundImage, ImageBrush lightBack, ImageBrush PieceBackgroundImage, GamePage gamePage, MediaPlayer pegTapped, MediaPlayer pegJumped, MediaPlayer brongTap)
         {
             this.setBoardArrayWithOneString(oneStringArray);//creates board array
             BoardBackGroundImage = dackGroundImage;
@@ -65,6 +79,11 @@ namespace MTProjectPegSolitaire
             this.piecesRemoved = piecesRemove;
             CreateBoard();
             this.gamePage = gamePage;
+
+            //sound
+            this.pegTapped = pegTapped;
+            this.brongTap = brongTap;
+            this.pegJumped = pegJumped;
 
         }
         #endregion
@@ -643,6 +662,7 @@ namespace MTProjectPegSolitaire
             if (boardSize == 5)
             {
                 piecesLeft = totalPiece5 - piecesRemoved+1;
+                Debug.WriteLine(piecesLeft);
                 if (piecesLeft == 1) score += 1100;
 
                 timeScore = 300;
@@ -660,7 +680,7 @@ namespace MTProjectPegSolitaire
             {
                 piecesLeft = totalPiece9 - piecesRemoved+1;
                 timeScore = 500;
-                if (piecesLeft == 1) score += 3000;
+                if (piecesLeft == 1) score += 3500;
                 else if (piecesLeft == 2) score += 1500;
                 else if (piecesLeft == 3) score += 100;
                 score += piecesRemoved * 10;
@@ -676,6 +696,8 @@ namespace MTProjectPegSolitaire
         #region Buttons Events methods
         private void PieceTappedFirstTime(object sender, TappedRoutedEventArgs e)
         {
+
+
             //get piece that triger action
             Ellipse piece = (Ellipse)sender;
 
@@ -696,8 +718,11 @@ namespace MTProjectPegSolitaire
                 moves[i] = new Point(99, 99);
             }
 
-            if (CheckIfCanMove(IFromEllipseTaped, JFromEllipseTapped, moves))
+            if (CheckIfCanMove(IFromEllipseTaped, JFromEllipseTapped, moves))//if hera have a valid move
             {
+                //sound peg tapped
+                if (App.isSound) pegTapped.Play();
+
                 //make any focus ring tapped befor not visible
                 for (int i = 0; i < boardSize; i++)
                 {
@@ -735,11 +760,18 @@ namespace MTProjectPegSolitaire
                         pieceToMove = new Point(IFromEllipseTaped, JFromEllipseTapped);
                     }
                 }
-            }//if can move
+            }//if can move 
+            else//if cant move play other sound
+            {
+                if (App.isSound) brongTap.Play();
+            }
         }//PieceTapped
 
         private void PieceHolderToMove_Tapped(object sender, TappedRoutedEventArgs e)
         {
+            //add sound for correct move
+            if (App.isSound) pegJumped.Play();
+
             //remove piece to move
             RemovePiece((int)pieceToMove.X, (int)pieceToMove.Y);
             //hide focuse ring

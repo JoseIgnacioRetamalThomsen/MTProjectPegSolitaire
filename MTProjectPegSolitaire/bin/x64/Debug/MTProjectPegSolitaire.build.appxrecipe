@@ -370,6 +370,21 @@
     <AppxPackagedFile Include="C:\Users\pepe\.nuget\packages\system.xml.xmlserializer\4.0.11\lib\netcore50\System.Xml.XmlSerializer.dll">
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\Assets\brongTap.wav">
+      <PackagePath>Assets\brongTap.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\Assets\gameOverBeep.wav">
+      <PackagePath>Assets\gameOverBeep.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\Assets\pegJumped.wav">
+      <PackagePath>Assets\pegJumped.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\Assets\pegTapped.wav">
+      <PackagePath>Assets\pegTapped.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\Assets\tappedSound.wav">
+      <PackagePath>Assets\tappedSound.wav</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\Assets\greenSphere.jpg">
       <PackagePath>Assets\greenSphere.jpg</PackagePath>
     </AppxPackagedFile>

@@ -44,7 +44,7 @@ namespace MTProjectPegSolitaire
         public static int lastPiecesRemoved { get; set; }
         public static int lastPiecesLeft { get; set; }
         public static int lastScore { get; set; }
-        
+
         //highScore
         public static bool isHighScoreChecked { get; set; }
 
@@ -64,11 +64,14 @@ namespace MTProjectPegSolitaire
 
         //random for use in the full app
         public static Random random { get; set; }
+
+        public static bool isSound { get; set; }
+
         #endregion
         public App()
         {
-            
-                                   this.InitializeComponent();
+
+            this.InitializeComponent();
             this.initAppVariables();
 
             //add on loadig for local setting
@@ -86,16 +89,16 @@ namespace MTProjectPegSolitaire
                 //get last board size
                 lastBoardSize = Convert.ToInt32((localSettings.Values["BoardSize"]).ToString());
             }
-            catch 
+            catch
             {
                 //this will be if is first time runig the app, will create baord size
                 //if first time start at 5
                 lastBoardSize = 5;
                 localSettings.Values["BoardSize"] = lastBoardSize;
-                
+
             }
             //timer, just start at 0 if game is contunied will be load from local storage
-                        lastTotalTimeSecond = 0;
+            lastTotalTimeSecond = 0;
             lastTotalTime = "";
             lastPiecesRemoved = 0;
             lastPiecesLeft = 0;
@@ -110,6 +113,8 @@ namespace MTProjectPegSolitaire
             highScoresName = new String[3];
             isOnGameOverPage = false;
             random = new Random();
+
+            isSound = true;
         }
 
 

@@ -121,6 +121,11 @@
     <None Include="MTProjectPegSolitaire_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\brongTap.wav" />
+    <Content Include="Assets\gameOverBeep.wav" />
+    <Content Include="Assets\pegJumped.wav" />
+    <Content Include="Assets\pegTapped.wav" />
+    <Content Include="Assets\tappedSound.wav" />
     <Content Include="Assets\greenSphere.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
