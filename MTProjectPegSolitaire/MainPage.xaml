@@ -46,8 +46,13 @@
             <RadioButton x:Name="MediunRB" Content="Medium" Tag="7" Checked="SelectDiff_Checked" Margin="3"/>
             <RadioButton x:Name="HardRB" Content="Hard" Tag="9" Checked="SelectDiff_Checked"  Margin="3"/>
         </StackPanel>
-
+        <StackPanel  Orientation="Horizontal"  HorizontalAlignment="Center" VerticalAlignment="Center" >
+            
+            <RadioButton x:Name="soundOn" Content="Sound On" Tag="5" Checked="soundOn_Checked"  Margin="3"/>
+            <RadioButton x:Name="soundOff" Content="Sound Off" Tag="7" Checked="soundOn_Checked" Margin="3"/>
+        </StackPanel>
         <Button x:Name="ContinueButton" Visibility="Collapsed" Content="CONTINUE" Tapped="ContinueButton_Tapped"  Width="200" Style="{StaticResource PivotTitleContentControlStyle}" Foreground="White" HorizontalAlignment="Center" Margin="0,20,0,5"></Button>
         <Button Content="NEW   GAME" MinWidth="200" Tapped="Button_NewGame_Tapped"  Style="{StaticResource PivotTitleContentControlStyle}" Foreground="White" HorizontalAlignment="Center" Margin="0,20,0,5"></Button>
     </StackPanel>
+
 </Page>

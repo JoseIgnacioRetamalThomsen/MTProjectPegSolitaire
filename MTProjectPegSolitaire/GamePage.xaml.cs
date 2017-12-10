@@ -8,6 +8,8 @@ using System.Threading;
 using System.Threading.Tasks;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Media.Core;
+using Windows.Media.Playback;
 using Windows.Storage;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -36,7 +38,10 @@ namespace MTProjectPegSolitaire
     /// </summary>
     public sealed partial class GamePage : Page
     {
+        
         #region constructors
+
+        
         public GamePage()
         {
             this.InitializeComponent();
@@ -46,10 +51,15 @@ namespace MTProjectPegSolitaire
             TimerSP.Children.Add(App.timer);
 
             //create board
+            //images
             ImageBrush BoardBackground = new ImageBrush() { ImageSource = new BitmapImage(new Uri(this.BaseUri, @"Assets\Wood_1.jpg")) };
             BoardBackground.Stretch = Stretch.UniformToFill;
             ImageBrush HoleBackground = new ImageBrush() { ImageSource = new BitmapImage(new Uri(this.BaseUri, @"Assets\lightBack.jpg")) };
             ImageBrush PieceBackgrounImage = new ImageBrush() { ImageSource = new BitmapImage(new Uri(this.BaseUri, @"Assets\greenSphere.jpg")) };
+            //sound 
+           
+            
+          
 
             //if continue game or new game
             if (App.continueGame)
@@ -58,7 +68,7 @@ namespace MTProjectPegSolitaire
                 String oneArrayBoard = localSettings.Values["boardArray"].ToString();
                 int piecesRmoves = Convert.ToInt32(localSettings.Values["LastPiecesRemoves"]) - 1;
                 int timeToContinue = Convert.ToInt32(localSettings.Values["LastTime"]);
-                App.board = new Board(oneArrayBoard, piecesRmoves, BoardBackground, HoleBackground, PieceBackgrounImage, this);
+                App.board = new Board(oneArrayBoard, piecesRmoves, BoardBackground, HoleBackground, PieceBackgrounImage, this, App.pegTapped, App.pegJumped, App.brongTap);
                 GamePageMainSP.Children.Add(App.board);
                 App.board.placePieceFromArray();
                 App.timer.setTime(timeToContinue);
@@ -66,7 +76,7 @@ namespace MTProjectPegSolitaire
             }
             else
             {
-                App.board = new Board(App.lastBoardSize, BoardBackground, HoleBackground, PieceBackgrounImage, this);
+                App.board = new Board(App.lastBoardSize, BoardBackground, HoleBackground, PieceBackgrounImage, this, App.pegTapped, App.pegJumped, App.brongTap);
 
 
 
@@ -76,6 +86,9 @@ namespace MTProjectPegSolitaire
                 App.timer.StartTimer();
             }
             App.board.setBoardArrayWithOneString(App.board.getBoardArrayInOneString());
+
+            //sound for back nad geme over
+      
         }//end contructor
 
         #endregion
@@ -84,6 +97,10 @@ namespace MTProjectPegSolitaire
         //navigate to endgame page after 1 second delay
         public async Task GameOverAsync()
         {
+            //sound
+            if (App.isSound) App.gameOverSound.Play();
+
+
             //show game over
             GameOverTF.Visibility = Visibility.Visible;
 
@@ -110,13 +127,17 @@ namespace MTProjectPegSolitaire
         //come backt to mainPage
         private void BackButton_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            //save board to local storage
-            ApplicationDataContainer localSettings = ApplicationData.Current.LocalSettings;
+            //sound
+          if (App.isSound) App.tappedSound.Play();
+
+             //save board to local storage
+             ApplicationDataContainer localSettings = ApplicationData.Current.LocalSettings;
             localSettings.Values["boardArray"] = App.board.getBoardArrayInOneString();
             localSettings.Values["LastTime"] = App.timer.GetTotalSeconds();
             localSettings.Values["LastPiecesRemoves"] = App.board.GetPieceRemoved();
 
             this.Frame.Navigate(typeof(MainPage), null);
+            App.timer.StopTimer();
         }
         #endregion
     }

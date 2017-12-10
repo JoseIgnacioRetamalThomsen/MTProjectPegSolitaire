@@ -6,6 +6,8 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Media.Core;
+using Windows.Media.Playback;
 using Windows.Storage;
 using Windows.UI;
 using Windows.UI.Xaml;
@@ -24,16 +26,20 @@ using Windows.UI.Xaml.Shapes;
  *   17/11/2017 File created: Jose Ignacio Retamal.
  *   20/11/2017 Static GUI added to xamal file : Jose Ignacio Retamal.
  *   09/12/2017 show ScoreBoard  :Jose Ignacio Retamal
+ *   10/12/2017 audio :Jose Retamal
  */
 
 namespace MTProjectPegSolitaire
 {
     /// <summary>
-    /// Landig page of the app
+    /// Home page of the app
     /// 
     /// </summary>
     public sealed partial class MainPage : Page
     {
+       
+        bool loadingSettings = true;
+        #region constructors
 
         public MainPage()
 
@@ -44,8 +50,13 @@ namespace MTProjectPegSolitaire
             this.Loading += LoadBoardSize_Loading;
             this.Loading += LoadScores_Loding;
             this.Loading += LoadGame_Loading;
+            this.Loading += LoadIsSound_Loading;
+            //create sound
+            
 
         }
+
+        
 
         private void LoadGame_Loading(FrameworkElement sender, object args)
         {
@@ -89,7 +100,8 @@ namespace MTProjectPegSolitaire
             HighScore2Name.Text = "2ND  " + App.highScoresName[1];
             HighScore3Name.Text = "3RD  " + App.highScoresName[2];
         }
-
+        #endregion
+        #region loading methods
 
         private void LoadScores_Loding(FrameworkElement sender, object args)
         {
@@ -109,7 +121,7 @@ namespace MTProjectPegSolitaire
             }
             catch //create score if do not exist
             {
-                // Debug.WriteLine(exception);
+                
                 localSettings.Values["HighScore1"] = 3475;
                 localSettings.Values["HighScore2"] = 1994;
                 localSettings.Values["HighScore3"] = 679;
@@ -145,9 +157,24 @@ namespace MTProjectPegSolitaire
                 HardRB.IsChecked = true;
             }
         }
+        private void LoadIsSound_Loading(FrameworkElement sender, object args)
+        {
+            if (App.isSound == false)
+            {
+                soundOff.IsChecked = true;
+            }else
+            {
+                soundOn.IsChecked = true;
+            }
 
+            loadingSettings = false;
+        }
+        #endregion
+        #region butons and radio button listerners
         private void Button_NewGame_Tapped(object sender, TappedRoutedEventArgs e)
         {
+            //sound
+            if (App.isSound) App.tappedSound.Play();
             //flas for new game
             App.continueGame = false;
             this.Frame.Navigate(typeof(GamePage), null);
@@ -156,6 +183,9 @@ namespace MTProjectPegSolitaire
 
         private void SelectDiff_Checked(object sender, RoutedEventArgs e)
         {
+            //sound
+            if (App.isSound && !loadingSettings) App.tappedSound.Play();
+
             //set board size and naviete to game , mean start the game
             if (EasyRB.IsChecked == true)
             {
@@ -184,29 +214,53 @@ namespace MTProjectPegSolitaire
 
         private void ContinueButton_Tapped(object sender, TappedRoutedEventArgs e)
         {
+            //sound
+           if (App.isSound) App.tappedSound.Play();
             App.continueGame = true;
             this.Frame.Navigate(typeof(GamePage), null);
         }
 
-        private void Button_Tapped(object sender, TappedRoutedEventArgs e)
-        {
-
-        }
+        
 
         //method for check hisgh score or how to play
         private void instructiosRB_Checked(object sender, RoutedEventArgs e)
         {
+            //sound
+            if (App.isSound&&!loadingSettings) App.tappedSound.Play();
 
             if (scoreTableRB.IsChecked == true)
             {
+               
                 HowToPlaySP.Visibility = Visibility.Collapsed;
                 highScoreSP.Visibility = Visibility.Visible;
             }
             else
             {
+                
                 HowToPlaySP.Visibility = Visibility.Visible;
                 highScoreSP.Visibility = Visibility.Collapsed;
             }
         }
+        private void soundOn_Checked(object sender, RoutedEventArgs e)
+        {
+            ApplicationDataContainer localSettings = ApplicationData.Current.LocalSettings;
+            //sound
+            if (soundOn.IsChecked == true)
+            {
+                if(!loadingSettings)App.tappedSound.Play();
+
+                App.isSound = true;
+                localSettings.Values["isSound"] = "true";
+            }
+            else
+            {
+                App.isSound = false;
+                localSettings.Values["isSound"] = "false";
+            }
+
+        }
+        #endregion
+
+
     }
 }
