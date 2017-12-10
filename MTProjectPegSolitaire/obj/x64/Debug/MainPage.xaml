@@ -48,7 +48,7 @@
         </StackPanel>
         <StackPanel  Orientation="Horizontal"  HorizontalAlignment="Center" VerticalAlignment="Center" >
             
-            <RadioButton x:ConnectionId='5' x:Name="soundOn" Content="Sound On" Tag="5"                            Margin="3" IsChecked="True"/>
+            <RadioButton x:ConnectionId='5' x:Name="soundOn" Content="Sound On" Tag="5"                            Margin="3"/>
             <RadioButton x:ConnectionId='6' x:Name="soundOff" Content="Sound Off" Tag="7"                           Margin="3"/>
         </StackPanel>
         <Button x:ConnectionId='3' x:Name="ContinueButton" Visibility="Collapsed" Content="CONTINUE"                                 Width="200" Style="{StaticResource PivotTitleContentControlStyle}" Foreground="White" HorizontalAlignment="Center" Margin="0,20,0,5"></Button>

@@ -121,6 +121,8 @@
     <None Include="MTProjectPegSolitaire_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\aplauseHigh.wav" />
+    <Content Include="Assets\aplauseNor.wav" />
     <Content Include="Assets\brongTap.wav" />
     <Content Include="Assets\gameOverBeep.wav" />
     <Content Include="Assets\pegJumped.wav" />

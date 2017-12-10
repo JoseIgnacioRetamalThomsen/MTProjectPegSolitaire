@@ -143,6 +143,13 @@ namespace MTProjectPegSolitaire
             if (haveHighScore > 0)
             {
                 HavaHighScoreSP.Visibility = Visibility.Visible;
+                //sound
+                if (App.isSound) App.aplauseHigh.Play();
+
+            }
+            else
+            {   //sound
+                if (App.isSound) App.aplauseNor.Play();
             }
 
         }
@@ -191,7 +198,10 @@ namespace MTProjectPegSolitaire
 
         private void HOME_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            ApplicationDataContainer localSettings = ApplicationData.Current.LocalSettings;
+            //sound
+            if (App.isSound) App.tappedSound.Play();
+
+                ApplicationDataContainer localSettings = ApplicationData.Current.LocalSettings;
             //reset game over for not able to continue a game when is over
             //is for fix a bug taht i cant find...
             localSettings.Values["boardArray"] = "0";

@@ -7,6 +7,8 @@ using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Media.Core;
+using Windows.Media.Playback;
 using Windows.Storage;
 using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
@@ -67,6 +69,14 @@ namespace MTProjectPegSolitaire
 
         public static bool isSound { get; set; }
 
+        //sound can be created only once or will crash the program
+        public static MediaPlayer tappedSound = new MediaPlayer();
+        public static MediaPlayer pegTapped = new MediaPlayer();
+        public static MediaPlayer pegJumped = new MediaPlayer();
+        public static MediaPlayer brongTap = new MediaPlayer();
+        public static MediaPlayer gameOverSound = new MediaPlayer();
+        public static MediaPlayer aplauseNor = new MediaPlayer();
+        public static MediaPlayer aplauseHigh = new MediaPlayer();
         #endregion
         public App()
         {
@@ -79,6 +89,13 @@ namespace MTProjectPegSolitaire
             //prefered size
             ApplicationView.PreferredLaunchViewSize = new Size(700, 750);
             ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.PreferredLaunchViewSize;
+            tappedSound.Source = MediaSource.CreateFromUri(new Uri("ms-appx:///Assets/tappedSound.wav"));
+            App.pegTapped.Source = MediaSource.CreateFromUri(new Uri("ms-appx:///Assets/pegTapped.wav"));
+            pegJumped.Source = MediaSource.CreateFromUri(new Uri("ms-appx:///Assets/pegJumped.wav"));
+            brongTap.Source = MediaSource.CreateFromUri(new Uri("ms-appx:///Assets/brongTap.wav"));
+            gameOverSound.Source = MediaSource.CreateFromUri(new Uri("ms-appx:///Assets/gameOverBeep.wav"));
+            aplauseNor.Source = MediaSource.CreateFromUri(new Uri("ms-appx:///Assets/aplauseNor.wav"));
+            aplauseHigh.Source = MediaSource.CreateFromUri(new Uri("ms-appx:///Assets/aplauseHigh.wav"));
         }
         private void initAppVariables()
         {
@@ -97,6 +114,15 @@ namespace MTProjectPegSolitaire
                 localSettings.Values["BoardSize"] = lastBoardSize;
 
             }
+            try
+            {
+                isSound = bool.Parse(localSettings.Values["isSound"].ToString());
+            }
+            catch
+            {
+                localSettings.Values["isSound"] = "true";
+                isSound = true;
+            }
             //timer, just start at 0 if game is contunied will be load from local storage
             lastTotalTimeSecond = 0;
             lastTotalTime = "";
@@ -114,7 +140,7 @@ namespace MTProjectPegSolitaire
             isOnGameOverPage = false;
             random = new Random();
 
-            isSound = true;
+            
         }
 
 

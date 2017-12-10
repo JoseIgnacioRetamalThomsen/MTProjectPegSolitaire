@@ -37,7 +37,7 @@ namespace MTProjectPegSolitaire
     /// </summary>
     public sealed partial class MainPage : Page
     {
-        MediaPlayer tappedSound = new MediaPlayer();
+       
         bool loadingSettings = true;
         #region constructors
 
@@ -52,7 +52,7 @@ namespace MTProjectPegSolitaire
             this.Loading += LoadGame_Loading;
             this.Loading += LoadIsSound_Loading;
             //create sound
-            tappedSound.Source = MediaSource.CreateFromUri(new Uri("ms-appx:///Assets/tappedSound.wav"));
+            
 
         }
 
@@ -121,7 +121,7 @@ namespace MTProjectPegSolitaire
             }
             catch //create score if do not exist
             {
-                // Debug.WriteLine(exception);
+                
                 localSettings.Values["HighScore1"] = 3475;
                 localSettings.Values["HighScore2"] = 1994;
                 localSettings.Values["HighScore3"] = 679;
@@ -162,7 +162,11 @@ namespace MTProjectPegSolitaire
             if (App.isSound == false)
             {
                 soundOff.IsChecked = true;
+            }else
+            {
+                soundOn.IsChecked = true;
             }
+
             loadingSettings = false;
         }
         #endregion
@@ -170,7 +174,7 @@ namespace MTProjectPegSolitaire
         private void Button_NewGame_Tapped(object sender, TappedRoutedEventArgs e)
         {
             //sound
-            if (App.isSound) tappedSound.Play();
+            if (App.isSound) App.tappedSound.Play();
             //flas for new game
             App.continueGame = false;
             this.Frame.Navigate(typeof(GamePage), null);
@@ -180,7 +184,7 @@ namespace MTProjectPegSolitaire
         private void SelectDiff_Checked(object sender, RoutedEventArgs e)
         {
             //sound
-            if (App.isSound && !loadingSettings) tappedSound.Play();
+            if (App.isSound && !loadingSettings) App.tappedSound.Play();
 
             //set board size and naviete to game , mean start the game
             if (EasyRB.IsChecked == true)
@@ -211,7 +215,7 @@ namespace MTProjectPegSolitaire
         private void ContinueButton_Tapped(object sender, TappedRoutedEventArgs e)
         {
             //sound
-           if (App.isSound) tappedSound.Play();
+           if (App.isSound) App.tappedSound.Play();
             App.continueGame = true;
             this.Frame.Navigate(typeof(GamePage), null);
         }
@@ -222,7 +226,7 @@ namespace MTProjectPegSolitaire
         private void instructiosRB_Checked(object sender, RoutedEventArgs e)
         {
             //sound
-            if (App.isSound&&!loadingSettings) tappedSound.Play();
+            if (App.isSound&&!loadingSettings) App.tappedSound.Play();
 
             if (scoreTableRB.IsChecked == true)
             {
@@ -239,16 +243,19 @@ namespace MTProjectPegSolitaire
         }
         private void soundOn_Checked(object sender, RoutedEventArgs e)
         {
+            ApplicationDataContainer localSettings = ApplicationData.Current.LocalSettings;
             //sound
             if (soundOn.IsChecked == true)
             {
-                if(!loadingSettings) tappedSound.Play();
+                if(!loadingSettings)App.tappedSound.Play();
 
                 App.isSound = true;
+                localSettings.Values["isSound"] = "true";
             }
             else
             {
                 App.isSound = false;
+                localSettings.Values["isSound"] = "false";
             }
 
         }

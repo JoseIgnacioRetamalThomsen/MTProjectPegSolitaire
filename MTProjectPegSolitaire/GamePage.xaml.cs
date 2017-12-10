@@ -38,9 +38,10 @@ namespace MTProjectPegSolitaire
     /// </summary>
     public sealed partial class GamePage : Page
     {
-        MediaPlayer tappedSound = new MediaPlayer();
-        MediaPlayer gameOverSound = new MediaPlayer();
+        
         #region constructors
+
+        
         public GamePage()
         {
             this.InitializeComponent();
@@ -56,12 +57,9 @@ namespace MTProjectPegSolitaire
             ImageBrush HoleBackground = new ImageBrush() { ImageSource = new BitmapImage(new Uri(this.BaseUri, @"Assets\lightBack.jpg")) };
             ImageBrush PieceBackgrounImage = new ImageBrush() { ImageSource = new BitmapImage(new Uri(this.BaseUri, @"Assets\greenSphere.jpg")) };
             //sound 
-            MediaPlayer pegTapped = new MediaPlayer();
-            pegTapped.Source = MediaSource.CreateFromUri(new Uri("ms-appx:///Assets/pegTapped.wav"));
-            MediaPlayer pegJumped = new MediaPlayer();
-            pegJumped.Source = MediaSource.CreateFromUri(new Uri("ms-appx:///Assets/pegJumped.wav"));
-            MediaPlayer brongTap = new MediaPlayer();
-            brongTap.Source = MediaSource.CreateFromUri(new Uri("ms-appx:///Assets/brongTap.wav"));
+           
+            
+          
 
             //if continue game or new game
             if (App.continueGame)
@@ -70,7 +68,7 @@ namespace MTProjectPegSolitaire
                 String oneArrayBoard = localSettings.Values["boardArray"].ToString();
                 int piecesRmoves = Convert.ToInt32(localSettings.Values["LastPiecesRemoves"]) - 1;
                 int timeToContinue = Convert.ToInt32(localSettings.Values["LastTime"]);
-                App.board = new Board(oneArrayBoard, piecesRmoves, BoardBackground, HoleBackground, PieceBackgrounImage, this, pegTapped, pegJumped, brongTap);
+                App.board = new Board(oneArrayBoard, piecesRmoves, BoardBackground, HoleBackground, PieceBackgrounImage, this, App.pegTapped, App.pegJumped, App.brongTap);
                 GamePageMainSP.Children.Add(App.board);
                 App.board.placePieceFromArray();
                 App.timer.setTime(timeToContinue);
@@ -78,7 +76,7 @@ namespace MTProjectPegSolitaire
             }
             else
             {
-                App.board = new Board(App.lastBoardSize, BoardBackground, HoleBackground, PieceBackgrounImage, this, pegTapped, pegJumped, brongTap);
+                App.board = new Board(App.lastBoardSize, BoardBackground, HoleBackground, PieceBackgrounImage, this, App.pegTapped, App.pegJumped, App.brongTap);
 
 
 
@@ -90,8 +88,7 @@ namespace MTProjectPegSolitaire
             App.board.setBoardArrayWithOneString(App.board.getBoardArrayInOneString());
 
             //sound for back nad geme over
-            tappedSound.Source = MediaSource.CreateFromUri(new Uri("ms-appx:///Assets/tappedSound.wav"));
-            gameOverSound.Source = MediaSource.CreateFromUri(new Uri("ms-appx:///Assets/gameOverBeep.wav"));
+      
         }//end contructor
 
         #endregion
@@ -101,7 +98,7 @@ namespace MTProjectPegSolitaire
         public async Task GameOverAsync()
         {
             //sound
-            if (App.isSound) gameOverSound.Play();
+            if (App.isSound) App.gameOverSound.Play();
 
 
             //show game over
@@ -131,7 +128,7 @@ namespace MTProjectPegSolitaire
         private void BackButton_Tapped(object sender, TappedRoutedEventArgs e)
         {
             //sound
-            if (App.isSound) tappedSound.Play();
+          if (App.isSound) App.tappedSound.Play();
 
              //save board to local storage
              ApplicationDataContainer localSettings = ApplicationData.Current.LocalSettings;
@@ -140,6 +137,7 @@ namespace MTProjectPegSolitaire
             localSettings.Values["LastPiecesRemoves"] = App.board.GetPieceRemoved();
 
             this.Frame.Navigate(typeof(MainPage), null);
+            App.timer.StopTimer();
         }
         #endregion
     }
