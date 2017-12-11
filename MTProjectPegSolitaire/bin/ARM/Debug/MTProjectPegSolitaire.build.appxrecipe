@@ -8,24 +8,24 @@
     <TargetOsDescription>Windows 10.0</TargetOsDescription>
     <SolutionConfiguration>Debug|ARM</SolutionConfiguration>
     <PackageArchitecture>arm</PackageArchitecture>
-    <PackageIdentityName>7a75daee-7f39-4dc3-b828-aa8269fc0800</PackageIdentityName>
-    <PackageIdentityPublisher>CN=Pepe</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\pepe\Documents\New folder\MTProjectPegSolitaire\MTProjectPegSolitaire\obj\ARM\Debug\</IntermediateOutputPath>
+    <PackageIdentityName>c8b3b3ee-b5c3-458b-8ba3-ff283e646445</PackageIdentityName>
+    <PackageIdentityPublisher>CN=C257EEA6-5F4C-4B8A-B5EA-B97FE77D6454</PackageIdentityPublisher>
+    <IntermediateOutputPath>C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\obj\ARM\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\pepe\Documents\New folder\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\ARM\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\bin\ARM\Debug\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\pepe\Documents\New folder\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\ARM\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\bin\ARM\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\pepe\Documents\New folder\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\ARM\Debug\MTProjectPegSolitaire.exe">
+    <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\bin\ARM\Debug\MTProjectPegSolitaire.exe">
       <PackagePath>entrypoint\MTProjectPegSolitaire.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pepe\.nuget\packages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
@@ -367,56 +367,80 @@
     <AppxPackagedFile Include="C:\Users\pepe\.nuget\packages\system.xml.xmlserializer\4.0.11\lib\netcore50\System.Xml.XmlSerializer.dll">
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pepe\Documents\New folder\MTProjectPegSolitaire\MTProjectPegSolitaire\Assets\BlackWoodBackground.jpg">
-      <PackagePath>Assets\BlackWoodBackground.jpg</PackagePath>
+    <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\Assets\aplauseHigh.wav">
+      <PackagePath>Assets\aplauseHigh.wav</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pepe\Documents\New folder\MTProjectPegSolitaire\MTProjectPegSolitaire\Assets\greenSphere.jpg">
+    <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\Assets\aplauseNor.wav">
+      <PackagePath>Assets\aplauseNor.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\Assets\brongTap.wav">
+      <PackagePath>Assets\brongTap.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\Assets\gameOverBeep.wav">
+      <PackagePath>Assets\gameOverBeep.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\Assets\pegJumped.wav">
+      <PackagePath>Assets\pegJumped.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\Assets\pegTapped.wav">
+      <PackagePath>Assets\pegTapped.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\Assets\tappedSound.wav">
+      <PackagePath>Assets\tappedSound.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\Assets\greenSphere.jpg">
       <PackagePath>Assets\greenSphere.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pepe\Documents\New folder\MTProjectPegSolitaire\MTProjectPegSolitaire\Assets\lightBack.jpg">
+    <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\Assets\lightBack.jpg">
       <PackagePath>Assets\lightBack.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pepe\Documents\New folder\MTProjectPegSolitaire\MTProjectPegSolitaire\Properties\Default.rd.xml">
-      <PackagePath>Properties\Default.rd.xml</PackagePath>
+    <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\Assets\Wood_1.jpg">
+      <PackagePath>Assets\Wood_1.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pepe\Documents\New folder\MTProjectPegSolitaire\MTProjectPegSolitaire\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\Assets\howtoplay.png">
+      <PackagePath>Assets\howtoplay.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pepe\Documents\New folder\MTProjectPegSolitaire\MTProjectPegSolitaire\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pepe\Documents\New folder\MTProjectPegSolitaire\MTProjectPegSolitaire\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pepe\Documents\New folder\MTProjectPegSolitaire\MTProjectPegSolitaire\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pepe\Documents\New folder\MTProjectPegSolitaire\MTProjectPegSolitaire\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pepe\Documents\New folder\MTProjectPegSolitaire\MTProjectPegSolitaire\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pepe\Documents\New folder\MTProjectPegSolitaire\MTProjectPegSolitaire\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pepe\Documents\New folder\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\ARM\Debug\MTProjectPegSolitaire.xr.xml">
+    <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\Properties\Default.rd.xml">
+      <PackagePath>Properties\Default.rd.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\bin\ARM\Debug\MTProjectPegSolitaire.xr.xml">
       <PackagePath>MTProjectPegSolitaire.xr.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.15063.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pepe\Documents\New folder\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\ARM\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\bin\ARM\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pepe\Documents\New folder\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\ARM\Debug\Core\MTProjectPegSolitaire.exe">
+    <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\bin\ARM\Debug\Core\MTProjectPegSolitaire.exe">
       <PackagePath>MTProjectPegSolitaire.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

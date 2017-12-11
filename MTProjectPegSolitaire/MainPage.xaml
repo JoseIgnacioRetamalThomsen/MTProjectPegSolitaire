@@ -22,8 +22,10 @@
             </StackPanel>
             <StackPanel x:Name="highScoreSP" Visibility="Collapsed">
                 <TextBlock   Text="High Scores" HorizontalAlignment="Center"  Foreground="Gray" Style="{StaticResource HeaderTextBlockStyle}" Margin="10"></TextBlock>
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                    <TextBlock x:Name="HighScore1Name" Text="1ST No One" Width="200" Foreground="Gold"  HorizontalAlignment="Left" Margin="10,5,10,5"></TextBlock>
+                      <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+
+                    <RadioButton Checked="RadioButton_Checked" Visibility="Collapsed"></RadioButton> 
+                          <TextBlock x:Name="HighScore1Name" Text="1ST No One" Width="200" Foreground="Gold"  HorizontalAlignment="Left" Margin="10,5,10,5"></TextBlock>
                     <TextBlock x:Name="HighScore1Score" Text="0000"  Foreground="Gold" TextAlignment="Left"></TextBlock>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
@@ -47,7 +49,7 @@
             <RadioButton x:Name="HardRB" Content="Hard" Tag="9" Checked="SelectDiff_Checked"  Margin="3"/>
         </StackPanel>
         <StackPanel  Orientation="Horizontal"  HorizontalAlignment="Center" VerticalAlignment="Center" >
-            
+
             <RadioButton x:Name="soundOn" Content="Sound On" Tag="5" Checked="soundOn_Checked"  Margin="3"/>
             <RadioButton x:Name="soundOff" Content="Sound Off" Tag="7" Checked="soundOn_Checked" Margin="3"/>
         </StackPanel>

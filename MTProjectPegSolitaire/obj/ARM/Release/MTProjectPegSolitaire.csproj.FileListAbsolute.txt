@@ -439,3 +439,17 @@ C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\obj\ARM\Rel
 C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\obj\ARM\Release\ilc\intermediate\TransformedSRWR\System.Runtime.WindowsRuntime.dll.ILTransformTask.repro
 C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\obj\ARM\Release\ilc\intermediate\TransformedSRWR\System.Runtime.WindowsRuntime.pdb
 C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\obj\ARM\Release\MTProjectPegSolitaire.csprojResolveAssemblyReference.cache
+C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\bin\ARM\Release\ilc\Assets\aplauseHigh.wav
+C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\bin\ARM\Release\ilc\Assets\aplauseNor.wav
+C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\bin\ARM\Release\ilc\Assets\brongTap.wav
+C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\bin\ARM\Release\ilc\Assets\gameOverBeep.wav
+C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\bin\ARM\Release\ilc\Assets\pegJumped.wav
+C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\bin\ARM\Release\ilc\Assets\pegTapped.wav
+C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\bin\ARM\Release\ilc\Assets\tappedSound.wav
+C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\obj\ARM\Release\ilc\in\Assets\aplauseHigh.wav
+C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\obj\ARM\Release\ilc\in\Assets\aplauseNor.wav
+C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\obj\ARM\Release\ilc\in\Assets\brongTap.wav
+C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\obj\ARM\Release\ilc\in\Assets\gameOverBeep.wav
+C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\obj\ARM\Release\ilc\in\Assets\pegJumped.wav
+C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\obj\ARM\Release\ilc\in\Assets\pegTapped.wav
+C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\obj\ARM\Release\ilc\in\Assets\tappedSound.wav

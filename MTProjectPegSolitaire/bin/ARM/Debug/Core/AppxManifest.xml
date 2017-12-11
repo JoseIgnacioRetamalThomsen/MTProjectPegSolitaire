@@ -7,11 +7,11 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="7a75daee-7f39-4dc3-b828-aa8269fc0800" Publisher="CN=Pepe" Version="1.0.0.0" ProcessorArchitecture="arm" />
-  <mp:PhoneIdentity PhoneProductId="7a75daee-7f39-4dc3-b828-aa8269fc0800" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Identity Name="6861PEPE.TrianglePegSolitaire" Publisher="CN=C257EEA6-5F4C-4B8A-B5EA-B97FE77D6454" Version="1.1.17.0" ProcessorArchitecture="arm" />
+  <mp:PhoneIdentity PhoneProductId="c8b3b3ee-b5c3-458b-8ba3-ff283e646445" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
-    <DisplayName>MTProjectPegSolitaire</DisplayName>
-    <PublisherDisplayName>Pepe</PublisherDisplayName>
+    <DisplayName>Triangle Peg Solitaire</DisplayName>
+    <PublisherDisplayName>_PEPE_</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
   <Dependencies>
@@ -24,9 +24,9 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="MTProjectPegSolitaire.exe" EntryPoint="MTProjectPegSolitaire.App">
-      <uap:VisualElements DisplayName="MTProjectPegSolitaire" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="MTProjectPegSolitaire" BackgroundColor="transparent">
-        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" />
-        <uap:SplashScreen Image="Assets\SplashScreen.png" />
+      <uap:VisualElements DisplayName="Triangle Peg Solitaire" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="MTProjectPegSolitaire" BackgroundColor="transparent">
+        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"></uap:DefaultTile>
+        <uap:SplashScreen Image="Assets\SplashScreen.png" BackgroundColor="white" />
       </uap:VisualElements>
     </Application>
   </Applications>

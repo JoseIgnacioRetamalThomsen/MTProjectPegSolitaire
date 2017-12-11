@@ -8,9 +8,9 @@
     <TargetOsDescription>Windows 10.0</TargetOsDescription>
     <SolutionConfiguration>Debug|x86</SolutionConfiguration>
     <PackageArchitecture>x86</PackageArchitecture>
-    <PackageIdentityName>7a75daee-7f39-4dc3-b828-aa8269fc0800</PackageIdentityName>
-    <PackageIdentityPublisher>CN=Pepe</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\pepe\Documents\VSProjects\MTProjectPegSolitaire\MTProjectPegSolitaire\obj\x86\Debug\</IntermediateOutputPath>
+    <PackageIdentityName>c8b3b3ee-b5c3-458b-8ba3-ff283e646445</PackageIdentityName>
+    <PackageIdentityPublisher>CN=C257EEA6-5F4C-4B8A-B5EA-B97FE77D6454</PackageIdentityPublisher>
+    <IntermediateOutputPath>C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,26 +18,26 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\pepe\Documents\VSProjects\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>5B1EC9249FE8A7CAD55F2C8B3C72B10432FBAE273032A688A592A173BAC88E69</RegisteredManifestChecksum>
-    <RegisteredPackageMoniker>7a75daee-7f39-4dc3-b828-aa8269fc0800_1.0.0.0_x86__wybb86je8jthg</RegisteredPackageMoniker>
-    <RegisteredUserModeAppID>7a75daee-7f39-4dc3-b828-aa8269fc0800_wybb86je8jthg!App</RegisteredUserModeAppID>
-    <RegisteredPackageID>7a75daee-7f39-4dc3-b828-aa8269fc0800</RegisteredPackageID>
-    <RegisteredPackagePublisher>CN=Pepe</RegisteredPackagePublisher>
-    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <LayoutDir>C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\bin\x86\Debug\AppX</LayoutDir>
+    <RegisteredManifestChecksum>F9C4C95C796652AF56189740111AB78BE66ECCEA62F0AEAEC1676BE53669CACA</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>6861PEPE.TrianglePegSolitaire_1.1.10.0_x86__qjv2gsarhqndc</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>6861PEPE.TrianglePegSolitaire_qjv2gsarhqndc!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>6861PEPE.TrianglePegSolitaire</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=C257EEA6-5F4C-4B8A-B5EA-B97FE77D6454</RegisteredPackagePublisher>
+    <RegisteredVersion>1.1.10.0</RegisteredVersion>
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\pepe\Documents\VSProjects\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-11-21T21:39:32.406</Modified>
+      <Modified>2017-12-10T23:53:12.841</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Debug\MTProjectPegSolitaire.exe">
+    <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\bin\x86\Debug\MTProjectPegSolitaire.exe">
       <PackagePath>entrypoint\MTProjectPegSolitaire.exe</PackagePath>
-      <Modified>2017-11-21T21:39:31.932</Modified>
+      <Modified>2017-12-10T23:53:12.229</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pepe\.nuget\packages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -495,72 +495,104 @@
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
       <Modified>2016-06-11T22:15:04.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\MTProjectPegSolitaire\MTProjectPegSolitaire\Assets\BlackWoodBackground.jpg">
-      <PackagePath>Assets\BlackWoodBackground.jpg</PackagePath>
-      <Modified>2017-11-19T16:01:46.984</Modified>
+    <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\Assets\aplauseHigh.wav">
+      <PackagePath>Assets\aplauseHigh.wav</PackagePath>
+      <Modified>2017-12-10T22:50:30.498</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\MTProjectPegSolitaire\MTProjectPegSolitaire\Assets\greenSphere.jpg">
+    <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\Assets\aplauseNor.wav">
+      <PackagePath>Assets\aplauseNor.wav</PackagePath>
+      <Modified>2017-12-10T22:50:27.704</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\Assets\brongTap.wav">
+      <PackagePath>Assets\brongTap.wav</PackagePath>
+      <Modified>2017-12-10T20:55:11.331</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\Assets\gameOverBeep.wav">
+      <PackagePath>Assets\gameOverBeep.wav</PackagePath>
+      <Modified>2017-12-10T21:15:02.920</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\Assets\pegJumped.wav">
+      <PackagePath>Assets\pegJumped.wav</PackagePath>
+      <Modified>2017-12-10T20:54:35.973</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\Assets\pegTapped.wav">
+      <PackagePath>Assets\pegTapped.wav</PackagePath>
+      <Modified>2017-12-10T20:52:56.147</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\Assets\tappedSound.wav">
+      <PackagePath>Assets\tappedSound.wav</PackagePath>
+      <Modified>2017-12-10T20:16:59.263</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\Assets\greenSphere.jpg">
       <PackagePath>Assets\greenSphere.jpg</PackagePath>
-      <Modified>2017-11-19T16:01:46.998</Modified>
+      <Modified>2017-12-08T23:24:23.210</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\MTProjectPegSolitaire\MTProjectPegSolitaire\Assets\lightBack.jpg">
+    <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\Assets\lightBack.jpg">
       <PackagePath>Assets\lightBack.jpg</PackagePath>
-      <Modified>2017-11-19T16:01:47.003</Modified>
+      <Modified>2017-12-08T23:24:23.210</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\MTProjectPegSolitaire\MTProjectPegSolitaire\Properties\Default.rd.xml">
-      <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2017-11-19T16:01:47.067</Modified>
+    <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\Assets\Wood_1.jpg">
+      <PackagePath>Assets\Wood_1.jpg</PackagePath>
+      <Modified>2017-12-08T23:24:23.210</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\MTProjectPegSolitaire\MTProjectPegSolitaire\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\Assets\howtoplay.png">
+      <PackagePath>Assets\howtoplay.png</PackagePath>
+      <Modified>2017-12-09T15:46:06.251</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2017-11-19T16:01:46.986</Modified>
+      <Modified>2017-12-08T23:24:23.195</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\MTProjectPegSolitaire\MTProjectPegSolitaire\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-11-19T16:01:46.987</Modified>
+      <Modified>2017-12-10T23:18:46.002</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\MTProjectPegSolitaire\MTProjectPegSolitaire\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-11-19T16:01:46.989</Modified>
+      <Modified>2017-12-10T23:23:21.392</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\MTProjectPegSolitaire\MTProjectPegSolitaire\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-11-19T16:01:46.990</Modified>
+      <Modified>2017-12-10T23:21:04.444</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\MTProjectPegSolitaire\MTProjectPegSolitaire\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-11-19T16:01:46.991</Modified>
+      <Modified>2017-12-10T23:25:50.508</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\MTProjectPegSolitaire\MTProjectPegSolitaire\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-11-19T16:01:46.992</Modified>
+      <Modified>2017-12-10T23:22:32.107</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\MTProjectPegSolitaire\MTProjectPegSolitaire\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-11-19T16:01:46.994</Modified>
+      <Modified>2017-12-10T23:24:09.881</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Debug\MTProjectPegSolitaire.xr.xml">
+    <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\Properties\Default.rd.xml">
+      <PackagePath>Properties\Default.rd.xml</PackagePath>
+      <Modified>2017-12-08T23:24:23.210</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\bin\x86\Debug\MTProjectPegSolitaire.xr.xml">
       <PackagePath>MTProjectPegSolitaire.xr.xml</PackagePath>
-      <Modified>2017-11-21T21:30:21.208</Modified>
+      <Modified>2017-12-08T23:24:24.547</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.15063.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
-      <Modified>2017-11-19T08:03:41.890</Modified>
+      <Modified>2017-12-05T22:58:45.541</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-11-21T21:30:22.614</Modified>
+      <Modified>2017-12-10T23:53:12.678</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Debug\Core\MTProjectPegSolitaire.exe">
+    <AppxPackagedFile Include="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\bin\x86\Debug\Core\MTProjectPegSolitaire.exe">
       <PackagePath>MTProjectPegSolitaire.exe</PackagePath>
-      <Modified>2017-11-21T21:39:32.400</Modified>
+      <Modified>2017-12-10T23:53:12.836</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
@@ -593,36 +625,36 @@
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00.Debug</Name>
-      <Version>14.0.25547.0</Version>
+      <Version>14.0.25830.2</Version>
       <Architecture>ARM</Architecture>
-      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.25547.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.25830.2, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\ARM\Microsoft.VCLibs.ARM.Debug.14.00.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00.Debug</Name>
-      <Version>14.0.25547.0</Version>
+      <Version>14.0.25830.2</Version>
       <Architecture>ARM64</Architecture>
-      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.25547.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.25830.2, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\ARM64\Microsoft.VCLibs.ARM64.Debug.14.00.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00.Debug</Name>
-      <Version>14.0.25547.0</Version>
+      <Version>14.0.25830.2</Version>
       <Architecture>x64</Architecture>
-      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.25547.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.25830.2, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x64\Microsoft.VCLibs.x64.Debug.14.00.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00.Debug</Name>
-      <Version>14.0.25547.0</Version>
+      <Version>14.0.25830.2</Version>
       <Architecture>x86</Architecture>
-      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.25547.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.25830.2, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x86\Microsoft.VCLibs.x86.Debug.14.00.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>

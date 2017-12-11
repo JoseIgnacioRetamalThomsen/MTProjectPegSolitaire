@@ -57,6 +57,7 @@
       <RootProperty Name="Content" />
       <RootProperty Name="Tag" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="Visibility" />
       <RootEvent Name="Checked" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Image">

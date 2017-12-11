@@ -33,6 +33,26 @@
 				</Candidate>
 			</NamedResource>
 			<ResourceMapSubtree name="Assets">
+				<NamedResource name="aplauseHigh.wav" uri="ms-resource://6861PEPE.TrianglePegSolitaire/Files/Assets/aplauseHigh.wav">
+					<Candidate type="Path">
+						<Value>Assets\aplauseHigh.wav</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="aplauseNor.wav" uri="ms-resource://6861PEPE.TrianglePegSolitaire/Files/Assets/aplauseNor.wav">
+					<Candidate type="Path">
+						<Value>Assets\aplauseNor.wav</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="brongTap.wav" uri="ms-resource://6861PEPE.TrianglePegSolitaire/Files/Assets/brongTap.wav">
+					<Candidate type="Path">
+						<Value>Assets\brongTap.wav</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="gameOverBeep.wav" uri="ms-resource://6861PEPE.TrianglePegSolitaire/Files/Assets/gameOverBeep.wav">
+					<Candidate type="Path">
+						<Value>Assets\gameOverBeep.wav</Value>
+					</Candidate>
+				</NamedResource>
 				<NamedResource name="greenSphere.jpg" uri="ms-resource://6861PEPE.TrianglePegSolitaire/Files/Assets/greenSphere.jpg">
 					<Candidate type="Path">
 						<Value>Assets\greenSphere.jpg</Value>
@@ -51,6 +71,16 @@
 				<NamedResource name="LockScreenLogo.png" uri="ms-resource://6861PEPE.TrianglePegSolitaire/Files/Assets/LockScreenLogo.png">
 					<Candidate qualifiers="Scale-200" isDefault="true" type="Path">
 						<Value>Assets\LockScreenLogo.scale-200.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="pegJumped.wav" uri="ms-resource://6861PEPE.TrianglePegSolitaire/Files/Assets/pegJumped.wav">
+					<Candidate type="Path">
+						<Value>Assets\pegJumped.wav</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="pegTapped.wav" uri="ms-resource://6861PEPE.TrianglePegSolitaire/Files/Assets/pegTapped.wav">
+					<Candidate type="Path">
+						<Value>Assets\pegTapped.wav</Value>
 					</Candidate>
 				</NamedResource>
 				<NamedResource name="SplashScreen.png" uri="ms-resource://6861PEPE.TrianglePegSolitaire/Files/Assets/SplashScreen.png">
@@ -74,6 +104,11 @@
 				<NamedResource name="StoreLogo.png" uri="ms-resource://6861PEPE.TrianglePegSolitaire/Files/Assets/StoreLogo.png">
 					<Candidate type="Path">
 						<Value>Assets\StoreLogo.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="tappedSound.wav" uri="ms-resource://6861PEPE.TrianglePegSolitaire/Files/Assets/tappedSound.wav">
+					<Candidate type="Path">
+						<Value>Assets\tappedSound.wav</Value>
 					</Candidate>
 				</NamedResource>
 				<NamedResource name="Wide310x150Logo.png" uri="ms-resource://6861PEPE.TrianglePegSolitaire/Files/Assets/Wide310x150Logo.png">

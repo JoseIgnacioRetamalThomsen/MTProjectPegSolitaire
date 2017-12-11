@@ -107,7 +107,7 @@ namespace MTProjectPegSolitaire
                 //update high scores
                 App.highScores[1] = App.lastScore;
                 //Debug.WriteLine(localSettings.Values["HighScore2"]);
-                App.highScores[2] = Convert.ToInt32((localSettings.Values["HighScore2"]).ToString());
+                App.highScores[2] = Convert.ToInt32((localSettings.Values["HighScore3"]).ToString());
                 localSettings.Values["HighScore2"] = App.highScores[1];
                 localSettings.Values["HighScore3"] = App.highScores[2];
 

@@ -1,137 +1,137 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type='text/xsl' href='C:\ProgramData\Windows App Certification Kit\results.xsl'?>
-<REPORT xml:lang="en-IE" OVERALL_RESULT="PASS" VERSION="10.0.16299.15" LATEST_VERSION="TRUE" UPDATE_DOWNLOAD_URL="" TOOLSET_ARCHITECTURE="x64" SecureBoot="FALSE" APP_TYPE="UapApp" PUBLISHER_DISPLAY_NAME="CN=C257EEA6-5F4C-4B8A-B5EA-B97FE77D6454" APP_NAME="" APP_VERSION="" OSVERSION="10.0.15063.0" OS="Microsoft Windows 10 Education" PER_USER_APPLICATION="" PARTIAL_RUN="FALSE" LCID="6153" VALIDATION_TYPE="UI" ReportGenerationTime="09/12/2017 16:07:31" ID="4ac1d7ea7fefae7c627a04dc15821d94">
+<REPORT xml:lang="en-IE" OVERALL_RESULT="PASS" VERSION="10.0.16299.15" LATEST_VERSION="TRUE" UPDATE_DOWNLOAD_URL="" TOOLSET_ARCHITECTURE="x64" SecureBoot="FALSE" APP_TYPE="UapApp" PUBLISHER_DISPLAY_NAME="CN=C257EEA6-5F4C-4B8A-B5EA-B97FE77D6454" APP_NAME="" APP_VERSION="" OSVERSION="10.0.15063.0" OS="Microsoft Windows 10 Education" PER_USER_APPLICATION="" PARTIAL_RUN="FALSE" LCID="6153" VALIDATION_TYPE="UI" ReportGenerationTime="11/12/2017 00:08:22" ID="7bd116b6ee4b534583cc018369b80fd9">
   <REQUIREMENTS>
     <REQUIREMENT NUMBER="10" TITLE="Deployment and launch tests" RATIONALE="Application failures such as crashes and hangs are a major disruption to users and cause frustration. Eliminating such failures improves application stability and reliability, and overall, provides users with a better application experience.">
-      <TEST INDEX="50" NAME="Bytecode generation" DESCRIPTION="Byte code generation should be able to complete successfully for packages containing an HTML5 Windows Store app." EXECUTIONTIME="00h:00m:01s.17ms" OPTIONAL="FALSE">
+      <TEST INDEX="50" NAME="Bytecode generation" DESCRIPTION="Byte code generation should be able to complete successfully for packages containing an HTML5 Windows Store app." EXECUTIONTIME="00h:00m:01s.05ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="79" NAME="Background tasks cancelation handler" DESCRIPTION="App should implement event handler to handle background task cancelation request." EXECUTIONTIME="00h:00m:21s.33ms" OPTIONAL="FALSE">
+      <TEST INDEX="79" NAME="Background tasks cancelation handler" DESCRIPTION="App should implement event handler to handle background task cancelation request." EXECUTIONTIME="00h:00m:21s.43ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="81" NAME="Platform version launch" DESCRIPTION="App should not mis-use OSVersionInfo API to provide users functionality that is specific to the OS." EXECUTIONTIME="00h:00m:18s.48ms" OPTIONAL="FALSE">
+      <TEST INDEX="81" NAME="Platform version launch" DESCRIPTION="App should not mis-use OSVersionInfo API to provide users functionality that is specific to the OS." EXECUTIONTIME="00h:00m:18s.38ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="47" NAME="App launch" DESCRIPTION="App launch tests." EXECUTIONTIME="00h:00m:17s.95ms" OPTIONAL="FALSE">
+      <TEST INDEX="47" NAME="App launch" DESCRIPTION="App launch tests." EXECUTIONTIME="00h:00m:17s.89ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="21" NAME="Crashes and hangs" DESCRIPTION="Do not crash or hang during the testing process." EXECUTIONTIME="00h:00m:03s.06ms" OPTIONAL="FALSE">
+      <TEST INDEX="21" NAME="Crashes and hangs" DESCRIPTION="Do not crash or hang during the testing process." EXECUTIONTIME="00h:00m:02s.98ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="12" TITLE="Package compliance test" RATIONALE="The package manifest was missing one or more required attributes.">
-      <TEST INDEX="77" NAME="Application count" DESCRIPTION="One package should not define more than one app in the manifest." EXECUTIONTIME="00h:00m:01s.11ms" OPTIONAL="FALSE">
+      <TEST INDEX="77" NAME="Application count" DESCRIPTION="One package should not define more than one app in the manifest." EXECUTIONTIME="00h:00m:01s.05ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="31" NAME="App manifest" DESCRIPTION="App manifest must include valid entries for all required fields." EXECUTIONTIME="00h:00m:02s.15ms" OPTIONAL="FALSE">
+      <TEST INDEX="31" NAME="App manifest" DESCRIPTION="App manifest must include valid entries for all required fields." EXECUTIONTIME="00h:00m:02s.11ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="74" NAME="Bundle manifest" DESCRIPTION="Bundle manifest must include valid entries for all required fields." EXECUTIONTIME="00h:00m:01s.52ms" OPTIONAL="FALSE">
+      <TEST INDEX="74" NAME="Bundle manifest" DESCRIPTION="Bundle manifest must include valid entries for all required fields." EXECUTIONTIME="00h:00m:01s.99ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="75" NAME="Package size" DESCRIPTION="Package file size should not be greater than 4 gigabytes." EXECUTIONTIME="00h:00m:01s.74ms" OPTIONAL="FALSE">
+      <TEST INDEX="75" NAME="Package size" DESCRIPTION="Package file size should not be greater than 4 gigabytes." EXECUTIONTIME="00h:00m:01s.71ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="83" NAME="Restricted namespace" DESCRIPTION="Check if any restricted namespace is referenced in the appx manifest." EXECUTIONTIME="00h:00m:01s.05ms" OPTIONAL="FALSE">
+      <TEST INDEX="83" NAME="Restricted namespace" DESCRIPTION="Check if any restricted namespace is referenced in the appx manifest." EXECUTIONTIME="00h:00m:01s.01ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="14" TITLE="Windows security features test" RATIONALE="Applications must opt-into Windows security features.">
-      <TEST INDEX="33" NAME="Binary analyzer" DESCRIPTION="Analysis of security features enabled on binaries" EXECUTIONTIME="00h:00m:01s.77ms" OPTIONAL="FALSE">
+      <TEST INDEX="33" NAME="Binary analyzer" DESCRIPTION="Analysis of security features enabled on binaries" EXECUTIONTIME="00h:00m:01s.76ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="70" NAME="Banned file analyzer" DESCRIPTION="Analysis of application to detect known insecure files" EXECUTIONTIME="00h:00m:01s.29ms" OPTIONAL="FALSE">
+      <TEST INDEX="70" NAME="Banned file analyzer" DESCRIPTION="Analysis of application to detect known insecure files" EXECUTIONTIME="00h:00m:01s.27ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="62" NAME="Private code signing" DESCRIPTION="App should not package private code signing key files." EXECUTIONTIME="00h:00m:01s.39ms" OPTIONAL="FALSE">
+      <TEST INDEX="62" NAME="Private code signing" DESCRIPTION="App should not package private code signing key files." EXECUTIONTIME="00h:00m:01s.34ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="15" TITLE="Supported API test" RATIONALE="The application should only refer to the APIs allowed by the Windows SDK for Windows Store Apps.">
-      <TEST INDEX="38" NAME="Supported APIs" DESCRIPTION="Windows Store App must only use supported platform APIs." EXECUTIONTIME="00h:00m:02s.51ms" OPTIONAL="FALSE">
+      <TEST INDEX="38" NAME="Supported APIs" DESCRIPTION="Windows Store App must only use supported platform APIs." EXECUTIONTIME="00h:00m:02s.43ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="19" TITLE="App manifest resources tests" RATIONALE="The App Package Manifest should have valid resources defined in the resources.pri file, as per the App Packaging Specification and App Manifest Schema.">
-      <TEST INDEX="45" NAME="App resources" DESCRIPTION="The package should have valid resources defined in the resources.pri file." EXECUTIONTIME="00h:00m:00s.67ms" OPTIONAL="FALSE">
+      <TEST INDEX="45" NAME="App resources" DESCRIPTION="The package should have valid resources defined in the resources.pri file." EXECUTIONTIME="00h:00m:00s.64ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="61" NAME="Branding" DESCRIPTION="App should not use the default images packed by windows SDK samples or Visual Studio." EXECUTIONTIME="00h:00m:01s.85ms" OPTIONAL="FALSE">
+      <TEST INDEX="61" NAME="Branding" DESCRIPTION="App should not use the default images packed by windows SDK samples or Visual Studio." EXECUTIONTIME="00h:00m:01s.73ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="20" TITLE="Debug configuration test" RATIONALE="The App should not install any debug binaries.">
-      <TEST INDEX="46" NAME="Debug configuration" DESCRIPTION="The App should not install any debug binaries." EXECUTIONTIME="00h:00m:01s.54ms" OPTIONAL="FALSE">
+      <TEST INDEX="46" NAME="Debug configuration" DESCRIPTION="The App should not install any debug binaries." EXECUTIONTIME="00h:00m:01s.46ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="21" TITLE="File encoding test" RATIONALE="Packages containing an HTML5 Windows Store app must have correct file encoding.">
-      <TEST INDEX="49" NAME="UTF-8 file encoding" DESCRIPTION="Packages containing an HTML5 Windows Store app must have correct file encoding." EXECUTIONTIME="00h:00m:01s.14ms" OPTIONAL="FALSE">
+      <TEST INDEX="49" NAME="UTF-8 file encoding" DESCRIPTION="Packages containing an HTML5 Windows Store app must have correct file encoding." EXECUTIONTIME="00h:00m:01s.05ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="23" TITLE="App Capabilities test" RATIONALE="Packages declaring special-use capabilities will have to provide justifications during the onboarding process.">
-      <TEST INDEX="52" NAME="Special use capabilities" DESCRIPTION="Packages declaring special-use capabilities will have to provide justifications during the onboarding process." EXECUTIONTIME="00h:00m:01s.14ms" OPTIONAL="FALSE">
+      <TEST INDEX="52" NAME="Special use capabilities" DESCRIPTION="Packages declaring special-use capabilities will have to provide justifications during the onboarding process." EXECUTIONTIME="00h:00m:01s.07ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="24" TITLE="Windows Runtime metadata validation" RATIONALE="Metadata needs to be conformant and consistent across all generation sources.">
-      <TEST INDEX="56" NAME="ExclusiveTo attribute" DESCRIPTION="A class must not implement an interface that is marked ExclusiveTo another class." EXECUTIONTIME="00h:00m:08s.33ms" OPTIONAL="FALSE">
+      <TEST INDEX="56" NAME="ExclusiveTo attribute" DESCRIPTION="A class must not implement an interface that is marked ExclusiveTo another class." EXECUTIONTIME="00h:00m:08s.21ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="57" NAME="Type location" DESCRIPTION="Types must be defined in the metadata file with the longest matching namespace." EXECUTIONTIME="00h:00m:00s.90ms" OPTIONAL="FALSE">
+      <TEST INDEX="57" NAME="Type location" DESCRIPTION="Types must be defined in the metadata file with the longest matching namespace." EXECUTIONTIME="00h:00m:00s.85ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="55" NAME="Type name case-sensitivity" DESCRIPTION="Namespace and type names must not vary only by casing." EXECUTIONTIME="00h:00m:00s.78ms" OPTIONAL="FALSE">
+      <TEST INDEX="55" NAME="Type name case-sensitivity" DESCRIPTION="Namespace and type names must not vary only by casing." EXECUTIONTIME="00h:00m:00s.73ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="54" NAME="Type name correctness" DESCRIPTION="Only system types can be in the Windows namespace and no types can be in the global namespace." EXECUTIONTIME="00h:00m:00s.78ms" OPTIONAL="FALSE">
+      <TEST INDEX="54" NAME="Type name correctness" DESCRIPTION="Only system types can be in the Windows namespace and no types can be in the global namespace." EXECUTIONTIME="00h:00m:00s.73ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="58" NAME="General metadata correctness" DESCRIPTION="Metadata files must meet various requirements in order to be valid and correct." EXECUTIONTIME="00h:00m:08s.24ms" OPTIONAL="FALSE">
+      <TEST INDEX="58" NAME="General metadata correctness" DESCRIPTION="Metadata files must meet various requirements in order to be valid and correct." EXECUTIONTIME="00h:00m:08s.05ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="53" NAME="Properties" DESCRIPTION="Write-only and indexer properties may not be used. Corresponding getter and setter methods must match in type." EXECUTIONTIME="00h:00m:00s.76ms" OPTIONAL="FALSE">
+      <TEST INDEX="53" NAME="Properties" DESCRIPTION="Write-only and indexer properties may not be used. Corresponding getter and setter methods must match in type." EXECUTIONTIME="00h:00m:00s.73ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="25" TITLE="Package sanity test" RATIONALE="Validation of the app package contents to ensure correctness.">
-      <TEST INDEX="63" NAME="Platform appropriate files" DESCRIPTION="App should not install files that do not match the target processor architecture." EXECUTIONTIME="00h:00m:01s.34ms" OPTIONAL="FALSE">
+      <TEST INDEX="63" NAME="Platform appropriate files" DESCRIPTION="App should not install files that do not match the target processor architecture." EXECUTIONTIME="00h:00m:01s.30ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="66" NAME="Supported directory structure check" DESCRIPTION="Validate each file in the package for that the file name length should be less than MAX_PATH." EXECUTIONTIME="00h:00m:00s.99ms" OPTIONAL="FALSE">
+      <TEST INDEX="66" NAME="Supported directory structure check" DESCRIPTION="Validate each file in the package for that the file name length should be less than MAX_PATH." EXECUTIONTIME="00h:00m:00s.98ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="27" TITLE="Resource Usage Test" RATIONALE="WinJS background tasks need to call close() to free resource.">
-      <TEST INDEX="68" NAME="WinJS background task" DESCRIPTION="WinJS background tasks need to call close() to free resource." EXECUTIONTIME="00h:00m:01s.90ms" OPTIONAL="FALSE">
+      <TEST INDEX="68" NAME="WinJS background task" DESCRIPTION="WinJS background tasks need to call close() to free resource." EXECUTIONTIME="00h:00m:02s.37ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
@@ -139,12 +139,12 @@
   </REQUIREMENTS>
   <APPLICATIONS>
     <Installed_Programs>
-      <Program Name="6861PEPE.TrianglePegSolitaire" Type="Application" Source="AppxPackage" Publisher="CN=C257EEA6-5F4C-4B8A-B5EA-B97FE77D6454" Version="1.1.2.0" Language="6153" InstallDate="" OSVersionAtInstallTime="10.0.0.15063" RootDirPath="C:\Program Files\windowsapps\6861pepe.trianglepegsolitaire_1.1.2.0_x64__qjv2gsarhqndc" Id="0000e1ce821787c45419d88e831ef676957a00000918" HiddenArp="false">
+      <Program Name="6861PEPE.TrianglePegSolitaire" Type="Application" Source="AppxPackage" Publisher="CN=C257EEA6-5F4C-4B8A-B5EA-B97FE77D6454" Version="1.1.1.0" Language="6153" InstallDate="" OSVersionAtInstallTime="10.0.0.15063" RootDirPath="C:\Program Files\windowsapps\6861pepe.trianglepegsolitaire_1.1.1.0_x64__qjv2gsarhqndc" Id="0000cb26c4036618161991ea786ba632139c00000918" HiddenArp="false">
         <Indicators>
           <WindowsStoreAppManifestIndicators>
-            <PackageManifest PackageFullName="6861PEPE.TrianglePegSolitaire_1.1.2.0_x64__qjv2gsarhqndc">
+            <PackageManifest PackageFullName="6861PEPE.TrianglePegSolitaire_1.1.1.0_x64__qjv2gsarhqndc">
               <Package>
-                <Identity Name="6861PEPE.TrianglePegSolitaire" Publisher="CN=C257EEA6-5F4C-4B8A-B5EA-B97FE77D6454" Version="1.1.2.0" ProcessorArchitecture="x64" />
+                <Identity Name="6861PEPE.TrianglePegSolitaire" Publisher="CN=C257EEA6-5F4C-4B8A-B5EA-B97FE77D6454" Version="1.1.1.0" ProcessorArchitecture="x64" />
                 <PhoneIdentity PhoneProductId="c8b3b3ee-b5c3-458b-8ba3-ff283e646445" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
                 <Properties>
                   <DisplayName>Triangle Peg Solitaire</DisplayName>
@@ -176,21 +176,21 @@
             </PackageManifest>
             <BundleManifest PackageFamilyName="6861PEPE.TrianglePegSolitaire_qjv2gsarhqndc">
               <Bundle SchemaVersion="3.0">
-                <Identity Name="6861PEPE.TrianglePegSolitaire" Publisher="CN=C257EEA6-5F4C-4B8A-B5EA-B97FE77D6454" Version="1.1.2.0" />
+                <Identity Name="6861PEPE.TrianglePegSolitaire" Publisher="CN=C257EEA6-5F4C-4B8A-B5EA-B97FE77D6454" Version="1.1.1.0" />
                 <Packages>
-                  <Package Type="application" Version="1.1.2.0" Architecture="x86" FileName="MTProjectPegSolitaire_1.1.2.0_x86.appx" Offset="1800403" Size="875558">
+                  <Package Type="application" Version="1.1.1.0" Architecture="x86" FileName="MTProjectPegSolitaire_1.1.1.0_x86.appx" Offset="2496001" Size="1222172">
                     <Resources>
                       <Resource Language="EN-US" />
                       <Resource Scale="200" />
                     </Resources>
                   </Package>
-                  <Package Type="application" Version="1.1.2.0" Architecture="x64" FileName="MTProjectPegSolitaire_1.1.2.0_x64.appx" Offset="893969" Size="906342">
+                  <Package Type="application" Version="1.1.1.0" Architecture="x64" FileName="MTProjectPegSolitaire_1.1.1.0_x64.appx" Offset="1240183" Size="1255726">
                     <Resources>
                       <Resource Language="EN-US" />
                       <Resource Scale="200" />
                     </Resources>
                   </Package>
-                  <Package Type="application" Version="1.1.2.0" Architecture="arm" FileName="MTProjectPegSolitaire_1.1.2.0_ARM.appx" Offset="68" Size="893809">
+                  <Package Type="application" Version="1.1.1.0" Architecture="arm" FileName="MTProjectPegSolitaire_1.1.1.0_ARM.appx" Offset="68" Size="1240023">
                     <Resources>
                       <Resource Language="EN-US" />
                       <Resource Scale="200" />
@@ -203,18 +203,30 @@
         </Indicators>
         <StaticProperties>
           <Files Id="0000da39a3ee5e6b4b0d3255bfef95601890afd80709">
-            <File Id="0000d3a784a0b601ab8905ec06f7c8f1e00f131425c2" Name="clrcompression.dll" ProductName="microsoft® .net framework" CompanyName="microsoft corporation" ProductVersion="1.0.24214.00 built by: projectkrel" VerLanguage="1033" SwitchBackContext="0" FileVersion="1.0.24214.00 built by: projectkrel" Size="69632" SizeOfImage="69632" PeHeaderHash="01017c90ae133bd09e28a4d27f7f6b651b82da84e020" PeChecksum="104676" CrcChecksum="-369591944" BinProductVersion="1.0.24214.00 built by: projectkrel" BinFileVersion="1.0.24214.0" FileDescription="clrcompression" LegalCopyright="© microsoft corporation.  all rights reserved." LinkDate="06/14/2016 03:31:30" BinaryType="pe64_amd64" LowerCaseLongPath="C:\Program Files\windowsapps\6861pepe.trianglepegsolitaire_1.1.2.0_x64__qjv2gsarhqndc\clrcompression.dll" />
-            <File Id="0000127a5b71e3fbc24993287d6276e005457fa46767" Name="MTProjectPegSolitaire.dll" ProductName="mtprojectpegsolitaire" CompanyName="" ProductVersion="1.0.0.0" VerLanguage="0" SwitchBackContext="0" FileVersion="1.0.0.0" Size="860160" SizeOfImage="860160" PeHeaderHash="010199b69138331e61f5e3624ab4b82d33facdcbb8f7" PeChecksum="0" CrcChecksum="-674603783" BinProductVersion="1.0.0.0" BinFileVersion="1.0.0.0" FileDescription="mtprojectpegsolitaire" LegalCopyright="copyright ©  2017" LinkDate="12/09/2017 16:05:02" BinaryType="pe64_amd64" LowerCaseLongPath="C:\Program Files\windowsapps\6861pepe.trianglepegsolitaire_1.1.2.0_x64__qjv2gsarhqndc\mtprojectpegsolitaire.dll" />
-            <File Id="0000de83583179c0483c5d05e773e2ec15b19672be5d" Name="MTProjectPegSolitaire.exe" ProductName="mtprojectpegsolitaire" CompanyName="" ProductVersion="1.0.0.0" VerLanguage="0" SwitchBackContext="0" FileVersion="1.0.0.0" Size="28672" SizeOfImage="28672" PeHeaderHash="010170bef973b5bc2a1a7d83725268af795b9430a93c" PeChecksum="0" CrcChecksum="2078345683" BinProductVersion="1.0.0.0" BinFileVersion="1.0.0.0" FileDescription="mtprojectpegsolitaire" LegalCopyright="copyright ©  2017" LinkDate="12/09/2017 16:05:02" BinaryType="pe64_amd64" LowerCaseLongPath="C:\Program Files\windowsapps\6861pepe.trianglepegsolitaire_1.1.2.0_x64__qjv2gsarhqndc\mtprojectpegsolitaire.exe" />
-            <File Id="0000ac29a7f12c6eaf3b175d89f47c0fe9992af27508" Name="resources.pri" ProductName="" CompanyName="" ProductVersion="" VerLanguage="0" SwitchBackContext="0" FileVersion="" Size="0" SizeOfImage="0" PeHeaderHash="" PeChecksum="0" CrcChecksum="-519724064" BinProductVersion="" BinFileVersion="" FileDescription="" LegalCopyright="" LinkDate="" BinaryType="data_only" LowerCaseLongPath="C:\Program Files\windowsapps\6861pepe.trianglepegsolitaire_1.1.2.0_x64__qjv2gsarhqndc\resources.pri" />
+            <File Id="0000d3a784a0b601ab8905ec06f7c8f1e00f131425c2" Name="clrcompression.dll" ProductName="microsoft® .net framework" CompanyName="microsoft corporation" ProductVersion="1.0.24214.00 built by: projectkrel" VerLanguage="1033" SwitchBackContext="0" FileVersion="1.0.24214.00 built by: projectkrel" Size="69632" SizeOfImage="69632" PeHeaderHash="01017c90ae133bd09e28a4d27f7f6b651b82da84e020" PeChecksum="104676" CrcChecksum="-369591944" BinProductVersion="1.0.24214.00 built by: projectkrel" BinFileVersion="1.0.24214.0" FileDescription="clrcompression" LegalCopyright="© microsoft corporation.  all rights reserved." LinkDate="06/14/2016 03:31:30" BinaryType="pe64_amd64" LowerCaseLongPath="C:\Program Files\windowsapps\6861pepe.trianglepegsolitaire_1.1.1.0_x64__qjv2gsarhqndc\clrcompression.dll" />
+            <File Id="0000e651e2ba8c6773dd9c58e8cfdf7d09977bad124d" Name="MTProjectPegSolitaire.dll" ProductName="mtprojectpegsolitaire" CompanyName="" ProductVersion="1.0.0.0" VerLanguage="0" SwitchBackContext="0" FileVersion="1.0.0.0" Size="872448" SizeOfImage="872448" PeHeaderHash="0101a8840f97155848773834019d292ad8c73f2460a1" PeChecksum="0" CrcChecksum="-1162126313" BinProductVersion="1.0.0.0" BinFileVersion="1.0.0.0" FileDescription="mtprojectpegsolitaire" LegalCopyright="copyright ©  2017" LinkDate="12/11/2017 00:05:54" BinaryType="pe64_amd64" LowerCaseLongPath="C:\Program Files\windowsapps\6861pepe.trianglepegsolitaire_1.1.1.0_x64__qjv2gsarhqndc\mtprojectpegsolitaire.dll" />
+            <File Id="0000c87be22f40605a4fb151f6519e8937539831743a" Name="MTProjectPegSolitaire.exe" ProductName="mtprojectpegsolitaire" CompanyName="" ProductVersion="1.0.0.0" VerLanguage="0" SwitchBackContext="0" FileVersion="1.0.0.0" Size="28672" SizeOfImage="28672" PeHeaderHash="01014d3baea74462de04b61e928ad532141aab7133ed" PeChecksum="0" CrcChecksum="615186941" BinProductVersion="1.0.0.0" BinFileVersion="1.0.0.0" FileDescription="mtprojectpegsolitaire" LegalCopyright="copyright ©  2017" LinkDate="12/11/2017 00:05:54" BinaryType="pe64_amd64" LowerCaseLongPath="C:\Program Files\windowsapps\6861pepe.trianglepegsolitaire_1.1.1.0_x64__qjv2gsarhqndc\mtprojectpegsolitaire.exe" />
+            <File Id="0000f4edddb9a95fd337841f0d42e2174b3489a05455" Name="resources.pri" ProductName="" CompanyName="" ProductVersion="" VerLanguage="0" SwitchBackContext="0" FileVersion="" Size="0" SizeOfImage="0" PeHeaderHash="" PeChecksum="0" CrcChecksum="-1082006900" BinProductVersion="" BinFileVersion="" FileDescription="" LegalCopyright="" LinkDate="" BinaryType="data_only" LowerCaseLongPath="C:\Program Files\windowsapps\6861pepe.trianglepegsolitaire_1.1.1.0_x64__qjv2gsarhqndc\resources.pri" />
           </Files>
         </StaticProperties>
       </Program>
     </Installed_Programs>
   </APPLICATIONS>
   <DEPENDENCY_INFORMATION>
-    <AitStaticAnalysis ProgramId="0000e1ce821787c45419d88e831ef676957a00000904" AnalysisVersion="1.60" DictionaryVersion="3.2" Type="Package" Id="6861PEPE.TrianglePegSolitaire_1.1.2.0_x64__qjv2gsarhqndc">
-      <AitFile ErrorCode="0" Name="MTProjectPegSolitaire.dll" Id="0000127a5b71e3fbc24993287d6276e005457fa46767">
+    <AitStaticAnalysis ProgramId="0000cb26c4036618161991ea786ba632139c00000904" AnalysisVersion="1.60" DictionaryVersion="3.2" Type="Package" Id="6861PEPE.TrianglePegSolitaire_1.1.1.0_x64__qjv2gsarhqndc">
+      <AitFile ErrorCode="0" Name="MTProjectPegSolitaire.exe" Id="0000c87be22f40605a4fb151f6519e8937539831743a" />
+      <AitFile ErrorCode="0" Name="clrcompression.dll" Id="0000d3a784a0b601ab8905ec06f7c8f1e00f131425c2">
+        <AitCategory Id="ApiStatic">
+          <AitFeature Name="api-ms-win-core-profile-l1-1-0.dll!QueryPerformanceCounter" />
+          <AitFeature Name="api-ms-win-core-com-l1-1-0.dll!CoTaskMemAlloc" />
+          <AitFeature Name="api-ms-win-core-com-l1-1-0.dll!CoTaskMemFree" />
+          <AitFeature Name="api-ms-win-core-sysinfo-l1-1-0.dll!GetSystemTimeAsFileTime" />
+          <AitFeature Name="api-ms-win-core-sysinfo-l1-1-0.dll!GetTickCount64" />
+          <AitFeature Name="api-ms-win-core-libraryloader-l1-1-0.dll!DisableThreadLibraryCalls" />
+          <AitFeature Name="api-ms-win-core-processthreads-l1-1-0.dll!GetCurrentThreadId" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="MTProjectPegSolitaire.dll" Id="0000e651e2ba8c6773dd9c58e8cfdf7d09977bad124d">
         <AitCategory Id="Com">
           <AitFeature Name="{00000003-0000-0000-c000-000000000046}" />
           <AitFeature Name="{00020401-0000-0000-c000-000000000046}" />
@@ -281,6 +293,7 @@
           <AitFeature Name="{2bf27008-2eb4-5675-b1cd-e9906cc5ce64}" />
           <AitFeature Name="{2c847c85-781e-49f7-9fef-b9e14d014707}" />
           <AitFeature Name="{2d162925-5966-4bfa-8638-4d345689f6cf}" />
+          <AitFeature Name="{2eb61048-655f-4c37-b813-b4e45dfa0abe}" />
           <AitFeature Name="{2fa22f4b-707e-4b27-ad0d-d0d8cd468fd2}" />
           <AitFeature Name="{3124d025-04a7-4d45-825e-8204a624dbf4}" />
           <AitFeature Name="{31af3271-e3b4-442d-a341-4c0226b2725b}" />
@@ -292,6 +305,7 @@
           <AitFeature Name="{35aac87a-62ee-4d3e-a24c-2bc8432d68b7}" />
           <AitFeature Name="{36f23359-040e-48f7-9a98-f2664591959c}" />
           <AitFeature Name="{377f6162-6e4d-574e-bf01-77f4fd021d0e}" />
+          <AitFeature Name="{381a83cb-6fff-499b-8d64-2885dfc1249e}" />
           <AitFeature Name="{38b1ed92-a28a-4972-93df-f4f759b8afd2}" />
           <AitFeature Name="{38b4535c-2785-5122-96fe-d44f795b9cb2}" />
           <AitFeature Name="{38ef4b0f-14f8-42df-9a1e-a4bcc4af77f4}" />
@@ -387,6 +401,7 @@
           <AitFeature Name="{80a13c19-843a-451c-8cf5-44c701b0e216}" />
           <AitFeature Name="{81212c2b-24d0-4957-abc3-224470a93a4e}" />
           <AitFeature Name="{81c19cf1-74e6-4387-82eb-bb8fd64b4346}" />
+          <AitFeature Name="{82449b9f-7322-4c0b-b03b-3e69a48260c5}" />
           <AitFeature Name="{85b13970-9bc4-4e96-acf1-30c8fd3d55c8}" />
           <AitFeature Name="{8806a321-1e06-422c-a1cc-01696559e021}" />
           <AitFeature Name="{8a43ed9f-f4e6-4421-acf9-1dab2986820c}" />
@@ -545,6 +560,7 @@
           <AitFeature Name="{ecae8ccd-8e5e-4fbe-9846-30a6370afcdf}" />
           <AitFeature Name="{ecc4b13b-146c-5963-b8b3-024c5b9b95e4}" />
           <AitFeature Name="{eccb574a-c684-5572-a679-6b0842cfb57f}" />
+          <AitFeature Name="{ef9dc2bc-9317-4696-b051-2bad643177b5}" />
           <AitFeature Name="{f0117ddb-12fa-4d8d-8b26-b383d09c2b3c}" />
           <AitFeature Name="{f19104be-422a-4904-a52f-ee72010429e5}" />
           <AitFeature Name="{f1d04933-34e1-4a5c-b2ae-ca3b1c0b20de}" />
@@ -558,6 +574,7 @@
           <AitFeature Name="{f722dcc2-9827-403d-aaed-ecca9ac17398}" />
           <AitFeature Name="{f744d97b-9988-44fb-abd6-5378844cfa8b}" />
           <AitFeature Name="{f76efa41-380e-45db-be87-9e1326ba4b57}" />
+          <AitFeature Name="{f77d6fa4-4652-410e-b1d8-e9a5e245a45c}" />
           <AitFeature Name="{f7f1b229-f024-467f-970a-7e705615db7b}" />
           <AitFeature Name="{f88345f8-e0a3-4be2-b90c-dc20e6d8beb0}" />
           <AitFeature Name="{f9f683c7-d789-472b-aa93-6d4105e6dabe}" />
@@ -620,6 +637,7 @@
         <AitCategory Id="WRTClassFromSearch">
           <AitFeature Name="Windows.Storage.ApplicationData" />
           <AitFeature Name="Windows.UI.Xaml.Controls.Grid" />
+          <AitFeature Name="Windows.Media.Core.MediaSource" />
           <AitFeature Name="Windows.UI.Xaml.Controls.Page" />
           <AitFeature Name="Windows.ApplicationModel.Package" />
           <AitFeature Name="Windows.UI.Xaml.Media.Imaging.BitmapImage" />
@@ -647,6 +665,7 @@
           <AitFeature Name="Windows.ApplicationModel.Resources.Core.ResourceManager" />
           <AitFeature Name="Windows.System.Threading.ThreadPoolTimer" />
           <AitFeature Name="Windows.UI.Xaml.DispatcherTimer" />
+          <AitFeature Name="Windows.Media.Playback.MediaPlayer" />
           <AitFeature Name="Windows.Security.Cryptography.Core.HashAlgorithmNames" />
           <AitFeature Name="Windows.Globalization.CalendarIdentifiers" />
           <AitFeature Name="Windows.UI.Colors" />
@@ -658,18 +677,6 @@
           <AitFeature Name="Windows.UI.Core.CoreWindow" />
         </AitCategory>
       </AitFile>
-      <AitFile ErrorCode="0" Name="clrcompression.dll" Id="0000d3a784a0b601ab8905ec06f7c8f1e00f131425c2">
-        <AitCategory Id="ApiStatic">
-          <AitFeature Name="api-ms-win-core-profile-l1-1-0.dll!QueryPerformanceCounter" />
-          <AitFeature Name="api-ms-win-core-com-l1-1-0.dll!CoTaskMemAlloc" />
-          <AitFeature Name="api-ms-win-core-com-l1-1-0.dll!CoTaskMemFree" />
-          <AitFeature Name="api-ms-win-core-sysinfo-l1-1-0.dll!GetSystemTimeAsFileTime" />
-          <AitFeature Name="api-ms-win-core-sysinfo-l1-1-0.dll!GetTickCount64" />
-          <AitFeature Name="api-ms-win-core-libraryloader-l1-1-0.dll!DisableThreadLibraryCalls" />
-          <AitFeature Name="api-ms-win-core-processthreads-l1-1-0.dll!GetCurrentThreadId" />
-        </AitCategory>
-      </AitFile>
-      <AitFile ErrorCode="0" Name="MTProjectPegSolitaire.exe" Id="0000de83583179c0483c5d05e773e2ec15b19672be5d" />
     </AitStaticAnalysis>
   </DEPENDENCY_INFORMATION>
 </REPORT>
