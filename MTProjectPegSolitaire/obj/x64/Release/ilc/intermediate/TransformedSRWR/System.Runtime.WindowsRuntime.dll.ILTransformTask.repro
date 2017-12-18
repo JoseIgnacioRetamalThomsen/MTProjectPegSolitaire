@@ -1,10 +1,10 @@
 FullName=Microsoft.Build.ILTasks.ILTransformInternalTask
-InputAssembly=C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\obj\x64\Release\ilc\in\System.Runtime.WindowsRuntime.dll
-OutputAssembly=C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\obj\x64\Release\ilc\intermediate\TransformedSRWR\System.Runtime.WindowsRuntime.dll
+InputAssembly=C:\Users\pepe\Desktop\171217Peg\MTProjectPegSolitaire\obj\x64\Release\ilc\in\System.Runtime.WindowsRuntime.dll
+OutputAssembly=C:\Users\pepe\Desktop\171217Peg\MTProjectPegSolitaire\obj\x64\Release\ilc\intermediate\TransformedSRWR\System.Runtime.WindowsRuntime.dll
 UseILOutputPrefix=False
 LibPathsCount=2
 LibPath=C:\Users\pepe\.nuget\packages\microsoft.net.native.compiler\1.7.1\tools\x64\ilc\lib\Private\
-LibPath=C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\obj\x64\Release\ilc\in\
+LibPath=C:\Users\pepe\Desktop\171217Peg\MTProjectPegSolitaire\obj\x64\Release\ilc\in\
 CoreAssemblyName=System.Private.CoreLib
 SkipWritingTransformedAssembly=False
 DontSaveUnlessChangesMade=False

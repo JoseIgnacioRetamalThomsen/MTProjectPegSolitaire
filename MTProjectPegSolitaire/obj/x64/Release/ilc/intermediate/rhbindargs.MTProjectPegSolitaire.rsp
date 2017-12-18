@@ -6,11 +6,11 @@
 "/nativeLink:C:\Users\pepe\.nuget\packages\microsoft.net.native.compiler\1.7.1\tools\x64\ilc\lib\Native\vmath.lib"
 /customImports
 /methodBodyFolding
-"C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\obj\x64\Release\ilc\intermediate\MDIL\MTProjectPegSolitaire.mdilexe"
-"/i:C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\obj\x64\Release\ilc\intermediate\MDIL"
-"/out:C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\obj\x64\Release\ilc\intermediate\Native\MTProjectPegSolitaire.exe"
-"/pdbAltPath:C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\bin\x64\Release\ilc"
-"/res:C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\obj\x64\Release\ilc\intermediate\Native.res"
-"/i:C:\Users\pepe\.nuget\packages\microsoft.net.native.sharedlibrary-x64\1.7.0\tools\SharedLibrary\ret\MDIL"
+"C:\Users\pepe\Desktop\171217Peg\MTProjectPegSolitaire\obj\x64\Release\ilc\intermediate\MDIL\MTProjectPegSolitaire.mdilexe"
+"/i:C:\Users\pepe\Desktop\171217Peg\MTProjectPegSolitaire\obj\x64\Release\ilc\intermediate\MDIL"
+"/out:C:\Users\pepe\Desktop\171217Peg\MTProjectPegSolitaire\obj\x64\Release\ilc\intermediate\Native\MTProjectPegSolitaire.exe"
+"/pdbAltPath:C:\Users\pepe\Desktop\171217Peg\MTProjectPegSolitaire\bin\x64\Release\ilc"
+"/res:C:\Users\pepe\Desktop\171217Peg\MTProjectPegSolitaire\obj\x64\Release\ilc\intermediate\Native.res"
+"/i:C:\Program Files (x86)\Microsoft SDKs\NuGetPackagesFallback\microsoft.net.native.sharedlibrary-x64\1.7.0\tools\SharedLibrary\ret\MDIL"
 /shimexe
 "/classlib:SharedLibrary"

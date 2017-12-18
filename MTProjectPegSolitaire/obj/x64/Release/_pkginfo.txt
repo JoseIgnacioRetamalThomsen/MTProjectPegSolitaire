@@ -1,1 +1,1 @@
-C:\Users\pepe\Documents\pegpacks\MTProjectPegSolitaire_1.1.3.0_Test\MTProjectPegSolitaire_1.1.3.0_x86_x64_arm.appxbundle
+C:\Users\pepe\Documents\packTest\MTProjectPegSolitaire_1.1.4.0_x64_Test\MTProjectPegSolitaire_1.1.4.0_x64.appx

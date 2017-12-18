@@ -11,7 +11,7 @@
         <StackPanel x:ConnectionId='2' x:Name="HowToPlayOrScoreSP" Height="300" >
             <StackPanel x:ConnectionId='12' x:Name="HowToPlaySP" BorderBrush="Gray" BorderThickness="3" CornerRadius="8" Background="WhiteSmoke" Margin="5">
                 <TextBlock Text="How to Play" Style="{StaticResource SubtitleTextBlockStyle}" Foreground="Gray" HorizontalAlignment="Center" ></TextBlock>
-                <Image Source="assets/howtoplay.png" MaxWidth="300" HorizontalAlignment="Center"></Image>
+                <Image Source="assets/Graphics/howtoplay.png" MaxWidth="300" HorizontalAlignment="Center"></Image>
                 <TextBlock Text="The aim is to remove pegs from the board by "  Style="{StaticResource BodyTextBlockStyle}" Foreground="Gray" HorizontalAlignment="Center" ></TextBlock>
                 <TextBlock Text="jumping with one peg over another, jumped peg is " Style="{StaticResource BodyTextBlockStyle}" Foreground="Gray" HorizontalAlignment="Center" ></TextBlock>
                 <TextBlock Text="removed. You can jump only when the opposite " Style="{StaticResource BodyTextBlockStyle}" Foreground="Gray" HorizontalAlignment="Center" ></TextBlock>
@@ -24,7 +24,11 @@
                 <TextBlock   Text="High Scores" HorizontalAlignment="Center"  Foreground="Gray" Style="{StaticResource HeaderTextBlockStyle}" Margin="10"></TextBlock>
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                     <TextBlock x:ConnectionId='18' x:Name="HighScore1Name" Text="1ST No One" Width="200" Foreground="Gold"  HorizontalAlignment="Left" Margin="10,5,10,5"></TextBlock>
-                    <TextBlock x:ConnectionId='19' x:Name="HighScore1Score" Text="0000"  Foreground="Gold" TextAlignment="Left"></TextBlock>
+                    <!--f
+                    f
+                    f
+                    f-->
+<TextBlock x:ConnectionId='19' x:Name="HighScore1Score" Text="0000"  Foreground="Gold" TextAlignment="Left"></TextBlock>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                     <TextBlock x:ConnectionId='16' x:Name="HighScore2Name" Text="2ND No One" Width="200" Foreground="Gold"  Margin="10,5,10,5"></TextBlock>

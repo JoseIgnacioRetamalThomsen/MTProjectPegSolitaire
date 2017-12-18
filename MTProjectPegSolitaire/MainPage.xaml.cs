@@ -259,8 +259,17 @@ namespace MTProjectPegSolitaire
             }
 
         }
+
         #endregion
 
+        private void RadioButton_Tapped(object sender, TappedRoutedEventArgs e)
+        {
 
+        }
+
+        private void RadioButton_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

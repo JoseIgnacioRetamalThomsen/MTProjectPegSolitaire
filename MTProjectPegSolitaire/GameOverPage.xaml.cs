@@ -71,7 +71,7 @@ namespace MTProjectPegSolitaire
                 localSettings.Values["LastTimeInSeconds"] = App.lastTotalTimeSecond;
                 localSettings.Values["LastPiecesRemoved"] = App.lastPiecesRemoved;
             }
-            catch (Exception exp) { }
+            catch { }
 
             //0 if not high score, 1 high1, 2 high2 ...
             haveHighScore = 0;

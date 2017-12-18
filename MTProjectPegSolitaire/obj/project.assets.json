@@ -18422,7 +18422,7 @@
       ]
     },
     "Microsoft.NETCore.UniversalWindowsPlatform/6.0.1": {
-      "sha512": "svqEclOg2g3pmsVen1/sCCsozefwISlHQcB/Y5yxqovG6tx+LIxN0XtGH4XSieLbf5PbzVIXmHoPPrWb0QhuaA==",
+      "sha512": "2RI4q8FfR0S50V4YdZIZtzfyA2Bo4+jJHQXG+TDN7D4mPrFiIswIq8HVeDWS9xZsDwz23z7d/T2qi4rZa60Sig==",
       "type": "package",
       "path": "microsoft.netcore.universalwindowsplatform/6.0.1",
       "files": [
@@ -25735,11 +25735,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pepe\\Documents\\VSProjects\\TrianglePeg\\MTProjectPegSolitaire\\MTProjectPegSolitaire.csproj",
+      "projectUniqueName": "C:\\Users\\pepe\\Desktop\\171217Peg\\MTProjectPegSolitaire\\MTProjectPegSolitaire.csproj",
       "projectName": "MTProjectPegSolitaire",
-      "projectPath": "C:\\Users\\pepe\\Documents\\VSProjects\\TrianglePeg\\MTProjectPegSolitaire\\MTProjectPegSolitaire.csproj",
+      "projectPath": "C:\\Users\\pepe\\Desktop\\171217Peg\\MTProjectPegSolitaire\\MTProjectPegSolitaire.csproj",
       "packagesPath": "C:\\Users\\pepe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pepe\\Documents\\VSProjects\\TrianglePeg\\MTProjectPegSolitaire\\obj\\",
+      "outputPath": "C:\\Users\\pepe\\Desktop\\171217Peg\\MTProjectPegSolitaire\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [

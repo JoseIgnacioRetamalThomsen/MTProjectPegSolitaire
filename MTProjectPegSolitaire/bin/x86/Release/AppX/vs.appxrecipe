@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>DESKTOP-JP81E6B</Machine>
+    <Machine>DESKTOP-M9237PH</Machine>
     <WindowsUser>pepe</WindowsUser>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
     <TargetOsDescription>Windows 10.0</TargetOsDescription>
     <SolutionConfiguration>Release|x86</SolutionConfiguration>
     <PackageArchitecture>x86</PackageArchitecture>
-    <PackageIdentityName>7a75daee-7f39-4dc3-b828-aa8269fc0800</PackageIdentityName>
-    <PackageIdentityPublisher>CN=Pepe</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\pepe\Documents\New folder\MTProjectPegSolitaire\MTProjectPegSolitaire\obj\x86\Release\</IntermediateOutputPath>
+    <PackageIdentityName>c8b3b3ee-b5c3-458b-8ba3-ff283e646445</PackageIdentityName>
+    <PackageIdentityPublisher>CN=C257EEA6-5F4C-4B8A-B5EA-B97FE77D6454</PackageIdentityPublisher>
+    <IntermediateOutputPath>C:\Users\pepe\Desktop\171217Peg\MTProjectPegSolitaire\obj\x86\Release\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,116 +18,148 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\pepe\Documents\New folder\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\AppX</LayoutDir>
-    <RegisteredManifestChecksum>A0228CF1C9662964B0A33B930D558B7EC30ACEE789777DC91C4647972376A0B6</RegisteredManifestChecksum>
-    <RegisteredPackageMoniker>7a75daee-7f39-4dc3-b828-aa8269fc0800_1.0.0.0_x86__wybb86je8jthg</RegisteredPackageMoniker>
-    <RegisteredUserModeAppID>7a75daee-7f39-4dc3-b828-aa8269fc0800_wybb86je8jthg!App</RegisteredUserModeAppID>
-    <RegisteredPackageID>7a75daee-7f39-4dc3-b828-aa8269fc0800</RegisteredPackageID>
-    <RegisteredPackagePublisher>CN=Pepe</RegisteredPackagePublisher>
-    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <LayoutDir>C:\Users\pepe\Desktop\171217Peg\MTProjectPegSolitaire\bin\x86\Release\AppX</LayoutDir>
+    <RegisteredManifestChecksum>50884E2B563244ED095CBE863ACF496F1F7500B3BB594D5F8D049ACA1F0A975A</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>6861PEPE.TrianglePegSolitaire_1.1.4.0_x86__qjv2gsarhqndc</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>6861PEPE.TrianglePegSolitaire_qjv2gsarhqndc!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>6861PEPE.TrianglePegSolitaire</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=C257EEA6-5F4C-4B8A-B5EA-B97FE77D6454</RegisteredPackagePublisher>
+    <RegisteredVersion>1.1.4.0</RegisteredVersion>
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\pepe\Documents\New folder\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\pepe\Desktop\171217Peg\MTProjectPegSolitaire\bin\x86\Release\ilc\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-06T19:16:08.265</Modified>
+      <Modified>2017-12-18T14:31:00.106</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\pepe\Documents\New folder\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\BlackWoodBackground.jpg">
-      <PackagePath>Assets\BlackWoodBackground.jpg</PackagePath>
-      <Modified>2017-11-22T23:44:28.793</Modified>
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\171217Peg\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Graphics\greenSphere.jpg">
+      <PackagePath>Assets\Graphics\greenSphere.jpg</PackagePath>
+      <Modified>2017-12-17T11:15:41.088</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pepe\Documents\New folder\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\greenSphere.jpg">
-      <PackagePath>Assets\greenSphere.jpg</PackagePath>
-      <Modified>2017-11-22T23:44:28.808</Modified>
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\171217Peg\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Graphics\howtoplay.png">
+      <PackagePath>Assets\Graphics\howtoplay.png</PackagePath>
+      <Modified>2017-12-17T11:15:41.088</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pepe\Documents\New folder\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\lightBack.jpg">
-      <PackagePath>Assets\lightBack.jpg</PackagePath>
-      <Modified>2017-11-22T23:44:28.808</Modified>
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\171217Peg\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Graphics\lightBack.jpg">
+      <PackagePath>Assets\Graphics\lightBack.jpg</PackagePath>
+      <Modified>2017-12-17T11:15:41.104</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pepe\Documents\New folder\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\LockScreenLogo.scale-200.png">
-      <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2017-11-22T23:44:28.793</Modified>
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\171217Peg\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Graphics\Wood_1.jpg">
+      <PackagePath>Assets\Graphics\Wood_1.jpg</PackagePath>
+      <Modified>2017-12-17T11:15:41.035</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pepe\Documents\New folder\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\SplashScreen.scale-200.png">
-      <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\171217Peg\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Logo\LockScreenLogo.scale-200.png">
+      <PackagePath>Assets\Logo\LockScreenLogo.scale-200.png</PackagePath>
+      <Modified>2017-12-17T11:15:41.004</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\171217Peg\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Logo\SplashScreen.scale-200.png">
+      <PackagePath>Assets\Logo\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-11-22T23:44:28.793</Modified>
+      <Modified>2017-12-17T11:15:41.020</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pepe\Documents\New folder\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Square150x150Logo.scale-200.png">
-      <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\171217Peg\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Logo\Square150x150Logo.scale-200.png">
+      <PackagePath>Assets\Logo\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-11-22T23:44:28.793</Modified>
+      <Modified>2017-12-17T11:15:41.020</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pepe\Documents\New folder\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Square44x44Logo.scale-200.png">
-      <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\171217Peg\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Logo\Square44x44Logo.scale-200.png">
+      <PackagePath>Assets\Logo\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-11-22T23:44:28.793</Modified>
+      <Modified>2017-12-17T11:15:41.020</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pepe\Documents\New folder\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
-      <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\171217Peg\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Logo\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <PackagePath>Assets\Logo\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-11-22T23:44:28.793</Modified>
+      <Modified>2017-12-17T11:15:41.020</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pepe\Documents\New folder\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\StoreLogo.png">
-      <PackagePath>Assets\StoreLogo.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\171217Peg\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Logo\StoreLogo.png">
+      <PackagePath>Assets\Logo\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-11-22T23:44:28.793</Modified>
+      <Modified>2017-12-17T11:15:41.020</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pepe\Documents\New folder\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Wide310x150Logo.scale-200.png">
-      <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\171217Peg\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Logo\Wide310x150Logo.scale-200.png">
+      <PackagePath>Assets\Logo\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-11-22T23:44:28.793</Modified>
+      <Modified>2017-12-17T11:15:41.035</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pepe\Documents\New folder\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\clrcompression.dll">
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\171217Peg\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Sound\aplauseHigh.wav">
+      <PackagePath>Assets\Sound\aplauseHigh.wav</PackagePath>
+      <Modified>2017-12-17T11:15:41.051</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\171217Peg\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Sound\aplauseNor.wav">
+      <PackagePath>Assets\Sound\aplauseNor.wav</PackagePath>
+      <Modified>2017-12-17T11:15:41.051</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\171217Peg\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Sound\brongTap.wav">
+      <PackagePath>Assets\Sound\brongTap.wav</PackagePath>
+      <Modified>2017-12-17T11:15:41.072</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\171217Peg\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Sound\gameOverBeep.wav">
+      <PackagePath>Assets\Sound\gameOverBeep.wav</PackagePath>
+      <Modified>2017-12-17T11:15:41.072</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\171217Peg\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Sound\pegJumped.wav">
+      <PackagePath>Assets\Sound\pegJumped.wav</PackagePath>
+      <Modified>2017-12-17T11:15:41.104</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\171217Peg\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Sound\pegTapped.wav">
+      <PackagePath>Assets\Sound\pegTapped.wav</PackagePath>
+      <Modified>2017-12-17T11:15:41.119</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\171217Peg\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Sound\tappedSound.wav">
+      <PackagePath>Assets\Sound\tappedSound.wav</PackagePath>
+      <Modified>2017-12-17T11:15:41.119</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\171217Peg\MTProjectPegSolitaire\bin\x86\Release\ilc\clrcompression.dll">
       <PackagePath>clrcompression.dll</PackagePath>
-      <Modified>2016-06-13T20:51:30.000</Modified>
+      <Modified>2016-06-14T04:51:30.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pepe\Documents\New folder\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\MTProjectPegSolitaire.dll">
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\171217Peg\MTProjectPegSolitaire\bin\x86\Release\ilc\MTProjectPegSolitaire.dll">
       <PackagePath>MTProjectPegSolitaire.dll</PackagePath>
-      <Modified>2017-12-06T19:16:08.142</Modified>
+      <Modified>2017-12-18T14:30:59.575</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pepe\Documents\New folder\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\MTProjectPegSolitaire.exe">
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\171217Peg\MTProjectPegSolitaire\bin\x86\Release\ilc\MTProjectPegSolitaire.exe">
       <PackagePath>MTProjectPegSolitaire.exe</PackagePath>
-      <Modified>2017-12-06T19:16:08.248</Modified>
+      <Modified>2017-12-18T14:31:00.029</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pepe\Documents\New folder\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\MTProjectPegSolitaire.pdb">
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\171217Peg\MTProjectPegSolitaire\bin\x86\Release\ilc\MTProjectPegSolitaire.pdb">
       <PackagePath>MTProjectPegSolitaire.pdb</PackagePath>
-      <Modified>2017-12-06T19:16:08.237</Modified>
+      <Modified>2017-12-18T14:30:59.979</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pepe\Documents\New folder\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\resources.pri">
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\171217Peg\MTProjectPegSolitaire\bin\x86\Release\ilc\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-06T19:15:45.982</Modified>
+      <Modified>2017-12-18T14:15:18.421</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
-    <ResolvedSDKReference Include="C:\Users\pepe\.nuget\packages\microsoft.net.native.sharedlibrary-x86\1.7.0\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.1.7.appx">
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\NuGetPackagesFallback\microsoft.net.native.sharedlibrary-x86\1.7.0\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.1.7.appx">
       <Name>Microsoft.NET.Native.Framework.1.7</Name>
       <Version>1.7.25531.0</Version>
       <Architecture>x86</Architecture>
       <FrameworkIdentity>Name = Microsoft.NET.Native.Framework.1.7, MinVersion = 1.7.25531.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Users\pepe\.nuget\packages\microsoft.net.native.sharedlibrary-x86\1.7.0\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.1.7.appx</AppxLocation>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\NuGetPackagesFallback\microsoft.net.native.sharedlibrary-x86\1.7.0\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.1.7.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Users\pepe\.nuget\packages\microsoft.net.native.sharedlibrary-x64\1.7.0\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.1.7.appx">
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\NuGetPackagesFallback\microsoft.net.native.sharedlibrary-x64\1.7.0\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.1.7.appx">
       <Name>Microsoft.NET.Native.Framework.1.7</Name>
       <Version>1.7.25531.0</Version>
       <Architecture>x64</Architecture>
       <FrameworkIdentity>Name = Microsoft.NET.Native.Framework.1.7, MinVersion = 1.7.25531.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Users\pepe\.nuget\packages\microsoft.net.native.sharedlibrary-x64\1.7.0\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.1.7.appx</AppxLocation>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\NuGetPackagesFallback\microsoft.net.native.sharedlibrary-x64\1.7.0\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.1.7.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Users\pepe\.nuget\packages\microsoft.net.native.sharedlibrary-arm\1.7.0\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.1.7.appx">
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\NuGetPackagesFallback\microsoft.net.native.sharedlibrary-arm\1.7.0\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.1.7.appx">
       <Name>Microsoft.NET.Native.Framework.1.7</Name>
       <Version>1.7.25531.0</Version>
       <Architecture>arm</Architecture>
       <FrameworkIdentity>Name = Microsoft.NET.Native.Framework.1.7, MinVersion = 1.7.25531.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Users\pepe\.nuget\packages\microsoft.net.native.sharedlibrary-arm\1.7.0\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.1.7.appx</AppxLocation>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\NuGetPackagesFallback\microsoft.net.native.sharedlibrary-arm\1.7.0\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.1.7.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>

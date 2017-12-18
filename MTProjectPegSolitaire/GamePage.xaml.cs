@@ -38,10 +38,10 @@ namespace MTProjectPegSolitaire
     /// </summary>
     public sealed partial class GamePage : Page
     {
-        
+
         #region constructors
 
-        
+
         public GamePage()
         {
             this.InitializeComponent();
@@ -52,14 +52,14 @@ namespace MTProjectPegSolitaire
 
             //create board
             //images
-            ImageBrush BoardBackground = new ImageBrush() { ImageSource = new BitmapImage(new Uri(this.BaseUri, @"Assets\Wood_1.jpg")) };
+            ImageBrush BoardBackground = new ImageBrush() { ImageSource = new BitmapImage(new Uri(this.BaseUri, @"Assets\Graphics\Wood_1.jpg")) };
             BoardBackground.Stretch = Stretch.UniformToFill;
-            ImageBrush HoleBackground = new ImageBrush() { ImageSource = new BitmapImage(new Uri(this.BaseUri, @"Assets\lightBack.jpg")) };
-            ImageBrush PieceBackgrounImage = new ImageBrush() { ImageSource = new BitmapImage(new Uri(this.BaseUri, @"Assets\greenSphere.jpg")) };
+            ImageBrush HoleBackground = new ImageBrush() { ImageSource = new BitmapImage(new Uri(this.BaseUri, @"Assets\Graphics\lightBack.jpg")) };
+            ImageBrush PieceBackgrounImage = new ImageBrush() { ImageSource = new BitmapImage(new Uri(this.BaseUri, @"Assets\Graphics\greenSphere.jpg")) };
             //sound 
-           
-            
-          
+
+
+
 
             //if continue game or new game
             if (App.continueGame)
@@ -88,7 +88,7 @@ namespace MTProjectPegSolitaire
             App.board.setBoardArrayWithOneString(App.board.getBoardArrayInOneString());
 
             //sound for back nad geme over
-      
+
         }//end contructor
 
         #endregion
@@ -128,10 +128,10 @@ namespace MTProjectPegSolitaire
         private void BackButton_Tapped(object sender, TappedRoutedEventArgs e)
         {
             //sound
-          if (App.isSound) App.tappedSound.Play();
+            if (App.isSound) App.tappedSound.Play();
 
-             //save board to local storage
-             ApplicationDataContainer localSettings = ApplicationData.Current.LocalSettings;
+            //save board to local storage
+            ApplicationDataContainer localSettings = ApplicationData.Current.LocalSettings;
             localSettings.Values["boardArray"] = App.board.getBoardArrayInOneString();
             localSettings.Values["LastTime"] = App.timer.GetTotalSeconds();
             localSettings.Values["LastPiecesRemoves"] = App.board.GetPieceRemoved();

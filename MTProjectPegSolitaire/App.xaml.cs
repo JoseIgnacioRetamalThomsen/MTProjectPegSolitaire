@@ -89,13 +89,13 @@ namespace MTProjectPegSolitaire
             //prefered size
             ApplicationView.PreferredLaunchViewSize = new Size(700, 750);
             ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.PreferredLaunchViewSize;
-            tappedSound.Source = MediaSource.CreateFromUri(new Uri("ms-appx:///Assets/tappedSound.wav"));
-            App.pegTapped.Source = MediaSource.CreateFromUri(new Uri("ms-appx:///Assets/pegTapped.wav"));
-            pegJumped.Source = MediaSource.CreateFromUri(new Uri("ms-appx:///Assets/pegJumped.wav"));
-            brongTap.Source = MediaSource.CreateFromUri(new Uri("ms-appx:///Assets/brongTap.wav"));
-            gameOverSound.Source = MediaSource.CreateFromUri(new Uri("ms-appx:///Assets/gameOverBeep.wav"));
-            aplauseNor.Source = MediaSource.CreateFromUri(new Uri("ms-appx:///Assets/aplauseNor.wav"));
-            aplauseHigh.Source = MediaSource.CreateFromUri(new Uri("ms-appx:///Assets/aplauseHigh.wav"));
+            tappedSound.Source = MediaSource.CreateFromUri(new Uri("ms-appx:///Assets/Sound/tappedSound.wav"));
+            App.pegTapped.Source = MediaSource.CreateFromUri(new Uri("ms-appx:///Assets/Sound/pegTapped.wav"));
+            pegJumped.Source = MediaSource.CreateFromUri(new Uri("ms-appx:///Assets/Sound/pegJumped.wav"));
+            brongTap.Source = MediaSource.CreateFromUri(new Uri("ms-appx:///Assets/Sound/brongTap.wav"));
+            gameOverSound.Source = MediaSource.CreateFromUri(new Uri("ms-appx:///Assets/Sound/gameOverBeep.wav"));
+            aplauseNor.Source = MediaSource.CreateFromUri(new Uri("ms-appx:///Assets/Sound/aplauseNor.wav"));
+            aplauseHigh.Source = MediaSource.CreateFromUri(new Uri("ms-appx:///Assets/Sound/aplauseHigh.wav"));
         }
         private void initAppVariables()
         {

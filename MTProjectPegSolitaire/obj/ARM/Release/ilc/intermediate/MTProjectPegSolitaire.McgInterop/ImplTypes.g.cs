@@ -16177,6 +16177,102 @@ namespace Windows.Globalization
 	}
 }
 
+namespace Windows.Media.Core
+{
+	// Windows.Media.Core.IMediaSourceStatics
+	public unsafe static class IMediaSourceStatics__Impl
+	{
+		// StubClass for 'Windows.Media.Core.IMediaSourceStatics'
+		public static partial class Stubs
+		{
+			// Signature, Windows.Media.Core.IMediaSourceStatics.CreateFromUri, [fwd] [return] [Mcg.CodeGen.ComHRESULTReturnMarshaller] void__int, [fwd] [in] [Mcg.CodeGen.WinRTUriMarshaller] System_Uri__Windows_Foundation__Uri, [fwd] [out] [retval] [nativebyref] [Mcg.CodeGen.WinRTClassMarshaller] Windows_Media_Core_MediaSource__Windows_Media_Core__MediaSource *, 
+			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+			public static global::Windows.Media.Core.MediaSource CreateFromUri(
+						global::System.__ComObject __this, 
+						global::System.Uri uri)
+			{
+				// Setup
+				global::System.Runtime.InteropServices.__vtable_IInspectable* unsafe_uri = default(global::System.Runtime.InteropServices.__vtable_IInspectable*);
+				void* unsafe_result__retval = default(void*);
+				global::Windows.Media.Core.MediaSource result__retval = default(global::Windows.Media.Core.MediaSource);
+				int unsafe___hr;
+				try
+				{
+					// Marshalling
+					if (uri != null)
+						unsafe_uri = (global::System.Runtime.InteropServices.__vtable_IInspectable*)global::__Interop.McgHelpers.SystemUri2WindowsFoundationUri(uri);
+					else
+						unsafe_uri = null;
+					unsafe_result__retval = null;
+					// Call to native method
+					unsafe___hr = global::__Interop.ComCallHelpers.Call(
+										__this, 
+										typeof(global::Windows.Media.Core.IMediaSourceStatics).TypeHandle, 
+										13, 
+										unsafe_uri, 
+										&(unsafe_result__retval)
+									);
+					global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+					result__retval = (global::Windows.Media.Core.MediaSource)global::System.Runtime.InteropServices.McgMarshal.ComInterfaceToObject(
+										((global::System.IntPtr)unsafe_result__retval), 
+										typeof(global::Windows.Media.Core.MediaSource).TypeHandle
+									);
+					// Return
+					return result__retval;
+				}
+				finally
+				{
+					// Cleanup
+					global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(new global::System.IntPtr(((void*)unsafe_uri)));
+					global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(new global::System.IntPtr(((void*)unsafe_result__retval)));
+				}
+			}
+		}
+	}
+}
+
+namespace Windows.Media.Playback
+{
+	// Windows.Media.Playback.IMediaPlayer
+	public unsafe static class IMediaPlayer__Impl
+	{
+		// StubClass for 'Windows.Media.Playback.IMediaPlayer'
+		public static partial class Stubs
+		{
+			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+			public static void Play(global::System.__ComObject __this)
+			{
+				global::__Interop.ForwardComStubs.Stub_11<global::Windows.Media.Playback.IMediaPlayer>(
+									__this, 
+									45
+								);
+				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+			}
+		}
+	}
+
+	// Windows.Media.Playback.IMediaPlayerSource2
+	public unsafe static class IMediaPlayerSource2__Impl
+	{
+		// StubClass for 'Windows.Media.Playback.IMediaPlayerSource2'
+		public static partial class Stubs
+		{
+			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+			public static void put_Source(
+						global::System.__ComObject __this, 
+						global::Windows.Media.Playback.IMediaPlaybackSource value)
+			{
+				global::__Interop.ForwardComStubs.Stub_5<global::Windows.Media.Playback.IMediaPlayerSource2, global::Windows.Media.Playback.IMediaPlaybackSource>(
+									__this, 
+									value, 
+									7
+								);
+				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+			}
+		}
+	}
+}
+
 namespace Windows.Security.Cryptography
 {
 	// Windows.Security.Cryptography.ICryptographicBufferStatics
