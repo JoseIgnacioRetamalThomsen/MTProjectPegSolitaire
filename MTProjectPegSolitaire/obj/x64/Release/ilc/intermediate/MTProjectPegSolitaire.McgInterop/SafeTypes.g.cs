@@ -51,6 +51,342 @@ using System.Runtime.InteropServices.WindowsRuntime;
 // warning CS0628 new protected member declared in sealed class
 #pragma warning disable 628
 
+namespace Microsoft.Advertising.MicrosoftAdvertising_XamlTypeInfo
+{
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Microsoft.Advertising.MicrosoftAdvertising_XamlTypeInfo.__IXamlMetaDataProviderPublicNonVirtuals))]
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.Markup.IXamlMetadataProvider))]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(1)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Microsoft.Advertising, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime" +
+		"")]
+	public unsafe sealed class XamlMetaDataProvider : global::System.__ComObject, global::Windows.UI.Xaml.Markup.IXamlMetadataProvider, global::Microsoft.Advertising.MicrosoftAdvertising_XamlTypeInfo.__IXamlMetaDataProviderPublicNonVirtuals
+	{
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		public global::Windows.UI.Xaml.Markup.IXamlType GetXamlType(string fullName)
+		{
+			global::Windows.UI.Xaml.Markup.IXamlType __retVal = global::Windows.UI.Xaml.Markup.IXamlMetadataProvider__Impl.Stubs.GetXamlType(
+								this, 
+								fullName
+							);
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		public global::Windows.UI.Xaml.Markup.IXamlType GetXamlType(global::System.Type type)
+		{
+			global::Windows.UI.Xaml.Markup.IXamlType __retVal = global::Windows.UI.Xaml.Markup.IXamlMetadataProvider__Impl.Stubs.GetXamlType(
+								this, 
+								type
+							);
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		public global::Windows.UI.Xaml.Markup.XmlnsDefinition[] GetXmlnsDefinitions()
+		{
+			global::Windows.UI.Xaml.Markup.XmlnsDefinition[] __retVal = global::Windows.UI.Xaml.Markup.IXamlMetadataProvider__Impl.Stubs.GetXmlnsDefinitions(this);
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.NoInlining)]
+		public XamlMetaDataProvider()
+		{
+			global::System.IntPtr retval;
+			retval = global::System.Runtime.InteropServices.McgMarshal.ActivateInstance("Microsoft.Advertising.MicrosoftAdvertising_XamlTypeInfo.XamlMetaDataProvider");
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+			this.__AttachAndRelease(retval);
+		}
+
+		public XamlMetaDataProvider(global::System.IntPtr dummy)
+		{
+		}
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Microsoft.Advertising, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime" +
+		"")]
+	public unsafe interface __IXamlMetaDataProviderPublicNonVirtuals
+	{
+	}
+}
+
+namespace Microsoft.Advertising.WinRT.UI
+{
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Microsoft.Advertising.WinRT.UI.__IAdControlPublicNonVirtuals))]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(1)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Microsoft.Advertising, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime" +
+		"")]
+	public unsafe sealed class AdControl : global::Windows.UI.Xaml.Controls.StackPanel, global::System.IDisposable, global::Microsoft.Advertising.WinRT.UI.__IAdControlPublicNonVirtuals
+	{
+		public void Dispose()
+		{
+			global::System.IDisposable__Impl.Stubs.Close(this);
+		}
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "AdUnitId")]
+		public string get_AdUnitId()
+		{
+			string __retVal = global::Microsoft.Advertising.WinRT.UI.__IAdControlPublicNonVirtuals__Impl.Stubs.get_AdUnitId(this);
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "AdUnitId")]
+		public void set_AdUnitId(string value)
+		{
+			global::Microsoft.Advertising.WinRT.UI.__IAdControlPublicNonVirtuals__Impl.Stubs.set_AdUnitId(
+								this, 
+								value
+							);
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+		}
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "ApplicationId")]
+		public string get_ApplicationId()
+		{
+			string __retVal = global::Microsoft.Advertising.WinRT.UI.__IAdControlPublicNonVirtuals__Impl.Stubs.get_ApplicationId(this);
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "ApplicationId")]
+		public void set_ApplicationId(string value)
+		{
+			global::Microsoft.Advertising.WinRT.UI.__IAdControlPublicNonVirtuals__Impl.Stubs.set_ApplicationId(
+								this, 
+								value
+							);
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+		}
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "IsEngaged")]
+		public bool get_IsEngaged()
+		{
+			bool __retVal = global::Microsoft.Advertising.WinRT.UI.__IAdControlPublicNonVirtuals__Impl.Stubs.get_IsEngaged(this);
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "IsAutoRefreshEnabled")]
+		public bool get_IsAutoRefreshEnabled()
+		{
+			bool __retVal = global::Microsoft.Advertising.WinRT.UI.__IAdControlPublicNonVirtuals__Impl.Stubs.get_IsAutoRefreshEnabled(this);
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "IsAutoRefreshEnabled")]
+		public void set_IsAutoRefreshEnabled(bool value)
+		{
+			global::Microsoft.Advertising.WinRT.UI.__IAdControlPublicNonVirtuals__Impl.Stubs.set_IsAutoRefreshEnabled(
+								this, 
+								value
+							);
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+		}
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "AutoRefreshIntervalInSeconds")]
+		public int get_AutoRefreshIntervalInSeconds()
+		{
+			int __retVal = global::Microsoft.Advertising.WinRT.UI.__IAdControlPublicNonVirtuals__Impl.Stubs.get_AutoRefreshIntervalInSeconds(this);
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "AutoRefreshIntervalInSeconds")]
+		public void set_AutoRefreshIntervalInSeconds(int value)
+		{
+			global::Microsoft.Advertising.WinRT.UI.__IAdControlPublicNonVirtuals__Impl.Stubs.set_AutoRefreshIntervalInSeconds(
+								this, 
+								value
+							);
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+		}
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Keywords")]
+		public string get_Keywords()
+		{
+			string __retVal = global::Microsoft.Advertising.WinRT.UI.__IAdControlPublicNonVirtuals__Impl.Stubs.get_Keywords(this);
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Keywords")]
+		public void set_Keywords(string value)
+		{
+			global::Microsoft.Advertising.WinRT.UI.__IAdControlPublicNonVirtuals__Impl.Stubs.set_Keywords(
+								this, 
+								value
+							);
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+		}
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "CountryOrRegion")]
+		public string get_CountryOrRegion()
+		{
+			string __retVal = global::Microsoft.Advertising.WinRT.UI.__IAdControlPublicNonVirtuals__Impl.Stubs.get_CountryOrRegion(this);
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "CountryOrRegion")]
+		public void set_CountryOrRegion(string value)
+		{
+			global::Microsoft.Advertising.WinRT.UI.__IAdControlPublicNonVirtuals__Impl.Stubs.set_CountryOrRegion(
+								this, 
+								value
+							);
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+		}
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "PostalCode")]
+		public string get_PostalCode()
+		{
+			string __retVal = global::Microsoft.Advertising.WinRT.UI.__IAdControlPublicNonVirtuals__Impl.Stubs.get_PostalCode(this);
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "PostalCode")]
+		public void set_PostalCode(string value)
+		{
+			global::Microsoft.Advertising.WinRT.UI.__IAdControlPublicNonVirtuals__Impl.Stubs.set_PostalCode(
+								this, 
+								value
+							);
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+		}
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "IsSuspended")]
+		public bool get_IsSuspended()
+		{
+			bool __retVal = global::Microsoft.Advertising.WinRT.UI.__IAdControlPublicNonVirtuals__Impl.Stubs.get_IsSuspended(this);
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "HasAd")]
+		public bool get_HasAd()
+		{
+			bool __retVal = global::Microsoft.Advertising.WinRT.UI.__IAdControlPublicNonVirtuals__Impl.Stubs.get_HasAd(this);
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.NoInlining)]
+		public AdControl() : 
+				base(default(global::System.IntPtr))
+		{
+			global::System.IntPtr retval;
+			retval = global::System.Runtime.InteropServices.McgMarshal.ActivateInstance("Microsoft.Advertising.WinRT.UI.AdControl");
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+			this.__AttachAndRelease(retval);
+		}
+
+		public AdControl(global::System.IntPtr dummy) : 
+				base(dummy)
+		{
+		}
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Microsoft.Advertising, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime" +
+		"")]
+	public unsafe interface __IAdControlPublicNonVirtuals
+	{
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "AdUnitId")]
+		string get_AdUnitId();
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "AdUnitId")]
+		void set_AdUnitId(string value);
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "ApplicationId")]
+		string get_ApplicationId();
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "ApplicationId")]
+		void set_ApplicationId(string value);
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "IsEngaged")]
+		bool get_IsEngaged();
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "IsAutoRefreshEnabled")]
+		bool get_IsAutoRefreshEnabled();
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "IsAutoRefreshEnabled")]
+		void set_IsAutoRefreshEnabled(bool value);
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "AutoRefreshIntervalInSeconds")]
+		int get_AutoRefreshIntervalInSeconds();
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "AutoRefreshIntervalInSeconds")]
+		void set_AutoRefreshIntervalInSeconds(int value);
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Keywords")]
+		string get_Keywords();
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Keywords")]
+		void set_Keywords(string value);
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "CountryOrRegion")]
+		string get_CountryOrRegion();
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "CountryOrRegion")]
+		void set_CountryOrRegion(string value);
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "PostalCode")]
+		string get_PostalCode();
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "PostalCode")]
+		void set_PostalCode(string value);
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "IsSuspended")]
+		bool get_IsSuspended();
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "HasAd")]
+		bool get_HasAd();
+	}
+}
+
 namespace System.Runtime.InteropServices
 {
 	[global::System.Runtime.InteropServices.McgRedirectedType("System.Runtime.InteropServices.IMarshal,System.Runtime.WindowsRuntime, Version=4.0.11.0, Culture=neutral, Public" +
@@ -2031,6 +2367,40 @@ namespace Windows.Foundation.Metadata
 				| global::System.AttributeTargets.Parameter 
 				| global::System.AttributeTargets.Delegate 
 				| global::System.AttributeTargets.ReturnValue 
+				| global::System.AttributeTargets.GenericParameter), AllowMultiple=true)]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe sealed class VersionAttribute : global::System.Attribute
+	{
+		public VersionAttribute(uint version)
+		{
+			throw new global::System.InvalidOperationException("Cannot construct type \'Windows.Foundation.Metadata.VersionAttribute\'.  Windows Runtime attribute types are not c" +
+					"onstructable.");
+		}
+
+		public VersionAttribute(
+					uint version, 
+					global::Windows.Foundation.Metadata.Platform platform)
+		{
+			throw new global::System.InvalidOperationException("Cannot construct type \'Windows.Foundation.Metadata.VersionAttribute\'.  Windows Runtime attribute types are not c" +
+					"onstructable.");
+		}
+	}
+
+	[global::System.AttributeUsage((global::System.AttributeTargets.Assembly | global::System.AttributeTargets.Module 
+				| global::System.AttributeTargets.Class 
+				| global::System.AttributeTargets.Struct 
+				| global::System.AttributeTargets.Enum 
+				| global::System.AttributeTargets.Constructor 
+				| global::System.AttributeTargets.Method 
+				| global::System.AttributeTargets.Property 
+				| global::System.AttributeTargets.Field 
+				| global::System.AttributeTargets.Event 
+				| global::System.AttributeTargets.Interface 
+				| global::System.AttributeTargets.Parameter 
+				| global::System.AttributeTargets.Delegate 
+				| global::System.AttributeTargets.ReturnValue 
 				| global::System.AttributeTargets.GenericParameter), AllowMultiple=false)]
 	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
@@ -3475,21 +3845,21 @@ namespace Windows.UI
 			return __pRetVal;
 		}
 
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "DarkGreen")]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "DarkSlateGray")]
 		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		public static global::Windows.UI.Color get_DarkGreen()
+		public static global::Windows.UI.Color get_DarkSlateGray()
 		{
 			global::Windows.UI.Color retval;
-			retval = __Factory_Windows_UI__IColorsStatics_get_DarkGreen("Windows.UI.Colors");
+			retval = __Factory_Windows_UI__IColorsStatics_get_DarkSlateGray("Windows.UI.Colors");
 			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
 			return retval;
 		}
 
 		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		static global::Windows.UI.Color __Factory_Windows_UI__IColorsStatics_get_DarkGreen(string typeName)
+		static global::Windows.UI.Color __Factory_Windows_UI__IColorsStatics_get_DarkSlateGray(string typeName)
 		{
 			global::Windows.UI.Color __pRetVal;
-			__pRetVal = global::Windows.UI.IColorsStatics__Impl.Stubs.get_DarkGreen(global::System.Runtime.InteropServices.McgMarshal.GetActivationFactory(
+			__pRetVal = global::Windows.UI.IColorsStatics__Impl.Stubs.get_DarkSlateGray(global::System.Runtime.InteropServices.McgMarshal.GetActivationFactory(
 									typeName, 
 									typeof(global::Windows.UI.IColorsStatics).TypeHandle
 								));
@@ -3534,6 +3904,28 @@ namespace Windows.UI
 		{
 			global::Windows.UI.Color __pRetVal;
 			__pRetVal = global::Windows.UI.IColorsStatics__Impl.Stubs.get_Gray(global::System.Runtime.InteropServices.McgMarshal.GetActivationFactory(
+									typeName, 
+									typeof(global::Windows.UI.IColorsStatics).TypeHandle
+								));
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+			return __pRetVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Silver")]
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		public static global::Windows.UI.Color get_Silver()
+		{
+			global::Windows.UI.Color retval;
+			retval = __Factory_Windows_UI__IColorsStatics_get_Silver("Windows.UI.Colors");
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+			return retval;
+		}
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		static global::Windows.UI.Color __Factory_Windows_UI__IColorsStatics_get_Silver(string typeName)
+		{
+			global::Windows.UI.Color __pRetVal;
+			__pRetVal = global::Windows.UI.IColorsStatics__Impl.Stubs.get_Silver(global::System.Runtime.InteropServices.McgMarshal.GetActivationFactory(
 									typeName, 
 									typeof(global::Windows.UI.IColorsStatics).TypeHandle
 								));
@@ -3603,8 +3995,8 @@ namespace Windows.UI
 		global::Windows.UI.Color get_DarkGray();
 
 		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "DarkGreen")]
-		global::Windows.UI.Color get_DarkGreen();
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "DarkSlateGray")]
+		global::Windows.UI.Color get_DarkSlateGray();
 
 		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
 		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Gold")]
@@ -3613,6 +4005,10 @@ namespace Windows.UI
 		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
 		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Gray")]
 		global::Windows.UI.Color get_Gray();
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Silver")]
+		global::Windows.UI.Color get_Silver();
 
 		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
 		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Transparent")]
@@ -9762,11 +10158,43 @@ namespace Windows.UI.Xaml.Controls
 	}
 
 	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.Controls.IPanel))]
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public unsafe class Panel : global::Windows.UI.Xaml.FrameworkElement, global::Windows.UI.Xaml.Controls.IPanel
 	{
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.NoInlining)]
+		protected Panel() : 
+				base(default(global::System.IntPtr))
+		{
+			global::System.IntPtr retval;
+			retval = __Factory_Windows_UI_Xaml_Controls__IPanelFactory_CreateInstance("Windows.UI.Xaml.Controls.Panel");
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+			this.__AttachAndRelease(retval);
+		}
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		global::System.IntPtr __Factory_Windows_UI_Xaml_Controls__IPanelFactory_CreateInstance(string typeName)
+		{
+			global::System.IntPtr innerInspectable;
+			global::System.IntPtr outerInspectable = default(global::System.IntPtr);
+			outerInspectable = global::System.Runtime.InteropServices.McgMarshal.GetOuterIInspectableForManagedObject(this);
+			global::System.IntPtr __pRetVal_WithAggregation;
+			__pRetVal_WithAggregation = global::Windows.UI.Xaml.Controls.IPanelFactory__Impl.Stubs.CreateInstance(
+								global::System.Runtime.InteropServices.McgMarshal.GetActivationFactory(
+													typeName, 
+													typeof(global::Windows.UI.Xaml.Controls.IPanelFactory).TypeHandle
+												), 
+								outerInspectable, 
+								out innerInspectable
+							);
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+			global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(outerInspectable);
+			global::System.Runtime.InteropServices.McgMarshal.ComSafeRelease(__pRetVal_WithAggregation);
+			return innerInspectable;
+		}
+
 		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
 		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Children")]
 		public virtual global::Windows.UI.Xaml.Controls.UIElementCollection get_Children()
@@ -9984,6 +10412,26 @@ namespace Windows.UI.Xaml.Controls
 		public virtual void put_CornerRadius(global::Windows.UI.Xaml.CornerRadius value)
 		{
 			global::Windows.UI.Xaml.Controls.IStackPanel2__Impl.Stubs.put_CornerRadius(
+								this, 
+								value
+							);
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+		}
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Padding")]
+		public virtual global::Windows.UI.Xaml.Thickness get_Padding()
+		{
+			global::Windows.UI.Xaml.Thickness __retVal = global::Windows.UI.Xaml.Controls.IStackPanel2__Impl.Stubs.get_Padding(this);
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Padding")]
+		public virtual void put_Padding(global::Windows.UI.Xaml.Thickness value)
+		{
+			global::Windows.UI.Xaml.Controls.IStackPanel2__Impl.Stubs.put_Padding(
 								this, 
 								value
 							);
@@ -11631,6 +12079,16 @@ namespace Windows.UI.Xaml.Controls
 
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IPanelFactory
+	{
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		global::System.IntPtr CreateInstance(
+					global::System.IntPtr outer, 
+					out global::System.IntPtr inner);
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public unsafe interface IPanel
 	{
 		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
@@ -11696,6 +12154,14 @@ namespace Windows.UI.Xaml.Controls
 		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
 		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "CornerRadius")]
 		void put_CornerRadius(global::Windows.UI.Xaml.CornerRadius value);
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Padding")]
+		global::Windows.UI.Xaml.Thickness get_Padding();
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Padding")]
+		void put_Padding(global::Windows.UI.Xaml.Thickness value);
 	}
 
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]

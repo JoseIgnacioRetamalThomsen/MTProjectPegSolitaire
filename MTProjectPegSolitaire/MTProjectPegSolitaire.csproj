@@ -19,7 +19,7 @@
     <WindowsXamlEnableOverview>true</WindowsXamlEnableOverview>
     <PackageCertificateKeyFile>MTProjectPegSolitaire_StoreKey.pfx</PackageCertificateKeyFile>
     <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
-    <AppxPackageDir>C:\Users\pepe\Documents\packTest\</AppxPackageDir>
+    <AppxPackageDir>C:\Users\pepe\Downloads\trianglePegG\pack\</AppxPackageDir>
     <AppxBundle>Auto</AppxBundle>
     <AppxBundlePlatforms>x86|x64|arm</AppxBundlePlatforms>
     <PackageCertificateThumbprint>F3A9F7BB70F14B4DFB97460F95F3E9C33179B421</PackageCertificateThumbprint>
@@ -121,12 +121,61 @@
     <None Include="MTProjectPegSolitaire_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\Graphics\backnew2.png" />
+    <Content Include="Assets\Graphics\baknew.png" />
+    <Content Include="Assets\Graphics\ballgrey.jpg" />
+    <Content Include="Assets\Graphics\hnew.png" />
+    <Content Include="Assets\Graphics\holenew.png" />
+    <Content Include="Assets\Graphics\tut.png" />
+    <Content Include="Assets\Logo\LargeTile.scale-100.png" />
+    <Content Include="Assets\Logo\LargeTile.scale-125.png" />
+    <Content Include="Assets\Logo\LargeTile.scale-150.png" />
+    <Content Include="Assets\Logo\LargeTile.scale-200.png" />
+    <Content Include="Assets\Logo\LargeTile.scale-400.png" />
+    <Content Include="Assets\Logo\SmallTile.scale-100.png" />
+    <Content Include="Assets\Logo\SmallTile.scale-125.png" />
+    <Content Include="Assets\Logo\SmallTile.scale-150.png" />
+    <Content Include="Assets\Logo\SmallTile.scale-200.png" />
+    <Content Include="Assets\Logo\SmallTile.scale-400.png" />
+    <Content Include="Assets\Logo\SplashScreen.scale-100.png" />
+    <Content Include="Assets\Logo\SplashScreen.scale-125.png" />
+    <Content Include="Assets\Logo\SplashScreen.scale-150.png" />
+    <Content Include="Assets\Logo\SplashScreen.scale-400.png" />
+    <Content Include="Assets\Logo\Square150x150Logo.scale-100.png" />
+    <Content Include="Assets\Logo\Square150x150Logo.scale-125.png" />
+    <Content Include="Assets\Logo\Square150x150Logo.scale-150.png" />
+    <Content Include="Assets\Logo\Square150x150Logo.scale-400.png" />
+    <Content Include="Assets\Logo\Square44x44Logo.altform-unplated_targetsize-16.png" />
+    <Content Include="Assets\Logo\Square44x44Logo.altform-unplated_targetsize-256.png" />
+    <Content Include="Assets\Logo\Square44x44Logo.altform-unplated_targetsize-32.png" />
+    <Content Include="Assets\Logo\Square44x44Logo.altform-unplated_targetsize-48.png" />
+    <Content Include="Assets\Logo\Square44x44Logo.scale-100.png" />
+    <Content Include="Assets\Logo\Square44x44Logo.scale-125.png" />
+    <Content Include="Assets\Logo\Square44x44Logo.scale-150.png" />
+    <Content Include="Assets\Logo\Square44x44Logo.scale-400.png" />
+    <Content Include="Assets\Logo\Square44x44Logo.targetsize-16.png" />
+    <Content Include="Assets\Logo\Square44x44Logo.targetsize-24.png" />
+    <Content Include="Assets\Logo\Square44x44Logo.targetsize-256.png" />
+    <Content Include="Assets\Logo\Square44x44Logo.targetsize-32.png" />
+    <Content Include="Assets\Logo\Square44x44Logo.targetsize-48.png" />
+    <Content Include="Assets\Logo\StoreLogo.scale-100.png" />
+    <Content Include="Assets\Logo\StoreLogo.scale-125.png" />
+    <Content Include="Assets\Logo\StoreLogo.scale-150.png" />
+    <Content Include="Assets\Logo\StoreLogo.scale-200.png" />
+    <Content Include="Assets\Logo\StoreLogo.scale-400.png" />
+    <Content Include="Assets\Logo\Wide310x150Logo.scale-100.png" />
+    <Content Include="Assets\Logo\Wide310x150Logo.scale-125.png" />
+    <Content Include="Assets\Logo\Wide310x150Logo.scale-150.png" />
+    <Content Include="Assets\Logo\Wide310x150Logo.scale-400.png" />
     <Content Include="Assets\Sound\aplauseHigh.wav" />
     <Content Include="Assets\Sound\aplauseNor.wav" />
     <Content Include="Assets\Sound\brongTap.wav" />
+    <Content Include="Assets\Sound\end.wav" />
     <Content Include="Assets\Sound\gameOverBeep.wav" />
+    <Content Include="Assets\Sound\mis1.wav" />
     <Content Include="Assets\Sound\pegJumped.wav" />
     <Content Include="Assets\Sound\pegTapped.wav" />
+    <Content Include="Assets\Sound\tap1.wav" />
     <Content Include="Assets\Sound\tappedSound.wav" />
     <Content Include="Assets\Graphics\greenSphere.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -137,13 +186,16 @@
     </Content>
     <Content Include="Assets\Graphics\Wood_1.jpg" />
     <None Include="Package.StoreAssociation.xml" />
+    <Content Include="Assets\Sound\win1.wav" />
+    <Content Include="Assets\Sound\win2.mp3" />
+    <Content Include="Assets\Sound\wina.wav" />
+    <Content Include="Assets\Sound\woodclick.wav" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\Logo\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\Logo\SplashScreen.scale-200.png" />
     <Content Include="Assets\Logo\Square150x150Logo.scale-200.png" />
     <Content Include="Assets\Logo\Square44x44Logo.scale-200.png" />
     <Content Include="Assets\Logo\Square44x44Logo.targetsize-24_altform-unplated.png" />
-    <Content Include="Assets\Logo\StoreLogo.png" />
     <Content Include="Assets\Logo\Wide310x150Logo.scale-200.png" />
   </ItemGroup>
   <ItemGroup>
@@ -168,6 +220,14 @@
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.0.1</Version>
     </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <SDKReference Include="Microsoft.Advertising.Xaml, Version=10.0">
+      <Name>Microsoft Advertising SDK for XAML</Name>
+    </SDKReference>
+    <SDKReference Include="Microsoft.VCLibs, Version=14.0">
+      <Name>Visual C++ 2015 Runtime for Universal Windows Platform Apps</Name>
+    </SDKReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

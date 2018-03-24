@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>DESKTOP-M9237PH</Machine>
+    <Machine>DESKTOP-HDSTN23</Machine>
     <WindowsUser>pepe</WindowsUser>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>c8b3b3ee-b5c3-458b-8ba3-ff283e646445</PackageIdentityName>
     <PackageIdentityPublisher>CN=C257EEA6-5F4C-4B8A-B5EA-B97FE77D6454</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\pepe\Desktop\171217Peg\MTProjectPegSolitaire\obj\x86\Release\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\obj\x86\Release\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,121 +18,368 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\pepe\Desktop\171217Peg\MTProjectPegSolitaire\bin\x86\Release\AppX</LayoutDir>
-    <RegisteredManifestChecksum>50884E2B563244ED095CBE863ACF496F1F7500B3BB594D5F8D049ACA1F0A975A</RegisteredManifestChecksum>
-    <RegisteredPackageMoniker>6861PEPE.TrianglePegSolitaire_1.1.4.0_x86__qjv2gsarhqndc</RegisteredPackageMoniker>
+    <LayoutDir>C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\AppX</LayoutDir>
+    <RegisteredManifestChecksum>74C1493EA3F381EC54D07CE28374CBD6454FD83700A22FEFD37F72F13E48D849</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>6861PEPE.TrianglePegSolitaire_1.1.5.0_x86__qjv2gsarhqndc</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>6861PEPE.TrianglePegSolitaire_qjv2gsarhqndc!App</RegisteredUserModeAppID>
     <RegisteredPackageID>6861PEPE.TrianglePegSolitaire</RegisteredPackageID>
     <RegisteredPackagePublisher>CN=C257EEA6-5F4C-4B8A-B5EA-B97FE77D6454</RegisteredPackagePublisher>
-    <RegisteredVersion>1.1.4.0</RegisteredVersion>
+    <RegisteredVersion>1.1.5.0</RegisteredVersion>
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\pepe\Desktop\171217Peg\MTProjectPegSolitaire\bin\x86\Release\ilc\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-18T14:31:00.106</Modified>
+      <Modified>2018-03-24T21:21:25.483</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\pepe\Desktop\171217Peg\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Graphics\greenSphere.jpg">
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Graphics\backnew2.png">
+      <PackagePath>Assets\Graphics\backnew2.png</PackagePath>
+      <Modified>2018-03-24T11:00:47.961</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Graphics\baknew.png">
+      <PackagePath>Assets\Graphics\baknew.png</PackagePath>
+      <Modified>2018-03-24T10:56:02.330</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Graphics\ballgrey.jpg">
+      <PackagePath>Assets\Graphics\ballgrey.jpg</PackagePath>
+      <Modified>2018-03-24T10:50:50.556</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Graphics\greenSphere.jpg">
       <PackagePath>Assets\Graphics\greenSphere.jpg</PackagePath>
-      <Modified>2017-12-17T11:15:41.088</Modified>
+      <Modified>2018-03-01T03:48:12.901</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pepe\Desktop\171217Peg\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Graphics\howtoplay.png">
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Graphics\hnew.png">
+      <PackagePath>Assets\Graphics\hnew.png</PackagePath>
+      <Modified>2018-03-24T11:04:28.115</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Graphics\holenew.png">
+      <PackagePath>Assets\Graphics\holenew.png</PackagePath>
+      <Modified>2018-03-24T11:07:19.871</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Graphics\howtoplay.png">
       <PackagePath>Assets\Graphics\howtoplay.png</PackagePath>
-      <Modified>2017-12-17T11:15:41.088</Modified>
+      <Modified>2018-03-01T03:48:12.904</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pepe\Desktop\171217Peg\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Graphics\lightBack.jpg">
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Graphics\lightBack.jpg">
       <PackagePath>Assets\Graphics\lightBack.jpg</PackagePath>
-      <Modified>2017-12-17T11:15:41.104</Modified>
+      <Modified>2018-03-01T03:48:12.906</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pepe\Desktop\171217Peg\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Graphics\Wood_1.jpg">
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Graphics\tut.png">
+      <PackagePath>Assets\Graphics\tut.png</PackagePath>
+      <Modified>2018-03-24T15:53:46.067</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Graphics\Wood_1.jpg">
       <PackagePath>Assets\Graphics\Wood_1.jpg</PackagePath>
-      <Modified>2017-12-17T11:15:41.035</Modified>
+      <Modified>2018-03-01T03:48:12.900</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pepe\Desktop\171217Peg\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Logo\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Logo\LargeTile.scale-100.png">
+      <PackagePath>Assets\Logo\LargeTile.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-03-24T15:42:22.794</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Logo\LargeTile.scale-125.png">
+      <PackagePath>Assets\Logo\LargeTile.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-03-24T15:42:22.822</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Logo\LargeTile.scale-150.png">
+      <PackagePath>Assets\Logo\LargeTile.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-03-24T15:42:22.859</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Logo\LargeTile.scale-200.png">
+      <PackagePath>Assets\Logo\LargeTile.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-03-24T15:42:22.914</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Logo\LargeTile.scale-400.png">
+      <PackagePath>Assets\Logo\LargeTile.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-03-24T15:42:23.090</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Logo\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\Logo\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2017-12-17T11:15:41.004</Modified>
+      <Modified>2018-03-01T03:48:12.907</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pepe\Desktop\171217Peg\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Logo\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Logo\SmallTile.scale-100.png">
+      <PackagePath>Assets\Logo\SmallTile.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-03-24T15:42:22.391</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Logo\SmallTile.scale-125.png">
+      <PackagePath>Assets\Logo\SmallTile.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-03-24T15:42:22.405</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Logo\SmallTile.scale-150.png">
+      <PackagePath>Assets\Logo\SmallTile.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-03-24T15:42:22.420</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Logo\SmallTile.scale-200.png">
+      <PackagePath>Assets\Logo\SmallTile.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-03-24T15:42:22.436</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Logo\SmallTile.scale-400.png">
+      <PackagePath>Assets\Logo\SmallTile.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-03-24T15:42:22.459</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Logo\SplashScreen.scale-100.png">
+      <PackagePath>Assets\Logo\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-03-24T15:42:23.265</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Logo\SplashScreen.scale-125.png">
+      <PackagePath>Assets\Logo\SplashScreen.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-03-24T15:42:23.302</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Logo\SplashScreen.scale-150.png">
+      <PackagePath>Assets\Logo\SplashScreen.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-03-24T15:42:23.353</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Logo\SplashScreen.scale-200.png">
       <PackagePath>Assets\Logo\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-17T11:15:41.020</Modified>
+      <Modified>2018-03-24T15:42:23.445</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pepe\Desktop\171217Peg\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Logo\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Logo\SplashScreen.scale-400.png">
+      <PackagePath>Assets\Logo\SplashScreen.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-03-24T15:42:23.786</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Logo\Square150x150Logo.scale-100.png">
+      <PackagePath>Assets\Logo\Square150x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-03-24T15:42:22.479</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Logo\Square150x150Logo.scale-125.png">
+      <PackagePath>Assets\Logo\Square150x150Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-03-24T15:42:22.494</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Logo\Square150x150Logo.scale-150.png">
+      <PackagePath>Assets\Logo\Square150x150Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-03-24T15:42:22.510</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Logo\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Logo\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-17T11:15:41.020</Modified>
+      <Modified>2018-03-24T15:42:22.531</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pepe\Desktop\171217Peg\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Logo\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Logo\Square150x150Logo.scale-400.png">
+      <PackagePath>Assets\Logo\Square150x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-03-24T15:42:22.584</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Logo\Square44x44Logo.altform-unplated_targetsize-16.png">
+      <PackagePath>Assets\Logo\Square44x44Logo.altform-unplated_targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-03-24T15:42:23.191</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Logo\Square44x44Logo.altform-unplated_targetsize-256.png">
+      <PackagePath>Assets\Logo\Square44x44Logo.altform-unplated_targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-03-24T15:42:23.238</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Logo\Square44x44Logo.altform-unplated_targetsize-32.png">
+      <PackagePath>Assets\Logo\Square44x44Logo.altform-unplated_targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-03-24T15:42:23.204</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Logo\Square44x44Logo.altform-unplated_targetsize-48.png">
+      <PackagePath>Assets\Logo\Square44x44Logo.altform-unplated_targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-03-24T15:42:23.212</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Logo\Square44x44Logo.scale-100.png">
+      <PackagePath>Assets\Logo\Square44x44Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-03-24T15:42:23.098</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Logo\Square44x44Logo.scale-125.png">
+      <PackagePath>Assets\Logo\Square44x44Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-03-24T15:42:23.105</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Logo\Square44x44Logo.scale-150.png">
+      <PackagePath>Assets\Logo\Square44x44Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-03-24T15:42:23.113</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Logo\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Logo\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-17T11:15:41.020</Modified>
+      <Modified>2018-03-24T15:42:23.121</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pepe\Desktop\171217Peg\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Logo\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Logo\Square44x44Logo.scale-400.png">
+      <PackagePath>Assets\Logo\Square44x44Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-03-24T15:42:23.135</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Logo\Square44x44Logo.targetsize-16.png">
+      <PackagePath>Assets\Logo\Square44x44Logo.targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-03-24T15:42:23.141</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Logo\Square44x44Logo.targetsize-24.png">
+      <PackagePath>Assets\Logo\Square44x44Logo.targetsize-24.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-03-24T15:42:23.149</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Logo\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Logo\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-17T11:15:41.020</Modified>
+      <Modified>2018-03-24T15:42:23.198</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pepe\Desktop\171217Peg\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Logo\StoreLogo.png">
-      <PackagePath>Assets\Logo\StoreLogo.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Logo\Square44x44Logo.targetsize-256.png">
+      <PackagePath>Assets\Logo\Square44x44Logo.targetsize-256.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-17T11:15:41.020</Modified>
+      <Modified>2018-03-24T15:42:23.183</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pepe\Desktop\171217Peg\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Logo\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Logo\Square44x44Logo.targetsize-32.png">
+      <PackagePath>Assets\Logo\Square44x44Logo.targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-03-24T15:42:23.156</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Logo\Square44x44Logo.targetsize-48.png">
+      <PackagePath>Assets\Logo\Square44x44Logo.targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-03-24T15:42:23.164</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Logo\StoreLogo.scale-100.png">
+      <PackagePath>Assets\Logo\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-03-24T15:42:23.793</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Logo\StoreLogo.scale-125.png">
+      <PackagePath>Assets\Logo\StoreLogo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-03-24T15:42:23.801</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Logo\StoreLogo.scale-150.png">
+      <PackagePath>Assets\Logo\StoreLogo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-03-24T15:42:23.810</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Logo\StoreLogo.scale-200.png">
+      <PackagePath>Assets\Logo\StoreLogo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-03-24T15:42:23.820</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Logo\StoreLogo.scale-400.png">
+      <PackagePath>Assets\Logo\StoreLogo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-03-24T15:42:23.837</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Logo\Wide310x150Logo.scale-100.png">
+      <PackagePath>Assets\Logo\Wide310x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-03-24T15:42:22.601</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Logo\Wide310x150Logo.scale-125.png">
+      <PackagePath>Assets\Logo\Wide310x150Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-03-24T15:42:22.621</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Logo\Wide310x150Logo.scale-150.png">
+      <PackagePath>Assets\Logo\Wide310x150Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-03-24T15:42:22.648</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Logo\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Logo\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-17T11:15:41.035</Modified>
+      <Modified>2018-03-24T15:42:22.680</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pepe\Desktop\171217Peg\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Sound\aplauseHigh.wav">
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Logo\Wide310x150Logo.scale-400.png">
+      <PackagePath>Assets\Logo\Wide310x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-03-24T15:42:22.774</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Sound\aplauseHigh.wav">
       <PackagePath>Assets\Sound\aplauseHigh.wav</PackagePath>
-      <Modified>2017-12-17T11:15:41.051</Modified>
+      <Modified>2018-03-01T03:48:12.914</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pepe\Desktop\171217Peg\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Sound\aplauseNor.wav">
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Sound\aplauseNor.wav">
       <PackagePath>Assets\Sound\aplauseNor.wav</PackagePath>
-      <Modified>2017-12-17T11:15:41.051</Modified>
+      <Modified>2018-03-01T03:48:12.915</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pepe\Desktop\171217Peg\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Sound\brongTap.wav">
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Sound\brongTap.wav">
       <PackagePath>Assets\Sound\brongTap.wav</PackagePath>
-      <Modified>2017-12-17T11:15:41.072</Modified>
+      <Modified>2018-03-01T03:48:12.916</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pepe\Desktop\171217Peg\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Sound\gameOverBeep.wav">
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Sound\end.wav">
+      <PackagePath>Assets\Sound\end.wav</PackagePath>
+      <Modified>2018-03-24T21:08:40.632</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Sound\gameOverBeep.wav">
       <PackagePath>Assets\Sound\gameOverBeep.wav</PackagePath>
-      <Modified>2017-12-17T11:15:41.072</Modified>
+      <Modified>2018-03-01T03:48:12.917</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pepe\Desktop\171217Peg\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Sound\pegJumped.wav">
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Sound\mis1.wav">
+      <PackagePath>Assets\Sound\mis1.wav</PackagePath>
+      <Modified>2018-03-24T21:20:51.947</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Sound\pegJumped.wav">
       <PackagePath>Assets\Sound\pegJumped.wav</PackagePath>
-      <Modified>2017-12-17T11:15:41.104</Modified>
+      <Modified>2018-03-01T03:48:12.918</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pepe\Desktop\171217Peg\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Sound\pegTapped.wav">
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Sound\pegTapped.wav">
       <PackagePath>Assets\Sound\pegTapped.wav</PackagePath>
-      <Modified>2017-12-17T11:15:41.119</Modified>
+      <Modified>2018-03-01T03:48:12.919</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pepe\Desktop\171217Peg\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Sound\tappedSound.wav">
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Sound\tap1.wav">
+      <PackagePath>Assets\Sound\tap1.wav</PackagePath>
+      <Modified>2018-03-24T21:05:55.807</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Sound\tappedSound.wav">
       <PackagePath>Assets\Sound\tappedSound.wav</PackagePath>
-      <Modified>2017-12-17T11:15:41.119</Modified>
+      <Modified>2018-03-01T03:48:12.920</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pepe\Desktop\171217Peg\MTProjectPegSolitaire\bin\x86\Release\ilc\clrcompression.dll">
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Sound\win1.wav">
+      <PackagePath>Assets\Sound\win1.wav</PackagePath>
+      <Modified>2018-03-24T21:16:20.237</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Sound\win2.mp3">
+      <PackagePath>Assets\Sound\win2.mp3</PackagePath>
+      <Modified>2018-03-24T21:13:26.536</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Sound\wina.wav">
+      <PackagePath>Assets\Sound\wina.wav</PackagePath>
+      <Modified>2018-03-24T21:19:02.606</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\Assets\Sound\woodclick.wav">
+      <PackagePath>Assets\Sound\woodclick.wav</PackagePath>
+      <Modified>2018-03-24T21:00:17.213</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\clrcompression.dll">
       <PackagePath>clrcompression.dll</PackagePath>
-      <Modified>2016-06-14T04:51:30.000</Modified>
+      <Modified>2016-06-13T20:51:30.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pepe\Desktop\171217Peg\MTProjectPegSolitaire\bin\x86\Release\ilc\MTProjectPegSolitaire.dll">
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\MTProjectPegSolitaire.dll">
       <PackagePath>MTProjectPegSolitaire.dll</PackagePath>
-      <Modified>2017-12-18T14:30:59.575</Modified>
+      <Modified>2018-03-24T21:21:25.371</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pepe\Desktop\171217Peg\MTProjectPegSolitaire\bin\x86\Release\ilc\MTProjectPegSolitaire.exe">
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\MTProjectPegSolitaire.exe">
       <PackagePath>MTProjectPegSolitaire.exe</PackagePath>
-      <Modified>2017-12-18T14:31:00.029</Modified>
+      <Modified>2018-03-24T21:21:25.469</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pepe\Desktop\171217Peg\MTProjectPegSolitaire\bin\x86\Release\ilc\MTProjectPegSolitaire.pdb">
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\MTProjectPegSolitaire.pdb">
       <PackagePath>MTProjectPegSolitaire.pdb</PackagePath>
-      <Modified>2017-12-18T14:30:59.979</Modified>
+      <Modified>2018-03-24T21:21:25.458</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pepe\Desktop\171217Peg\MTProjectPegSolitaire\bin\x86\Release\ilc\resources.pri">
+    <AppxPackagedFile Include="C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-18T14:15:18.421</Modified>
+      <Modified>2018-03-24T21:21:07.916</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
@@ -189,6 +436,30 @@
       <AppxLocation>C:\Users\pepe\.nuget\packages\microsoft.net.native.compiler\1.7.1\build\..\tools\Runtime\arm\Microsoft.NET.Native.Runtime.1.7.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.Advertising.Xaml\10.0\">
+      <Name>Microsoft.Advertising.Xaml</Name>
+      <Version>10.1707.2.0</Version>
+      <Architecture>ARM</Architecture>
+      <FrameworkIdentity>Name=Microsoft.Advertising.Xaml, MinVersion=10.1707.2.0, Publisher=%27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.Advertising.Xaml\10.0\.\AppX\ARM\Microsoft.Advertising.Xaml.ARM.10.0.appx</AppxLocation>
+      <MoreInfo>http://go.microsoft.com/fwlink/%3fLinkID=619694</MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.Advertising.Xaml\10.0\">
+      <Name>Microsoft.Advertising.Xaml</Name>
+      <Version>10.1707.2.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name=Microsoft.Advertising.Xaml, MinVersion=10.1707.2.0, Publisher=%27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.Advertising.Xaml\10.0\.\AppX\x64\Microsoft.Advertising.Xaml.x64.10.0.appx</AppxLocation>
+      <MoreInfo>http://go.microsoft.com/fwlink/%3fLinkID=619694</MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.Advertising.Xaml\10.0\">
+      <Name>Microsoft.Advertising.Xaml</Name>
+      <Version>10.1707.2.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name=Microsoft.Advertising.Xaml, MinVersion=10.1707.2.0, Publisher=%27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.Advertising.Xaml\10.0\.\AppX\x86\Microsoft.Advertising.Xaml.x86.10.0.appx</AppxLocation>
+      <MoreInfo>http://go.microsoft.com/fwlink/%3fLinkID=619694</MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00</Name>

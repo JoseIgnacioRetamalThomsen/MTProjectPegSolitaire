@@ -5,7 +5,7 @@
     <autoResourcePackage qualifier="Scale" />
     <autoResourcePackage qualifier="DXFeatureLevel" />
   </packaging>
-  <index root="\" startIndexAt="C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\bin\x86\Release\ilc\resources.pri">
+  <index root="\" startIndexAt="C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\x86\Release\ilc\resources.pri">
     <default>
       <qualifier name="Language" value="en-US" />
       <qualifier name="Contrast" value="standard" />

@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
-  <Identity Name="6861PEPE.TrianglePegSolitaire" Publisher="CN=C257EEA6-5F4C-4B8A-B5EA-B97FE77D6454" Version="1.1.4.0" />
+  <Identity Name="6861PEPE.TrianglePegSolitaire" Publisher="CN=C257EEA6-5F4C-4B8A-B5EA-B97FE77D6454" Version="1.1.6.0" />
   <mp:PhoneIdentity PhoneProductId="c8b3b3ee-b5c3-458b-8ba3-ff283e646445" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>Triangle Peg Solitaire</DisplayName>
     <PublisherDisplayName>_PEPE_</PublisherDisplayName>
-    <Logo>Assets\logo\StoreLogo.png</Logo>
+    <Logo>Assets\Logo\StoreLogo.png</Logo>
   </Properties>
   <Dependencies>
     <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.0.0" MaxVersionTested="10.0.0.0" />
@@ -16,7 +16,7 @@
   <Applications>
     <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="MTProjectPegSolitaire.App">
       <uap:VisualElements DisplayName="Triangle Peg Solitaire" Square150x150Logo="Assets\Logo\Square150x150Logo.png" Square44x44Logo="Assets\Logo\Square44x44Logo.png" Description="MTProjectPegSolitaire" BackgroundColor="transparent">
-        <uap:DefaultTile Wide310x150Logo="Assets\Logo\Wide310x150Logo.png">
+        <uap:DefaultTile Wide310x150Logo="Assets\Logo\Wide310x150Logo.png" Square310x310Logo="Assets\Logo\LargeTile.png" Square71x71Logo="Assets\Logo\SmallTile.png">
           <uap:ShowNameOnTiles>
             <uap:ShowOn Tile="square150x150Logo" />
             <uap:ShowOn Tile="wide310x150Logo" />

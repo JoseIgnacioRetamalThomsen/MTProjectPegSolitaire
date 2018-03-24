@@ -1,7 +1,9 @@
-/In:"C:\Users\pepe\Desktop\171217Peg\MTProjectPegSolitaire\obj\x86\Release\ilc\in"
-/Lib:"C:\Users\pepe\Desktop\171217Peg\MTProjectPegSolitaire\obj\x86\Release\ilc\in"
+/In:"C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\obj\x86\Release\ilc\in"
+/Lib:"C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\obj\x86\Release\ilc\in"
 /Lib:"C:\Users\pepe\.nuget\packages\microsoft.net.native.compiler\1.7.1\tools\x86\ilc\lib\Private"
-/WinMD:"C:\Users\pepe\Desktop\171217Peg\MTProjectPegSolitaire\obj\x86\Release\ilc\in\WinMetadata\Windows.winmd"
-/VSTelemetrySessionSettings:"{"AppId":1001,"AppInsightsInstrumentationKey":"f144292e-e3b2-4011-ac90-20e5c03fbce5","AsimovInstrumentationKey":"AIF-312cbd79-9dbb-4c48-a7da-3cc2a931cb70","HostName":"Dev14","Id":"05c283d2-7f42-4948-8442-15bbacc00315","IsOptedIn":true,"ProcessStartTime":636492014863593476,"UserId":"ea5250c1-2441-47bc-b8a5-f847e4627a51"}"
+/Lib:"C:\Program Files (x86)\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.Advertising.Xaml\10.0\References\CommonConfiguration\neutral"
+/WinMD:"C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\obj\x86\Release\ilc\in\WinMetadata\Microsoft.Advertising.winmd"
+/WinMD:"C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\obj\x86\Release\ilc\in\WinMetadata\Windows.winmd"
+/VSTelemetrySessionSettings:"{"AppId":1001,"AppInsightsInstrumentationKey":"f144292e-e3b2-4011-ac90-20e5c03fbce5","AsimovInstrumentationKey":"AIF-312cbd79-9dbb-4c48-a7da-3cc2a931cb70","HostName":"Dev14","Id":"eae71d7d-54ce-490d-96cb-df153110530e","IsOptedIn":true,"ProcessStartTime":636575218063481831,"UserId":"c344ef44-99a8-4555-9b33-42418f71c9df"}"
 /RdXmlPath:"C:\Users\pepe\.nuget\packages\microsoft.net.native.compiler\1.7.1\tools\LibraryXML"
 /RunOnlyPreDR

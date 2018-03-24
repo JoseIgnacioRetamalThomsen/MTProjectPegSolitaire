@@ -929,7 +929,26 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static TResult HasThisCall__28<TResult>(
+		internal static int StdCall__28(
+					global::System.IntPtr pfn, 
+					void* pthis, 
+					sbyte arg0)
+		{
+			// This method is implemented elsewhere in the toolchain
+			return 0;
+		}
+
+		internal static int StdCall__29(
+					global::System.IntPtr pfn, 
+					void* pthis, 
+					global::System.Type__Impl.UnsafeType arg0, 
+					void* arg1)
+		{
+			// This method is implemented elsewhere in the toolchain
+			return 0;
+		}
+
+		internal static TResult HasThisCall__30<TResult>(
 					object __this, 
 					global::System.IntPtr pfn, 
 					string arg0)
@@ -938,7 +957,7 @@ namespace __Interop
 			return default(TResult);
 		}
 
-		internal static TResult HasThisCall__29<TResult>(
+		internal static TResult HasThisCall__31<TResult>(
 					object __this, 
 					global::System.IntPtr pfn)
 		{
@@ -946,7 +965,7 @@ namespace __Interop
 			return default(TResult);
 		}
 
-		internal static bool HasThisCall__30(
+		internal static bool HasThisCall__32(
 					object __this, 
 					global::System.IntPtr pfn)
 		{
@@ -954,14 +973,14 @@ namespace __Interop
 			return default(bool);
 		}
 
-		internal static void HasThisCall__31(
+		internal static void HasThisCall__33(
 					object __this, 
 					global::System.IntPtr pfn)
 		{
 			// This method is implemented elsewhere in the toolchain
 		}
 
-		internal static int StdCall__32(
+		internal static int StdCall__34(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.TimeSpan arg0)
@@ -970,7 +989,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__33(
+		internal static int StdCall__35(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					uint arg0, 
@@ -980,7 +999,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__34(
+		internal static int StdCall__36(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::Windows.Foundation.Point arg0, 
@@ -991,7 +1010,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__35(
+		internal static int StdCall__37(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					uint arg0, 
@@ -1001,7 +1020,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__36(
+		internal static int StdCall__38(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					uint arg0)
@@ -1010,7 +1029,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__37(
+		internal static int StdCall__39(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::Windows.Foundation.Point arg0)
@@ -1019,7 +1038,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__38(
+		internal static int StdCall__40(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					uint arg0, 
@@ -1031,32 +1050,10 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__39(
-					global::System.IntPtr pfn, 
-					void* pthis, 
-					void* arg0, 
-					global::System.TimeSpan arg1, 
-					void* arg2)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return 0;
-		}
-
-		internal static int StdCall__40(
-					global::System.IntPtr pfn, 
-					void* pthis, 
-					int arg0, 
-					void* arg1, 
-					void* arg2)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return 0;
-		}
-
 		internal static int StdCall__41(
 					global::System.IntPtr pfn, 
 					void* pthis, 
-					global::System.Runtime.InteropServices.HSTRING arg0, 
+					global::Windows.UI.Xaml.Markup.XmlnsDefinition__Impl.UnsafeType arg0, 
 					void* arg1, 
 					void* arg2)
 		{
@@ -1067,6 +1064,58 @@ namespace __Interop
 		internal static int StdCall__42(
 					global::System.IntPtr pfn, 
 					void* pthis, 
+					uint arg0, 
+					global::Windows.UI.Xaml.Markup.XmlnsDefinition__Impl.UnsafeType arg1)
+		{
+			// This method is implemented elsewhere in the toolchain
+			return 0;
+		}
+
+		internal static int StdCall__43(
+					global::System.IntPtr pfn, 
+					void* pthis, 
+					global::Windows.UI.Xaml.Markup.XmlnsDefinition__Impl.UnsafeType arg0)
+		{
+			// This method is implemented elsewhere in the toolchain
+			return 0;
+		}
+
+		internal static int StdCall__44(
+					global::System.IntPtr pfn, 
+					void* pthis, 
+					void* arg0, 
+					global::System.TimeSpan arg1, 
+					void* arg2)
+		{
+			// This method is implemented elsewhere in the toolchain
+			return 0;
+		}
+
+		internal static int StdCall__45(
+					global::System.IntPtr pfn, 
+					void* pthis, 
+					int arg0, 
+					void* arg1, 
+					void* arg2)
+		{
+			// This method is implemented elsewhere in the toolchain
+			return 0;
+		}
+
+		internal static int StdCall__46(
+					global::System.IntPtr pfn, 
+					void* pthis, 
+					global::System.Runtime.InteropServices.HSTRING arg0, 
+					void* arg1, 
+					void* arg2)
+		{
+			// This method is implemented elsewhere in the toolchain
+			return 0;
+		}
+
+		internal static int StdCall__47(
+					global::System.IntPtr pfn, 
+					void* pthis, 
 					void* arg0, 
 					int arg1)
 		{
@@ -1074,7 +1123,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__43(
+		internal static int StdCall__48(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::Windows.UI.Color arg0, 
@@ -1084,7 +1133,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__44(
+		internal static int StdCall__49(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -1096,7 +1145,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static uint HasThisCall__45(
+		internal static uint HasThisCall__50(
 					object __this, 
 					global::System.IntPtr pfn)
 		{
@@ -1104,7 +1153,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static void HasThisCall__46(
+		internal static void HasThisCall__51(
 					object __this, 
 					global::System.IntPtr pfn, 
 					uint arg0)
@@ -1112,7 +1161,7 @@ namespace __Interop
 			// This method is implemented elsewhere in the toolchain
 		}
 
-		internal static int StdCall__47(
+		internal static int StdCall__52(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					ulong arg0)
@@ -1121,7 +1170,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__48(
+		internal static int StdCall__53(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -1133,7 +1182,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__49(
+		internal static int StdCall__54(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -1143,7 +1192,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static void HasThisCall__50<TArg0>(
+		internal static void HasThisCall__55<TArg0>(
 					object __this, 
 					global::System.IntPtr pfn, 
 					TArg0 arg0, 
@@ -1152,7 +1201,7 @@ namespace __Interop
 			// This method is implemented elsewhere in the toolchain
 		}
 
-		internal static void HasThisCall__51<TArg0>(
+		internal static void HasThisCall__56<TArg0>(
 					object __this, 
 					global::System.IntPtr pfn, 
 					TArg0 arg0, 
@@ -1161,7 +1210,7 @@ namespace __Interop
 			// This method is implemented elsewhere in the toolchain
 		}
 
-		internal static int StdCall__52(
+		internal static int StdCall__57(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					int arg0, 
@@ -1175,7 +1224,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__53(
+		internal static int StdCall__58(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					int arg0, 
@@ -1188,7 +1237,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__54(
+		internal static int StdCall__59(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					int arg0, 
@@ -1199,7 +1248,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__55(
+		internal static int StdCall__60(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::Windows.Foundation.Size arg0)
@@ -1208,7 +1257,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__56(
+		internal static int StdCall__61(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -1222,7 +1271,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__57(
+		internal static int StdCall__62(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.IntPtr arg0, 
@@ -1236,7 +1285,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__58(
+		internal static int StdCall__63(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.IntPtr arg0)
@@ -1245,7 +1294,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__59(
+		internal static int StdCall__64(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					int arg0, 
@@ -1257,7 +1306,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__60(
+		internal static int StdCall__65(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -1268,7 +1317,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__61(
+		internal static int StdCall__66(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -1283,7 +1332,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__62(
+		internal static int StdCall__67(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					int arg0, 
@@ -1296,7 +1345,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__63(
+		internal static int StdCall__68(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					int arg0, 
@@ -1309,7 +1358,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__64(
+		internal static int StdCall__69(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					int arg0, 
@@ -1320,7 +1369,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static void StdCall__65(
+		internal static void StdCall__70(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.IntPtr arg0)
@@ -1328,7 +1377,7 @@ namespace __Interop
 			// This method is implemented elsewhere in the toolchain
 		}
 
-		internal static int StdCall__66(
+		internal static int StdCall__71(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -1342,7 +1391,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__67(
+		internal static int StdCall__72(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -1354,7 +1403,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__68(
+		internal static int StdCall__73(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 

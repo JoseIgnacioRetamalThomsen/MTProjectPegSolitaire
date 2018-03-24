@@ -1,1 +1,1 @@
-C:\Users\pepe\Documents\VSProjects\TrianglePeg\MTProjectPegSolitaire\bin\ARM\Release\Upload\MTProjectPegSolitaire_1.1.3.0\MTProjectPegSolitaire_1.1.3.0_x86_x64_arm.appxbundle
+C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\bin\ARM\Release\Upload\MTProjectPegSolitaire_1.1.6.0\MTProjectPegSolitaire_1.1.6.0_x86_x64_arm.appxbundle

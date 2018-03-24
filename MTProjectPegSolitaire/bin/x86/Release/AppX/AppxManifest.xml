@@ -7,18 +7,19 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="6861PEPE.TrianglePegSolitaire" Publisher="CN=C257EEA6-5F4C-4B8A-B5EA-B97FE77D6454" Version="1.1.4.0" ProcessorArchitecture="x86" />
+  <Identity Name="6861PEPE.TrianglePegSolitaire" Publisher="CN=C257EEA6-5F4C-4B8A-B5EA-B97FE77D6454" Version="1.1.5.0" ProcessorArchitecture="x86" />
   <mp:PhoneIdentity PhoneProductId="c8b3b3ee-b5c3-458b-8ba3-ff283e646445" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>Triangle Peg Solitaire</DisplayName>
     <PublisherDisplayName>_PEPE_</PublisherDisplayName>
-    <Logo>Assets\logo\StoreLogo.png</Logo>
+    <Logo>Assets\Logo\StoreLogo.png</Logo>
   </Properties>
   <Dependencies>
     <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.10586.0" MaxVersionTested="10.0.15063.0" />
     <PackageDependency Name="Microsoft.NET.Native.Framework.1.7" MinVersion="1.7.25531.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" />
     <PackageDependency Name="Microsoft.NET.Native.Runtime.1.7" MinVersion="1.7.25531.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" />
-    <PackageDependency Name="Microsoft.VCLibs.140.00" MinVersion="14.0.22929.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" />
+    <PackageDependency Name="Microsoft.Advertising.Xaml" MinVersion="10.1707.2.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" />
+    <PackageDependency Name="Microsoft.VCLibs.140.00" MinVersion="14.0.25426.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" />
   </Dependencies>
   <Resources>
     <Resource Language="EN-US" />
@@ -26,7 +27,7 @@
   <Applications>
     <Application Id="App" Executable="MTProjectPegSolitaire.exe" EntryPoint="MTProjectPegSolitaire.App">
       <uap:VisualElements DisplayName="Triangle Peg Solitaire" Square150x150Logo="Assets\Logo\Square150x150Logo.png" Square44x44Logo="Assets\Logo\Square44x44Logo.png" Description="MTProjectPegSolitaire" BackgroundColor="transparent">
-        <uap:DefaultTile Wide310x150Logo="Assets\Logo\Wide310x150Logo.png">
+        <uap:DefaultTile Wide310x150Logo="Assets\Logo\Wide310x150Logo.png" Square310x310Logo="Assets\Logo\LargeTile.png" Square71x71Logo="Assets\Logo\SmallTile.png">
           <uap:ShowNameOnTiles>
             <uap:ShowOn Tile="square150x150Logo" />
             <uap:ShowOn Tile="wide310x150Logo" />
@@ -43,7 +44,7 @@
     <build:Item Name="TargetFrameworkMoniker" Value=".NETCore,Version=v5.0" />
     <build:Item Name="VisualStudio" Version="15.0" />
     <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Enterprise 2017" />
-    <build:Item Name="OperatingSystem" Version="10.0.15063.0 (WinBuild.160101.0800)" />
+    <build:Item Name="OperatingSystem" Version="10.0.16299.15 (WinBuild.160101.0800)" />
     <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="15.0.27128.1" />
     <build:Item Name="ProjectGUID" Value="{4CFBD1AC-E13E-4196-A065-646AC5301D18}" />
     <build:Item Name="ilc.exe" Version="1.7.25626.00 built by: PROJECTNGDR2" />

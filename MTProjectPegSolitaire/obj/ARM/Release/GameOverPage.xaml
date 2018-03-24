@@ -5,6 +5,7 @@
     xmlns:local="using:MTProjectPegSolitaire"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:UI="using:Microsoft.Advertising.WinRT.UI"
     mc:Ignorable="d">
 
     <StackPanel  HorizontalAlignment="Center" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
@@ -47,6 +48,13 @@
             </StackPanel>
         </StackPanel>
                <Button x:ConnectionId='2' x:Name="HOME"                       Content="Home" HorizontalAlignment="Center" Margin="10,5,10,5" MinWidth="110"></Button>
+
+        <UI:AdControl ApplicationId="9p5jvf7m3ctr"
+        AdUnitId="1100020158"
+        HorizontalAlignment="Left"
+        Height="300"
+        VerticalAlignment="Top"
+        Width="600"/>
     </StackPanel>
 </Page>
 

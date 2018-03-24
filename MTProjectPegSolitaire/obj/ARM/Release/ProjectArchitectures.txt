@@ -1,1 +1,1 @@
-C:\Users\pepe\Desktop\171217Peg\MTProjectPegSolitaire\MTProjectPegSolitaire.csproj;arm
+C:\Users\pepe\Desktop\TrianglePegSolitaireVSS\MTProjectPegSolitaire\MTProjectPegSolitaire\MTProjectPegSolitaire.csproj;arm

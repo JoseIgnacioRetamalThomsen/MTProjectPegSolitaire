@@ -5,24 +5,37 @@
     xmlns:local="using:MTProjectPegSolitaire"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:UI="using:Microsoft.Advertising.WinRT.UI"
     mc:Ignorable="d">
+    <StackPanel  Padding="10" HorizontalAlignment="Center" >
 
-    <StackPanel x:Name="GamePageMainSP" HorizontalAlignment="Center"  Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" VerticalAlignment="Top">
-
-        <Button Tapped="BackButton_Tapped"  Content="BACK"></Button>
-        <StackPanel x:Name="TimerSP" Orientation="Horizontal" HorizontalAlignment="Center" >
-
-         
-        </StackPanel>
       
-        <StackPanel Height="100">
-            <TextBlock x:Name="GameOverTF" Visibility="Collapsed" Text="Game Over" Foreground="Red" FontStyle="Normal" FontSize="80" Style="{StaticResource   HeaderTextBlockStyle}" HorizontalAlignment="Center" VerticalAlignment="Center" >
-            </TextBlock>
+        <StackPanel x:Name="GamePageMainSP" HorizontalAlignment="Center"  Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" VerticalAlignment="Top">
+
+            <Button Tapped="BackButton_Tapped"  Content="BACK"></Button>
+            <UI:AdControl ApplicationId="9p5jvf7m3ctr"
+        AdUnitId="1100020158"
+        HorizontalAlignment="Left"
+        Height="150"
+        VerticalAlignment="Top"
+        Width="600"/>
+
+            <StackPanel x:Name="TimerSP" Orientation="Horizontal" HorizontalAlignment="Center" >
+
+
+            </StackPanel>
+
+            <StackPanel Height="100">
+                <TextBlock x:Name="GameOverTF" Visibility="Collapsed" Text="Game Over" Foreground="Red" FontStyle="Normal" FontSize="80" Style="{StaticResource   HeaderTextBlockStyle}" HorizontalAlignment="Center" VerticalAlignment="Center" >
+                </TextBlock>
+            </StackPanel>
+
+
+
+
+
         </StackPanel>
-    
-
-
-
-
+        
+       
     </StackPanel>
 </Page>

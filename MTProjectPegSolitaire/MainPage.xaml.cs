@@ -29,6 +29,17 @@ using Windows.UI.Xaml.Shapes;
  *   10/12/2017 audio :Jose Retamal
  */
 
+/*
+ * ADd
+ * name tpsadd1
+ * app id : 9p5jvf7m3ctr
+ * add unit : 1100020158
+ * 
+ * 
+ * 
+ * */
+
+
 namespace MTProjectPegSolitaire
 {
     /// <summary>

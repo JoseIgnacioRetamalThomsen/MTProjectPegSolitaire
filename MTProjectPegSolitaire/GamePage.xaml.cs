@@ -52,10 +52,10 @@ namespace MTProjectPegSolitaire
 
             //create board
             //images
-            ImageBrush BoardBackground = new ImageBrush() { ImageSource = new BitmapImage(new Uri(this.BaseUri, @"Assets\Graphics\Wood_1.jpg")) };
+            ImageBrush BoardBackground = new ImageBrush() { ImageSource = new BitmapImage(new Uri(this.BaseUri, @"Assets\Graphics\baknew.png")) };
             BoardBackground.Stretch = Stretch.UniformToFill;
-            ImageBrush HoleBackground = new ImageBrush() { ImageSource = new BitmapImage(new Uri(this.BaseUri, @"Assets\Graphics\lightBack.jpg")) };
-            ImageBrush PieceBackgrounImage = new ImageBrush() { ImageSource = new BitmapImage(new Uri(this.BaseUri, @"Assets\Graphics\greenSphere.jpg")) };
+            ImageBrush HoleBackground = new ImageBrush() { ImageSource = new BitmapImage(new Uri(this.BaseUri, @"Assets\Graphics\holenew.png")) };
+            ImageBrush PieceBackgrounImage = new ImageBrush() { ImageSource = new BitmapImage(new Uri(this.BaseUri, @"Assets\Graphics\ballgrey.jpg")) }; 
             //sound 
 
 

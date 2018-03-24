@@ -109,10 +109,11 @@ namespace MTProjectPegSolitaire
             //set size of grid(this)
             this.Width = 600;
             //3d effect
+            
             PlaneProjection planeProjection = new PlaneProjection();
-            planeProjection.RotationX = -25;
+            planeProjection.RotationX = -15;
             this.Projection = planeProjection;
-
+            
             //create board:
             //1.- Create back stack panel
             BackSP = new StackPanel()
@@ -124,14 +125,16 @@ namespace MTProjectPegSolitaire
             //2.-create background poligon
             var triangle = new Polygon();
             //set background to polygon from image
-            triangle.Fill = BoardBackGroundImage;
+            triangle.Fill = new SolidColorBrush(Colors.DarkSlateGray);//BoardBackGroundImage;
 
 
             var points = new PointCollection();
+            points.Add(new Windows.Foundation.Point(0, 510));
             points.Add(new Windows.Foundation.Point(0, 500));
-            points.Add(new Windows.Foundation.Point(300, -40));
-            points.Add(new Windows.Foundation.Point(300, -40));
+            points.Add(new Windows.Foundation.Point(295, -40));
+            points.Add(new Windows.Foundation.Point(305, -40));
             points.Add(new Windows.Foundation.Point(600, 500));
+            points.Add(new Windows.Foundation.Point(600, 510));
             //  points.Add(new Windows.Foundation.Point(180, 200));
             triangle.Points = points;
 
@@ -295,7 +298,7 @@ namespace MTProjectPegSolitaire
                         Width = ((70 * scale) / 100),
                         Height = ((70 * scale) / 100),
                         StrokeThickness = 2,
-                        Stroke = new SolidColorBrush(Colors.DarkGreen),
+                        Stroke = new SolidColorBrush(Colors.Silver),
                         Name = "Piece" + i + "_" + j,
 
 
@@ -344,7 +347,7 @@ namespace MTProjectPegSolitaire
                             Width = ((70 * scale) / 100),
                             Height = ((70 * scale) / 100),
                             StrokeThickness = 2,
-                            Stroke = new SolidColorBrush(Colors.DarkGreen),
+                            Stroke = new SolidColorBrush(Colors.Silver),
                             Name = "Piece" + i + "_" + j,
 
 
@@ -412,7 +415,7 @@ namespace MTProjectPegSolitaire
                 Width = ((70 * scale) / 100),
                 Height = ((70 * scale) / 100),
                 StrokeThickness = 2,
-                Stroke = new SolidColorBrush(Colors.DarkGreen),
+                Stroke = new SolidColorBrush(Colors.Silver),
                 Name = "Piece" + i + "_" + j,
 
 
